@@ -95,15 +95,34 @@ def mattermost_bridge(stand):
     raise RuntimeError("no Mattermost bridge; did scripts/up.sh finish?")
 
 
-def link_owner(stand, state, bridge_id):
-    alex = state["people"]["alex"]
+def link_people(stand, state, bridge_id):
+    """Tie each Mattermost account to a Switch user, the way a real team is set up.
+
+    alex is linked to the Switch admin, who owns the agents, so owner-only
+    rules recognise alex. sam and dana get ordinary Switch accounts of their
+    own: then a refusal is Switch saying "you may not", not "I can't tell who
+    you are".
+    """
     linked = stand.gw("GET", "/auth/me/identities")
-    if any(i["external_user_id"] == alex["id"] for i in linked):
-        print("owner link: @alex already linked to the Switch admin")
-        return
-    stand.gw("POST", "/collaborations/%s/identities" % bridge_id,
-             {"external_user_id": alex["id"], "username": "alex"})
-    print("owner link: @alex -> Switch admin")
+    alex = state["people"]["alex"]
+    if not any(i["external_user_id"] == alex["id"] for i in linked):
+        stand.gw("POST", "/collaborations/%s/identities" % bridge_id,
+                 {"external_user_id": alex["id"], "username": "alex"})
+    print("link: @alex -> Switch admin (the agents' owner)")
+    switch_users = {u["email"]: u for u in stand.gw("GET", "/users")}
+    for username in ("sam", "dana"):
+        person = state["people"][username]
+        email = "%s@n2k.example" % username
+        user = switch_users.get(email)
+        if user is None:
+            user = stand.gw("POST", "/users", {
+                "name": PEOPLE[username]["first_name"] + " " + PEOPLE[username]["last_name"],
+                "email": email, "password": secrets.token_urlsafe(18), "role": "user"})
+        person["switch_user_id"] = user["id"]
+        stand.gw("POST", "/collaborations/%s/identities" % bridge_id,
+                 {"external_user_id": person["id"], "username": username,
+                  "user_id": user["id"]})
+        print("link: @%s -> Switch user %s" % (username, email))
 
 
 def ensure_keeper(stand, state):
@@ -159,7 +178,7 @@ def main():
     save_state(state)
     bridge_id = mattermost_bridge(stand)
     state["bridge_id"] = bridge_id
-    link_owner(stand, state, bridge_id)
+    link_people(stand, state, bridge_id)
     keeper = ensure_keeper(stand, state)
     save_state(state)
     room_ids = ensure_rooms(stand, state, bridge_id)
