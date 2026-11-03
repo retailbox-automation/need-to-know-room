@@ -1,0 +1,1241 @@
+customer,region,city,phone,email,plan,annual_value_usd,customer_since
+Acme Bakery Co.,North-East,Boston,+1-617-555-0142,orders@acme-bakery.example.com,Growth,48200,2021-04-12
+Copper Fitness LLC,North-East,Hartford,+1-835-555-0178,hello@copper-fitness-llc.example.com,Growth,25300,2022-05-17
+Yarrow Dental LLC,South-East,Charlotte,+1-533-555-0182,hello@yarrow-dental-llc.example.com,Growth,131000,2019-08-24
+Kestrel Catering LLC,North-East,Boston,+1-231-555-0109,hello@kestrel-catering-llc.example.com,Pro,92200,2022-08-08
+Driftwood Pharmacy Inc.,Midwest,Chicago,+1-697-555-0116,hello@driftwood-pharmacy-inc.example.com,Growth,243700,2018-05-02
+Silverleaf Dental Inc.,North-East,Albany,+1-975-555-0129,hello@silverleaf-dental-inc.example.com,Enterprise,10100,2024-10-26
+Pinecrest Print Shop Partners,Midwest,Columbus,+1-718-555-0113,hello@pinecrest-print-shop-partners.example.com,Enterprise,47600,2025-09-04
+Tidewater Bicycles Partners,North-East,Hartford,+1-870-555-0142,hello@tidewater-bicycles-partners.example.com,Starter,26300,2017-03-17
+Northwind Florist Inc.,North-West,Portland,+1-847-555-0190,hello@northwind-florist-inc.example.com,Pro,235000,2021-12-16
+Silverleaf Bicycles & Sons,North-East,Albany,+1-272-555-0186,hello@silverleaf-bicycles-and-sons.example.com,Starter,52900,2025-12-18
+Silverleaf Pet Supply & Sons,West,Denver,+1-531-555-0146,hello@silverleaf-pet-supply-and-sons.example.com,Pro,223700,2023-05-20
+Redstone Tailors & Sons,Midwest,Madison,+1-734-555-0135,hello@redstone-tailors-and-sons.example.com,Growth,3000,2019-12-25
+Lantern Bicycles LLC,North-East,Providence,+1-889-555-0122,hello@lantern-bicycles-llc.example.com,Pro,169900,2021-01-22
+Granite Bakery & Sons,North-East,Albany,+1-380-555-0197,hello@granite-bakery-and-sons.example.com,Pro,21800,2026-08-08
+Northwind Hardware Partners,South-West,Tucson,+1-401-555-0199,hello@northwind-hardware-partners.example.com,Enterprise,160200,2023-02-20
+Willow Pharmacy Partners,South-East,Charlotte,+1-315-555-0171,hello@willow-pharmacy-partners.example.com,Starter,214100,2025-12-16
+Driftwood Pet Supply Group,North-East,Albany,+1-699-555-0161,hello@driftwood-pet-supply-group.example.com,Starter,123100,2024-09-28
+Silverleaf Hardware LLC,South-East,Orlando,+1-505-555-0154,hello@silverleaf-hardware-llc.example.com,Starter,52200,2014-12-02
+Redstone Catering Group,North-East,Boston,+1-820-555-0139,hello@redstone-catering-group.example.com,Growth,149500,2019-10-11
+Copper Hardware Co.,North-East,Albany,+1-655-555-0113,hello@copper-hardware-co.example.com,Starter,185700,2019-10-19
+Kestrel Optics LLC,North-West,Portland,+1-699-555-0175,hello@kestrel-optics-llc.example.com,Pro,213400,2025-02-16
+Kestrel Print Shop Inc.,West,Reno,+1-700-555-0172,hello@kestrel-print-shop-inc.example.com,Growth,178300,2020-10-24
+Valley Bakery Group,North-West,Boise,+1-675-555-0124,hello@valley-bakery-group.example.com,Growth,234600,2026-09-26
+Copper Hardware Inc.,Midwest,Chicago,+1-619-555-0171,hello@copper-hardware-inc.example.com,Pro,125600,2022-09-04
+Lantern Optics Co.,West,Sacramento,+1-601-555-0128,hello@lantern-optics-co.example.com,Enterprise,188200,2025-09-23
+Oakline Tailors Partners,North-East,Hartford,+1-929-555-0158,hello@oakline-tailors-partners.example.com,Enterprise,71500,2018-10-13
+Bright Studio Partners,Midwest,Chicago,+1-598-555-0141,hello@bright-studio-partners.example.com,Growth,200700,2023-01-03
+Willow Bakery Inc.,West,Salt Lake City,+1-797-555-0152,hello@willow-bakery-inc.example.com,Starter,72000,2021-08-07
+Upland Fitness Group,South-East,Nashville,+1-275-555-0178,hello@upland-fitness-group.example.com,Pro,212300,2025-11-16
+Bright Tailors Partners,North-West,Seattle,+1-274-555-0180,hello@bright-tailors-partners.example.com,Starter,199000,2023-05-17
+Kestrel Dental Inc.,North-East,Boston,+1-450-555-0147,hello@kestrel-dental-inc.example.com,Pro,194900,2023-09-25
+Upland Florist Group,North-East,Hartford,+1-946-555-0183,hello@upland-florist-group.example.com,Enterprise,226000,2022-04-23
+Valley Tailors Partners,Midwest,Chicago,+1-714-555-0171,hello@valley-tailors-partners.example.com,Growth,102700,2024-12-15
+Willow Bicycles Co.,South-West,Albuquerque,+1-517-555-0197,hello@willow-bicycles-co.example.com,Pro,15400,2022-08-12
+Yarrow Print Shop Partners,North-East,Hartford,+1-959-555-0151,hello@yarrow-print-shop-partners.example.com,Growth,156000,2021-05-23
+Valley Tailors & Sons,Midwest,Omaha,+1-339-555-0145,hello@valley-tailors-and-sons.example.com,Growth,148300,2017-02-14
+Silverleaf Fitness & Sons,South-East,Atlanta,+1-286-555-0194,hello@silverleaf-fitness-and-sons.example.com,Growth,194500,2025-04-04
+Valley Coffee LLC,North-East,Boston,+1-449-555-0106,hello@valley-coffee-llc.example.com,Growth,165300,2023-08-10
+Quarry Optics Partners,North-East,Boston,+1-599-555-0103,hello@quarry-optics-partners.example.com,Growth,69400,2024-07-11
+Foxglove Dental Partners,South-East,Charlotte,+1-615-555-0195,hello@foxglove-dental-partners.example.com,Enterprise,118200,2026-01-21
+Upland Pet Supply Partners,South-East,Charlotte,+1-454-555-0152,hello@upland-pet-supply-partners.example.com,Starter,246600,2017-06-21
+Juniper Fitness Group,North-East,Providence,+1-615-555-0141,hello@juniper-fitness-group.example.com,Pro,194200,2014-04-04
+Tidewater Coffee Group,South-West,Albuquerque,+1-264-555-0197,hello@tidewater-coffee-group.example.com,Pro,38800,2024-08-17
+Juniper Print Shop Group,North-West,Seattle,+1-281-555-0199,hello@juniper-print-shop-group.example.com,Growth,225700,2015-02-14
+Maple Coffee Group,South-West,Tucson,+1-313-555-0179,hello@maple-coffee-group.example.com,Pro,160400,2015-09-07
+Quarry Tailors Partners,North-East,Providence,+1-459-555-0101,hello@quarry-tailors-partners.example.com,Growth,228700,2021-02-19
+Bright Garage Inc.,South-East,Atlanta,+1-502-555-0109,hello@bright-garage-inc.example.com,Pro,37000,2019-05-07
+Tidewater Bakery Inc.,South-West,Phoenix,+1-922-555-0139,hello@tidewater-bakery-inc.example.com,Pro,109600,2023-06-02
+Yarrow Pet Supply Inc.,North-East,Hartford,+1-491-555-0131,hello@yarrow-pet-supply-inc.example.com,Growth,174500,2022-03-10
+Granite Dental Partners,North-East,Hartford,+1-309-555-0167,hello@granite-dental-partners.example.com,Pro,60500,2014-01-18
+Driftwood Bakery Partners,West,Denver,+1-939-555-0176,hello@driftwood-bakery-partners.example.com,Enterprise,207100,2019-10-11
+Redstone Catering & Sons,Midwest,Chicago,+1-462-555-0113,hello@redstone-catering-and-sons.example.com,Pro,240800,2014-09-27
+Granite Bicycles Group,South-East,Atlanta,+1-726-555-0159,hello@granite-bicycles-group.example.com,Pro,72200,2020-04-20
+Oakline Catering LLC,North-East,Albany,+1-645-555-0190,hello@oakline-catering-llc.example.com,Pro,73500,2024-05-27
+Driftwood Optics Partners,West,Reno,+1-253-555-0119,hello@driftwood-optics-partners.example.com,Pro,23100,2026-01-07
+Oakline Fitness & Sons,West,Salt Lake City,+1-490-555-0157,hello@oakline-fitness-and-sons.example.com,Growth,100800,2023-02-22
+Granite Pet Supply Group,North-East,Hartford,+1-399-555-0158,hello@granite-pet-supply-group.example.com,Growth,167500,2024-05-18
+Copper Fitness Co.,West,Reno,+1-548-555-0180,hello@copper-fitness-co.example.com,Enterprise,27600,2026-09-26
+Evergreen Books Group,South-East,Atlanta,+1-644-555-0184,hello@evergreen-books-group.example.com,Pro,121900,2024-04-11
+Foxglove Print Shop LLC,North-East,Albany,+1-599-555-0110,hello@foxglove-print-shop-llc.example.com,Starter,114700,2023-01-16
+Quarry Pharmacy LLC,North-East,Albany,+1-808-555-0192,hello@quarry-pharmacy-llc.example.com,Pro,180800,2017-11-04
+Quarry Tailors LLC,West,Salt Lake City,+1-387-555-0108,hello@quarry-tailors-llc.example.com,Starter,214600,2023-01-01
+Harbor Hardware Inc.,South-East,Atlanta,+1-506-555-0150,hello@harbor-hardware-inc.example.com,Pro,47200,2015-12-06
+Upland Florist Co.,North-West,Seattle,+1-911-555-0124,hello@upland-florist-co.example.com,Enterprise,157700,2024-05-05
+Maple Bakery Co.,South-East,Atlanta,+1-873-555-0179,hello@maple-bakery-co.example.com,Enterprise,9600,2024-09-24
+Northwind Fitness Inc.,South-West,Phoenix,+1-402-555-0161,hello@northwind-fitness-inc.example.com,Growth,102000,2025-04-09
+Ironwood Tailors Group,South-West,Tucson,+1-888-555-0141,hello@ironwood-tailors-group.example.com,Starter,191300,2014-08-09
+Upland Garage Inc.,West,Denver,+1-983-555-0154,hello@upland-garage-inc.example.com,Starter,238000,2019-02-20
+Silverleaf Catering Partners,West,Sacramento,+1-590-555-0198,hello@silverleaf-catering-partners.example.com,Enterprise,93400,2015-05-12
+Ironwood Books Group,South-West,Phoenix,+1-474-555-0144,hello@ironwood-books-group.example.com,Starter,173600,2019-12-24
+Maple Hardware Group,West,Denver,+1-445-555-0180,hello@maple-hardware-group.example.com,Pro,51000,2021-09-16
+Quarry Coffee Group,North-West,Seattle,+1-565-555-0110,hello@quarry-coffee-group.example.com,Pro,73900,2025-02-17
+Oakline Tailors & Sons,South-East,Orlando,+1-350-555-0174,hello@oakline-tailors-and-sons.example.com,Growth,231000,2015-05-26
+Upland Studio Inc.,Midwest,Omaha,+1-563-555-0116,hello@upland-studio-inc.example.com,Enterprise,203000,2025-07-25
+Redstone Bicycles Inc.,West,Salt Lake City,+1-323-555-0171,hello@redstone-bicycles-inc.example.com,Starter,133200,2015-11-04
+Quarry Studio Inc.,North-East,Providence,+1-698-555-0191,hello@quarry-studio-inc.example.com,Growth,17000,2014-12-02
+Bright Books Partners,South-West,Phoenix,+1-729-555-0127,hello@bright-books-partners.example.com,Enterprise,145700,2017-10-12
+Acme Fitness LLC,South-West,Albuquerque,+1-301-555-0173,hello@acme-fitness-llc.example.com,Growth,231900,2022-11-25
+Willow Hardware Partners,Midwest,Chicago,+1-258-555-0158,hello@willow-hardware-partners.example.com,Starter,235300,2018-01-05
+Harbor Bicycles Group,North-East,Boston,+1-320-555-0180,hello@harbor-bicycles-group.example.com,Growth,56200,2026-07-10
+Foxglove Bakery Partners,Midwest,Omaha,+1-216-555-0196,hello@foxglove-bakery-partners.example.com,Pro,24900,2014-03-27
+Willow Print Shop Partners,North-East,Boston,+1-263-555-0182,hello@willow-print-shop-partners.example.com,Enterprise,127700,2026-08-16
+Driftwood Dental Inc.,South-East,Orlando,+1-353-555-0184,hello@driftwood-dental-inc.example.com,Enterprise,154600,2018-10-06
+Oakline Garage Inc.,South-West,Phoenix,+1-771-555-0107,hello@oakline-garage-inc.example.com,Starter,77600,2020-10-24
+Evergreen Florist Partners,West,Denver,+1-968-555-0194,hello@evergreen-florist-partners.example.com,Enterprise,41100,2015-07-20
+Evergreen Fitness & Sons,West,Salt Lake City,+1-961-555-0152,hello@evergreen-fitness-and-sons.example.com,Enterprise,151300,2014-03-02
+Northwind Bicycles Partners,North-East,Providence,+1-536-555-0195,hello@northwind-bicycles-partners.example.com,Pro,99300,2022-12-08
+Kestrel Coffee LLC,South-West,Albuquerque,+1-446-555-0129,hello@kestrel-coffee-llc.example.com,Starter,133900,2017-02-20
+Foxglove Garage LLC,North-West,Portland,+1-271-555-0110,hello@foxglove-garage-llc.example.com,Starter,34300,2018-05-11
+Evergreen Tailors Partners,South-East,Orlando,+1-331-555-0145,hello@evergreen-tailors-partners.example.com,Enterprise,79600,2019-04-10
+Driftwood Tailors Partners,Midwest,Madison,+1-490-555-0103,hello@driftwood-tailors-partners.example.com,Pro,171900,2026-08-06
+Redstone Pet Supply LLC,Midwest,Columbus,+1-235-555-0183,hello@redstone-pet-supply-llc.example.com,Enterprise,42100,2023-10-20
+Yarrow Print Shop LLC,Midwest,Columbus,+1-527-555-0195,hello@yarrow-print-shop-llc.example.com,Enterprise,204900,2022-04-05
+Quarry Print Shop Partners,North-West,Seattle,+1-319-555-0107,hello@quarry-print-shop-partners.example.com,Enterprise,90900,2018-03-13
+Willow Garage Partners,South-West,Tucson,+1-386-555-0186,hello@willow-garage-partners.example.com,Growth,141800,2020-01-08
+Kestrel Hardware & Sons,West,Reno,+1-894-555-0128,hello@kestrel-hardware-and-sons.example.com,Growth,119800,2017-02-21
+Yarrow Optics & Sons,South-West,Tucson,+1-567-555-0172,hello@yarrow-optics-and-sons.example.com,Growth,231200,2022-10-19
+Juniper Books Inc.,South-East,Orlando,+1-559-555-0114,hello@juniper-books-inc.example.com,Pro,212100,2022-08-17
+Kestrel Print Shop Group,South-West,Tucson,+1-599-555-0155,hello@kestrel-print-shop-group.example.com,Pro,28300,2024-02-23
+Quarry Bakery LLC,West,Salt Lake City,+1-408-555-0167,hello@quarry-bakery-llc.example.com,Growth,23900,2023-10-22
+Ironwood Hardware LLC,North-East,Boston,+1-607-555-0160,hello@ironwood-hardware-llc.example.com,Pro,21100,2019-01-14
+Lantern Fitness Co.,South-East,Nashville,+1-504-555-0112,hello@lantern-fitness-co.example.com,Starter,195300,2015-04-25
+Juniper Print Shop Co.,North-East,Hartford,+1-798-555-0144,hello@juniper-print-shop-co.example.com,Enterprise,23200,2025-08-18
+Driftwood Garage Co.,Midwest,Chicago,+1-873-555-0131,hello@driftwood-garage-co.example.com,Starter,133900,2021-05-28
+Redstone Bicycles LLC,West,Denver,+1-390-555-0118,hello@redstone-bicycles-llc.example.com,Starter,14000,2021-12-06
+Valley Bakery Inc.,South-West,Phoenix,+1-790-555-0170,hello@valley-bakery-inc.example.com,Growth,223900,2024-11-11
+Granite Pharmacy Co.,South-West,Austin,+1-854-555-0149,hello@granite-pharmacy-co.example.com,Enterprise,120600,2019-06-27
+Pinecrest Pharmacy Inc.,West,Salt Lake City,+1-318-555-0175,hello@pinecrest-pharmacy-inc.example.com,Pro,218200,2016-04-24
+Silverleaf Bakery LLC,North-East,Providence,+1-355-555-0186,hello@silverleaf-bakery-llc.example.com,Pro,204400,2021-07-19
+Bright Fitness Inc.,South-East,Charlotte,+1-527-555-0162,hello@bright-fitness-inc.example.com,Growth,83800,2020-02-07
+Driftwood Print Shop Partners,North-West,Spokane,+1-389-555-0112,hello@driftwood-print-shop-partners.example.com,Starter,54300,2016-01-17
+Kestrel Catering Partners,North-East,Providence,+1-216-555-0193,hello@kestrel-catering-partners.example.com,Pro,168700,2020-04-07
+Valley Studio Group,Midwest,Omaha,+1-603-555-0154,hello@valley-studio-group.example.com,Pro,239900,2016-01-19
+Granite Print Shop Group,South-West,Tucson,+1-600-555-0171,hello@granite-print-shop-group.example.com,Enterprise,79200,2024-12-20
+Acme Catering Co.,South-West,Albuquerque,+1-951-555-0125,hello@acme-catering-co.example.com,Starter,130400,2019-11-20
+Ironwood Catering & Sons,North-East,Albany,+1-286-555-0170,hello@ironwood-catering-and-sons.example.com,Pro,6200,2015-04-19
+Valley Pet Supply LLC,North-East,Boston,+1-621-555-0163,hello@valley-pet-supply-llc.example.com,Enterprise,167400,2016-11-18
+Harbor Pharmacy Inc.,North-West,Portland,+1-520-555-0110,hello@harbor-pharmacy-inc.example.com,Starter,99600,2022-05-06
+Ironwood Pet Supply Group,North-West,Portland,+1-734-555-0162,hello@ironwood-pet-supply-group.example.com,Growth,146300,2017-05-26
+Juniper Print Shop Partners,North-East,Hartford,+1-712-555-0110,hello@juniper-print-shop-partners.example.com,Growth,187500,2018-11-19
+Lantern Studio Co.,West,Sacramento,+1-256-555-0149,hello@lantern-studio-co.example.com,Starter,44900,2018-03-08
+Northwind Pharmacy LLC,South-East,Orlando,+1-818-555-0133,hello@northwind-pharmacy-llc.example.com,Enterprise,243500,2015-09-06
+Granite Print Shop LLC,South-West,Tucson,+1-649-555-0156,hello@granite-print-shop-llc.example.com,Pro,6100,2021-11-05
+Northwind Bakery Inc.,South-East,Nashville,+1-952-555-0182,hello@northwind-bakery-inc.example.com,Growth,62200,2015-06-24
+Valley Books Partners,North-West,Spokane,+1-222-555-0141,hello@valley-books-partners.example.com,Pro,110500,2016-05-22
+Acme Catering Group,North-East,Boston,+1-206-555-0196,hello@acme-catering-group.example.com,Pro,69200,2017-02-17
+Quarry Pharmacy Partners,West,Denver,+1-970-555-0108,hello@quarry-pharmacy-partners.example.com,Pro,207900,2019-11-21
+Evergreen Catering & Sons,Midwest,Omaha,+1-205-555-0158,hello@evergreen-catering-and-sons.example.com,Enterprise,112400,2015-01-15
+Redstone Optics Partners,North-East,Albany,+1-832-555-0113,hello@redstone-optics-partners.example.com,Starter,183000,2020-04-26
+Willow Pharmacy Inc.,North-West,Boise,+1-268-555-0141,hello@willow-pharmacy-inc.example.com,Pro,226500,2016-09-15
+Silverleaf Florist LLC,North-East,Albany,+1-374-555-0193,hello@silverleaf-florist-llc.example.com,Pro,193700,2015-03-26
+Juniper Studio Group,North-East,Hartford,+1-744-555-0160,hello@juniper-studio-group.example.com,Enterprise,33300,2019-08-13
+Maple Hardware Co.,North-East,Hartford,+1-563-555-0151,hello@maple-hardware-co.example.com,Starter,210900,2017-03-23
+Driftwood Hardware LLC,South-East,Nashville,+1-752-555-0113,hello@driftwood-hardware-llc.example.com,Enterprise,106800,2017-04-27
+Silverleaf Catering & Sons,West,Denver,+1-701-555-0109,hello@silverleaf-catering-and-sons.example.com,Pro,174200,2018-05-17
+Evergreen Optics Co.,West,Reno,+1-555-555-0100,hello@evergreen-optics-co.example.com,Starter,170500,2023-12-21
+Maple Garage Inc.,Midwest,Madison,+1-312-555-0152,hello@maple-garage-inc.example.com,Enterprise,186800,2021-01-22
+Harbor Print Shop Inc.,South-West,Albuquerque,+1-494-555-0180,hello@harbor-print-shop-inc.example.com,Pro,21900,2020-05-23
+Driftwood Florist & Sons,North-West,Seattle,+1-831-555-0180,hello@driftwood-florist-and-sons.example.com,Growth,68600,2023-08-26
+Lantern Coffee Partners,South-East,Nashville,+1-556-555-0181,hello@lantern-coffee-partners.example.com,Growth,46600,2021-10-03
+Foxglove Tailors & Sons,South-West,Albuquerque,+1-845-555-0190,hello@foxglove-tailors-and-sons.example.com,Enterprise,119500,2016-08-06
+Juniper Florist Partners,North-East,Boston,+1-554-555-0107,hello@juniper-florist-partners.example.com,Starter,25000,2024-12-24
+Valley Optics & Sons,South-East,Atlanta,+1-966-555-0158,hello@valley-optics-and-sons.example.com,Enterprise,152500,2014-09-06
+Driftwood Fitness Partners,West,Salt Lake City,+1-742-555-0126,hello@driftwood-fitness-partners.example.com,Growth,148200,2017-12-03
+Ironwood Coffee Partners,South-West,Austin,+1-731-555-0145,hello@ironwood-coffee-partners.example.com,Growth,176600,2014-09-26
+Harbor Tailors LLC,West,Salt Lake City,+1-986-555-0173,hello@harbor-tailors-llc.example.com,Enterprise,190300,2018-09-24
+Ironwood Print Shop & Sons,South-West,Albuquerque,+1-211-555-0199,hello@ironwood-print-shop-and-sons.example.com,Growth,203300,2023-07-18
+Ironwood Bicycles LLC,South-West,Phoenix,+1-402-555-0106,hello@ironwood-bicycles-llc.example.com,Growth,182500,2014-10-24
+Maple Books Inc.,South-East,Orlando,+1-452-555-0154,hello@maple-books-inc.example.com,Starter,185800,2023-07-28
+Quarry Bicycles LLC,South-East,Charlotte,+1-382-555-0164,hello@quarry-bicycles-llc.example.com,Growth,29800,2018-02-11
+Maple Hardware Partners,West,Denver,+1-580-555-0186,hello@maple-hardware-partners.example.com,Enterprise,165300,2025-03-05
+Foxglove Fitness Group,South-East,Charlotte,+1-968-555-0137,hello@foxglove-fitness-group.example.com,Enterprise,149100,2019-02-18
+Evergreen Coffee Inc.,Midwest,Madison,+1-247-555-0173,hello@evergreen-coffee-inc.example.com,Pro,95600,2016-03-21
+Quarry Dental Inc.,North-West,Seattle,+1-640-555-0124,hello@quarry-dental-inc.example.com,Enterprise,109500,2020-11-04
+Kestrel Bakery Inc.,North-West,Portland,+1-623-555-0183,hello@kestrel-bakery-inc.example.com,Starter,86800,2015-07-04
+Foxglove Optics Co.,West,Sacramento,+1-791-555-0126,hello@foxglove-optics-co.example.com,Pro,224400,2020-08-15
+Valley Bicycles Partners,West,Salt Lake City,+1-638-555-0157,hello@valley-bicycles-partners.example.com,Growth,169800,2019-06-07
+Driftwood Studio & Sons,North-West,Boise,+1-226-555-0171,hello@driftwood-studio-and-sons.example.com,Pro,247400,2017-11-22
+Yarrow Books Co.,South-East,Orlando,+1-713-555-0156,hello@yarrow-books-co.example.com,Pro,176200,2016-07-07
+Northwind Florist LLC,North-West,Boise,+1-861-555-0191,hello@northwind-florist-llc.example.com,Starter,33100,2022-03-24
+Harbor Fitness Group,North-East,Albany,+1-715-555-0191,hello@harbor-fitness-group.example.com,Starter,236700,2025-07-06
+Upland Studio Group,West,Reno,+1-639-555-0123,hello@upland-studio-group.example.com,Starter,131300,2024-07-22
+Bright Garage Co.,South-West,Tucson,+1-597-555-0157,hello@bright-garage-co.example.com,Growth,110400,2021-04-19
+Juniper Bakery Co.,West,Salt Lake City,+1-424-555-0182,hello@juniper-bakery-co.example.com,Growth,144600,2023-09-24
+Foxglove Optics Partners,South-West,Austin,+1-565-555-0110,hello@foxglove-optics-partners.example.com,Enterprise,197400,2024-06-26
+Silverleaf Fitness LLC,South-West,Albuquerque,+1-581-555-0189,hello@silverleaf-fitness-llc.example.com,Pro,6200,2024-03-26
+Upland Print Shop & Sons,West,Sacramento,+1-941-555-0134,hello@upland-print-shop-and-sons.example.com,Growth,21500,2021-09-10
+Tidewater Optics & Sons,South-West,Austin,+1-614-555-0196,hello@tidewater-optics-and-sons.example.com,Starter,45300,2023-04-20
+Kestrel Dental & Sons,North-East,Hartford,+1-977-555-0124,hello@kestrel-dental-and-sons.example.com,Pro,179900,2020-12-01
+Harbor Print Shop & Sons,North-West,Portland,+1-333-555-0199,hello@harbor-print-shop-and-sons.example.com,Growth,234900,2017-04-06
+Oakline Dental Partners,West,Denver,+1-468-555-0116,hello@oakline-dental-partners.example.com,Starter,209300,2021-10-28
+Redstone Print Shop Partners,North-West,Seattle,+1-711-555-0114,hello@redstone-print-shop-partners.example.com,Starter,236900,2026-08-17
+Willow Fitness & Sons,North-East,Hartford,+1-936-555-0184,hello@willow-fitness-and-sons.example.com,Pro,221200,2021-01-27
+Foxglove Optics & Sons,North-West,Spokane,+1-706-555-0151,hello@foxglove-optics-and-sons.example.com,Pro,107400,2022-12-27
+Copper Print Shop Inc.,West,Reno,+1-967-555-0102,hello@copper-print-shop-inc.example.com,Starter,60200,2023-09-20
+Acme Tailors Co.,Midwest,Columbus,+1-445-555-0152,hello@acme-tailors-co.example.com,Pro,49500,2017-11-28
+Foxglove Pet Supply Co.,Midwest,Columbus,+1-472-555-0112,hello@foxglove-pet-supply-co.example.com,Enterprise,197400,2020-11-27
+Redstone Florist Co.,Midwest,Madison,+1-980-555-0100,hello@redstone-florist-co.example.com,Enterprise,40800,2023-11-18
+Yarrow Florist & Sons,North-West,Portland,+1-951-555-0175,hello@yarrow-florist-and-sons.example.com,Growth,143000,2021-02-10
+Granite Studio Co.,North-East,Providence,+1-406-555-0147,hello@granite-studio-co.example.com,Starter,4700,2020-05-20
+Bright Optics LLC,Midwest,Madison,+1-760-555-0185,hello@bright-optics-llc.example.com,Pro,236000,2026-12-04
+Northwind Fitness Co.,South-East,Nashville,+1-567-555-0112,hello@northwind-fitness-co.example.com,Pro,153400,2017-05-17
+Acme Books Inc.,North-East,Providence,+1-336-555-0196,hello@acme-books-inc.example.com,Enterprise,15000,2023-10-08
+Acme Bakery Partners,North-East,Albany,+1-843-555-0157,hello@acme-bakery-partners.example.com,Starter,245700,2023-11-13
+Yarrow Hardware LLC,South-East,Charlotte,+1-488-555-0163,hello@yarrow-hardware-llc.example.com,Enterprise,11700,2024-07-05
+Upland Studio Co.,North-East,Providence,+1-343-555-0134,hello@upland-studio-co.example.com,Starter,39800,2017-08-03
+Copper Studio Group,Midwest,Columbus,+1-782-555-0124,hello@copper-studio-group.example.com,Starter,226700,2019-05-11
+Tidewater Garage & Sons,Midwest,Omaha,+1-277-555-0180,hello@tidewater-garage-and-sons.example.com,Growth,17300,2026-11-05
+Quarry Bakery Co.,North-East,Providence,+1-735-555-0195,hello@quarry-bakery-co.example.com,Starter,16200,2021-03-17
+Maple Coffee Inc.,North-East,Boston,+1-687-555-0118,hello@maple-coffee-inc.example.com,Pro,226300,2021-01-26
+Tidewater Fitness LLC,Midwest,Columbus,+1-983-555-0170,hello@tidewater-fitness-llc.example.com,Enterprise,192400,2026-03-12
+Yarrow Dental Partners,North-West,Portland,+1-454-555-0123,hello@yarrow-dental-partners.example.com,Pro,132900,2024-09-04
+Oakline Optics & Sons,North-West,Seattle,+1-420-555-0117,hello@oakline-optics-and-sons.example.com,Pro,222400,2025-05-22
+Acme Print Shop Co.,Midwest,Omaha,+1-692-555-0120,hello@acme-print-shop-co.example.com,Growth,123000,2020-10-20
+Maple Books Co.,North-East,Boston,+1-313-555-0116,hello@maple-books-co.example.com,Starter,98500,2014-08-28
+Kestrel Coffee Partners,Midwest,Madison,+1-948-555-0110,hello@kestrel-coffee-partners.example.com,Starter,34500,2020-04-27
+Kestrel Tailors Inc.,South-West,Phoenix,+1-677-555-0105,hello@kestrel-tailors-inc.example.com,Starter,116600,2022-01-20
+Willow Bicycles Group,North-East,Providence,+1-766-555-0116,hello@willow-bicycles-group.example.com,Enterprise,142500,2017-02-11
+Northwind Books Group,North-West,Boise,+1-211-555-0107,hello@northwind-books-group.example.com,Growth,245200,2023-07-21
+Foxglove Pharmacy LLC,South-East,Nashville,+1-583-555-0161,hello@foxglove-pharmacy-llc.example.com,Pro,153100,2023-07-02
+Driftwood Fitness Inc.,Midwest,Madison,+1-249-555-0112,hello@driftwood-fitness-inc.example.com,Enterprise,4800,2018-12-12
+Acme Coffee Partners,South-West,Phoenix,+1-231-555-0179,hello@acme-coffee-partners.example.com,Pro,9700,2024-10-26
+Maple Bicycles & Sons,West,Reno,+1-826-555-0100,hello@maple-bicycles-and-sons.example.com,Growth,200300,2016-04-04
+Lantern Pet Supply Partners,North-West,Boise,+1-688-555-0101,hello@lantern-pet-supply-partners.example.com,Starter,229200,2025-04-28
+Tidewater Tailors Group,South-West,Albuquerque,+1-619-555-0196,hello@tidewater-tailors-group.example.com,Enterprise,116600,2025-03-01
+Harbor Pet Supply & Sons,South-East,Orlando,+1-904-555-0152,hello@harbor-pet-supply-and-sons.example.com,Growth,61800,2026-10-17
+Lantern Optics Inc.,West,Denver,+1-963-555-0117,hello@lantern-optics-inc.example.com,Pro,55600,2020-09-05
+Driftwood Print Shop LLC,South-West,Phoenix,+1-983-555-0133,hello@driftwood-print-shop-llc.example.com,Starter,211100,2020-06-13
+Lantern Tailors LLC,South-West,Austin,+1-361-555-0158,hello@lantern-tailors-llc.example.com,Growth,52400,2023-08-15
+Oakline Hardware LLC,North-East,Providence,+1-572-555-0189,hello@oakline-hardware-llc.example.com,Starter,175800,2014-01-28
+Maple Garage & Sons,South-East,Orlando,+1-530-555-0164,hello@maple-garage-and-sons.example.com,Growth,107200,2020-07-25
+Silverleaf Hardware Group,North-West,Spokane,+1-453-555-0190,hello@silverleaf-hardware-group.example.com,Pro,105000,2020-09-19
+Pinecrest Optics Partners,South-East,Nashville,+1-596-555-0198,hello@pinecrest-optics-partners.example.com,Starter,103600,2014-07-28
+Silverleaf Bicycles LLC,West,Salt Lake City,+1-742-555-0130,hello@silverleaf-bicycles-llc.example.com,Starter,64500,2017-06-10
+Valley Pet Supply Co.,North-West,Portland,+1-319-555-0147,hello@valley-pet-supply-co.example.com,Growth,10400,2015-12-28
+Oakline Pet Supply & Sons,South-West,Austin,+1-483-555-0117,hello@oakline-pet-supply-and-sons.example.com,Growth,165300,2015-08-20
+Copper Print Shop LLC,South-West,Albuquerque,+1-210-555-0171,hello@copper-print-shop-llc.example.com,Enterprise,170200,2016-12-01
+Upland Catering Group,South-East,Nashville,+1-648-555-0147,hello@upland-catering-group.example.com,Pro,92400,2022-05-22
+Bright Pharmacy Partners,North-West,Spokane,+1-575-555-0126,hello@bright-pharmacy-partners.example.com,Enterprise,104300,2023-12-08
+Redstone Florist LLC,North-West,Seattle,+1-274-555-0159,hello@redstone-florist-llc.example.com,Starter,116100,2026-07-08
+Redstone Pet Supply Co.,South-West,Austin,+1-415-555-0129,hello@redstone-pet-supply-co.example.com,Pro,244700,2025-10-07
+Willow Books Co.,West,Reno,+1-955-555-0129,hello@willow-books-co.example.com,Growth,48300,2024-08-23
+Maple Coffee & Sons,Midwest,Madison,+1-635-555-0173,hello@maple-coffee-and-sons.example.com,Enterprise,229900,2026-03-15
+Northwind Optics Group,West,Reno,+1-929-555-0154,hello@northwind-optics-group.example.com,Starter,28300,2023-08-14
+Willow Dental Group,North-West,Seattle,+1-614-555-0109,hello@willow-dental-group.example.com,Enterprise,128000,2024-11-04
+Maple Print Shop Inc.,Midwest,Omaha,+1-647-555-0150,hello@maple-print-shop-inc.example.com,Enterprise,226000,2024-06-19
+Ironwood Pharmacy Group,West,Salt Lake City,+1-484-555-0111,hello@ironwood-pharmacy-group.example.com,Growth,65300,2014-02-14
+Maple Bakery Partners,North-East,Albany,+1-483-555-0112,hello@maple-bakery-partners.example.com,Pro,239600,2020-02-06
+Redstone Tailors LLC,North-East,Albany,+1-390-555-0115,hello@redstone-tailors-llc.example.com,Starter,135800,2019-11-28
+Redstone Studio Inc.,North-East,Hartford,+1-984-555-0153,hello@redstone-studio-inc.example.com,Starter,129800,2021-12-11
+Juniper Bicycles Co.,Midwest,Columbus,+1-490-555-0128,hello@juniper-bicycles-co.example.com,Pro,159900,2025-05-02
+Foxglove Tailors Partners,North-East,Hartford,+1-902-555-0143,hello@foxglove-tailors-partners.example.com,Pro,181500,2015-06-17
+Lantern Hardware LLC,West,Salt Lake City,+1-740-555-0115,hello@lantern-hardware-llc.example.com,Growth,59200,2020-12-26
+Foxglove Pet Supply Group,Midwest,Chicago,+1-630-555-0151,hello@foxglove-pet-supply-group.example.com,Pro,247800,2026-02-14
+Redstone Hardware Inc.,North-West,Boise,+1-402-555-0196,hello@redstone-hardware-inc.example.com,Pro,152100,2021-07-01
+Tidewater Print Shop Co.,North-East,Albany,+1-218-555-0162,hello@tidewater-print-shop-co.example.com,Growth,165700,2025-11-27
+Yarrow Pharmacy Partners,North-East,Providence,+1-989-555-0161,hello@yarrow-pharmacy-partners.example.com,Growth,232600,2019-12-17
+Tidewater Bicycles LLC,South-West,Tucson,+1-636-555-0153,hello@tidewater-bicycles-llc.example.com,Enterprise,71400,2020-03-05
+Granite Optics Partners,South-West,Phoenix,+1-975-555-0115,hello@granite-optics-partners.example.com,Starter,83900,2017-02-25
+Harbor Garage LLC,West,Denver,+1-548-555-0127,hello@harbor-garage-llc.example.com,Enterprise,122800,2016-08-12
+Tidewater Pharmacy & Sons,South-West,Tucson,+1-675-555-0165,hello@tidewater-pharmacy-and-sons.example.com,Starter,127000,2023-10-23
+Maple Catering Inc.,Midwest,Omaha,+1-253-555-0175,hello@maple-catering-inc.example.com,Pro,166700,2014-05-25
+Upland Bakery Partners,North-East,Albany,+1-792-555-0185,hello@upland-bakery-partners.example.com,Enterprise,23900,2015-07-12
+Copper Bakery Partners,West,Denver,+1-317-555-0109,hello@copper-bakery-partners.example.com,Enterprise,77400,2016-10-19
+Maple Florist Partners,North-East,Hartford,+1-929-555-0115,hello@maple-florist-partners.example.com,Pro,222300,2017-12-18
+Pinecrest Hardware LLC,North-East,Providence,+1-981-555-0132,hello@pinecrest-hardware-llc.example.com,Enterprise,143200,2025-07-15
+Redstone Optics Co.,West,Denver,+1-408-555-0133,hello@redstone-optics-co.example.com,Enterprise,59900,2026-06-15
+Yarrow Print Shop Co.,South-East,Orlando,+1-420-555-0106,hello@yarrow-print-shop-co.example.com,Starter,194100,2018-04-06
+Willow Pet Supply Group,West,Reno,+1-698-555-0196,hello@willow-pet-supply-group.example.com,Pro,69000,2019-01-11
+Lantern Dental & Sons,Midwest,Chicago,+1-213-555-0138,hello@lantern-dental-and-sons.example.com,Growth,248000,2014-03-08
+Evergreen Optics Group,West,Reno,+1-947-555-0158,hello@evergreen-optics-group.example.com,Starter,223800,2020-05-05
+Driftwood Fitness LLC,South-West,Tucson,+1-444-555-0127,hello@driftwood-fitness-llc.example.com,Pro,62900,2016-08-01
+Kestrel Tailors LLC,Midwest,Chicago,+1-336-555-0183,hello@kestrel-tailors-llc.example.com,Enterprise,16700,2018-11-04
+Juniper Catering Co.,South-West,Phoenix,+1-837-555-0153,hello@juniper-catering-co.example.com,Growth,55800,2017-05-03
+Copper Pet Supply Inc.,North-West,Seattle,+1-390-555-0157,hello@copper-pet-supply-inc.example.com,Growth,5400,2018-02-24
+Yarrow Books Inc.,Midwest,Madison,+1-709-555-0104,hello@yarrow-books-inc.example.com,Growth,228100,2026-09-15
+Lantern Catering Co.,North-West,Boise,+1-303-555-0137,hello@lantern-catering-co.example.com,Pro,34900,2023-03-16
+Ironwood Garage LLC,Midwest,Madison,+1-224-555-0110,hello@ironwood-garage-llc.example.com,Enterprise,177200,2015-03-07
+Acme Books & Sons,North-West,Boise,+1-556-555-0143,hello@acme-books-and-sons.example.com,Growth,43600,2023-11-01
+Yarrow Bakery LLC,North-West,Boise,+1-316-555-0173,hello@yarrow-bakery-llc.example.com,Starter,113300,2017-02-04
+Tidewater Fitness Co.,Midwest,Columbus,+1-555-555-0116,hello@tidewater-fitness-co.example.com,Pro,214800,2018-07-28
+Northwind Studio & Sons,South-East,Charlotte,+1-263-555-0196,hello@northwind-studio-and-sons.example.com,Growth,35200,2023-04-15
+Harbor Hardware Group,West,Denver,+1-742-555-0199,hello@harbor-hardware-group.example.com,Starter,42500,2015-12-15
+Redstone Florist Inc.,South-East,Charlotte,+1-529-555-0192,hello@redstone-florist-inc.example.com,Growth,150000,2023-11-10
+Driftwood Pet Supply Partners,North-East,Providence,+1-514-555-0117,hello@driftwood-pet-supply-partners.example.com,Enterprise,70100,2024-05-02
+Granite Hardware LLC,West,Denver,+1-795-555-0101,hello@granite-hardware-llc.example.com,Starter,19700,2018-11-09
+Redstone Catering LLC,Midwest,Madison,+1-858-555-0138,hello@redstone-catering-llc.example.com,Starter,199500,2017-12-16
+Willow Catering Co.,North-East,Providence,+1-390-555-0176,hello@willow-catering-co.example.com,Starter,71600,2019-09-04
+Kestrel Optics & Sons,South-East,Orlando,+1-574-555-0144,hello@kestrel-optics-and-sons.example.com,Enterprise,123900,2017-11-26
+Acme Hardware & Sons,Midwest,Columbus,+1-311-555-0149,hello@acme-hardware-and-sons.example.com,Growth,173700,2014-06-13
+Quarry Pet Supply Co.,West,Salt Lake City,+1-714-555-0134,hello@quarry-pet-supply-co.example.com,Starter,69000,2026-10-13
+Granite Hardware Inc.,Midwest,Madison,+1-624-555-0169,hello@granite-hardware-inc.example.com,Pro,193600,2026-10-20
+Redstone Coffee Co.,South-East,Charlotte,+1-814-555-0103,hello@redstone-coffee-co.example.com,Growth,11500,2021-12-01
+Copper Catering Group,South-East,Orlando,+1-635-555-0142,hello@copper-catering-group.example.com,Starter,107400,2020-03-24
+Lantern Hardware Group,South-West,Tucson,+1-511-555-0166,hello@lantern-hardware-group.example.com,Growth,3500,2015-04-15
+Foxglove Print Shop Group,Midwest,Omaha,+1-481-555-0173,hello@foxglove-print-shop-group.example.com,Starter,109100,2015-07-02
+Maple Tailors Partners,South-East,Charlotte,+1-869-555-0185,hello@maple-tailors-partners.example.com,Starter,247800,2022-11-07
+Lantern Dental Co.,West,Reno,+1-230-555-0199,hello@lantern-dental-co.example.com,Growth,22200,2021-04-08
+Driftwood Fitness Co.,Midwest,Chicago,+1-930-555-0122,hello@driftwood-fitness-co.example.com,Growth,50200,2015-08-10
+Copper Print Shop Co.,South-West,Phoenix,+1-883-555-0147,hello@copper-print-shop-co.example.com,Pro,14700,2025-04-07
+Driftwood Coffee Partners,South-East,Nashville,+1-563-555-0190,hello@driftwood-coffee-partners.example.com,Growth,78600,2021-12-05
+Driftwood Florist LLC,North-East,Hartford,+1-651-555-0198,hello@driftwood-florist-llc.example.com,Growth,156000,2025-05-11
+Valley Florist Partners,North-West,Portland,+1-662-555-0138,hello@valley-florist-partners.example.com,Growth,139400,2019-01-24
+Evergreen Coffee & Sons,Midwest,Omaha,+1-447-555-0143,hello@evergreen-coffee-and-sons.example.com,Starter,140300,2025-10-16
+Redstone Hardware Co.,North-West,Portland,+1-252-555-0117,hello@redstone-hardware-co.example.com,Growth,249800,2020-04-18
+Valley Books Inc.,North-West,Portland,+1-940-555-0129,hello@valley-books-inc.example.com,Growth,7900,2016-01-17
+Kestrel Bakery LLC,South-West,Phoenix,+1-395-555-0174,hello@kestrel-bakery-llc.example.com,Enterprise,235200,2021-03-07
+Upland Florist & Sons,Midwest,Omaha,+1-593-555-0198,hello@upland-florist-and-sons.example.com,Growth,202900,2015-08-09
+Acme Pet Supply Co.,Midwest,Chicago,+1-730-555-0167,hello@acme-pet-supply-co.example.com,Growth,221400,2024-12-17
+Maple Tailors Inc.,North-West,Portland,+1-448-555-0191,hello@maple-tailors-inc.example.com,Enterprise,165600,2021-08-13
+Willow Catering & Sons,South-West,Austin,+1-612-555-0162,hello@willow-catering-and-sons.example.com,Enterprise,43000,2022-05-22
+Ironwood Florist Group,South-West,Albuquerque,+1-770-555-0170,hello@ironwood-florist-group.example.com,Starter,212800,2020-12-17
+Valley Coffee Partners,North-East,Providence,+1-924-555-0101,hello@valley-coffee-partners.example.com,Starter,219800,2020-01-26
+Yarrow Studio Group,Midwest,Omaha,+1-922-555-0140,hello@yarrow-studio-group.example.com,Enterprise,92300,2015-03-15
+Silverleaf Catering Group,South-West,Phoenix,+1-688-555-0187,hello@silverleaf-catering-group.example.com,Pro,22800,2025-05-25
+Valley Print Shop Partners,South-East,Atlanta,+1-391-555-0165,hello@valley-print-shop-partners.example.com,Pro,127900,2019-11-10
+Northwind Bakery & Sons,North-East,Providence,+1-274-555-0197,hello@northwind-bakery-and-sons.example.com,Starter,154400,2026-03-24
+Ironwood Studio LLC,Midwest,Madison,+1-345-555-0182,hello@ironwood-studio-llc.example.com,Starter,13500,2017-02-08
+Tidewater Studio Inc.,West,Sacramento,+1-385-555-0120,hello@tidewater-studio-inc.example.com,Pro,226900,2026-09-15
+Upland Pharmacy & Sons,West,Denver,+1-337-555-0138,hello@upland-pharmacy-and-sons.example.com,Growth,16300,2024-02-23
+Harbor Bakery Group,West,Salt Lake City,+1-302-555-0132,hello@harbor-bakery-group.example.com,Pro,196700,2024-10-28
+Pinecrest Hardware Partners,Midwest,Chicago,+1-767-555-0136,hello@pinecrest-hardware-partners.example.com,Growth,148300,2025-04-15
+Silverleaf Print Shop LLC,North-West,Spokane,+1-465-555-0165,hello@silverleaf-print-shop-llc.example.com,Growth,24600,2023-03-15
+Juniper Tailors Group,South-West,Tucson,+1-613-555-0177,hello@juniper-tailors-group.example.com,Starter,225400,2019-08-06
+Oakline Bakery & Sons,North-West,Portland,+1-355-555-0118,hello@oakline-bakery-and-sons.example.com,Enterprise,55100,2020-05-26
+Oakline Bakery Group,South-East,Atlanta,+1-533-555-0140,hello@oakline-bakery-group.example.com,Growth,15800,2025-02-11
+Bright Bicycles Co.,West,Salt Lake City,+1-483-555-0137,hello@bright-bicycles-co.example.com,Enterprise,102700,2016-04-17
+Copper Florist & Sons,South-West,Austin,+1-249-555-0140,hello@copper-florist-and-sons.example.com,Enterprise,231000,2015-07-19
+Foxglove Coffee Inc.,West,Reno,+1-862-555-0105,hello@foxglove-coffee-inc.example.com,Starter,245800,2022-08-03
+Maple Studio Partners,South-East,Nashville,+1-910-555-0116,hello@maple-studio-partners.example.com,Pro,48800,2022-03-26
+Evergreen Pharmacy Inc.,South-West,Albuquerque,+1-533-555-0158,hello@evergreen-pharmacy-inc.example.com,Pro,76400,2023-03-07
+Silverleaf Garage LLC,North-West,Seattle,+1-931-555-0154,hello@silverleaf-garage-llc.example.com,Enterprise,172500,2021-03-13
+Redstone Pet Supply Inc.,North-East,Providence,+1-423-555-0107,hello@redstone-pet-supply-inc.example.com,Growth,139000,2023-12-19
+Oakline Print Shop Co.,North-West,Boise,+1-899-555-0197,hello@oakline-print-shop-co.example.com,Enterprise,181600,2021-11-18
+Valley Pharmacy Group,South-East,Atlanta,+1-572-555-0132,hello@valley-pharmacy-group.example.com,Enterprise,5500,2014-05-02
+Bright Pharmacy Co.,North-East,Albany,+1-749-555-0173,hello@bright-pharmacy-co.example.com,Growth,83200,2015-06-07
+Northwind Florist Co.,North-East,Boston,+1-812-555-0136,hello@northwind-florist-co.example.com,Starter,215800,2021-03-14
+Willow Coffee Inc.,North-West,Portland,+1-287-555-0166,hello@willow-coffee-inc.example.com,Growth,28700,2014-04-04
+Ironwood Coffee Co.,North-East,Hartford,+1-232-555-0199,hello@ironwood-coffee-co.example.com,Enterprise,186200,2023-02-28
+Evergreen Pharmacy Group,North-East,Albany,+1-924-555-0141,hello@evergreen-pharmacy-group.example.com,Growth,18300,2021-12-05
+Driftwood Dental LLC,Midwest,Columbus,+1-262-555-0183,hello@driftwood-dental-llc.example.com,Starter,94500,2020-10-17
+Pinecrest Dental Group,West,Salt Lake City,+1-617-555-0112,hello@pinecrest-dental-group.example.com,Starter,95500,2020-11-22
+Evergreen Pharmacy LLC,North-East,Providence,+1-304-555-0130,hello@evergreen-pharmacy-llc.example.com,Enterprise,26900,2019-10-12
+Driftwood Books Group,North-East,Hartford,+1-947-555-0104,hello@driftwood-books-group.example.com,Enterprise,175000,2023-12-02
+Lantern Catering & Sons,North-East,Hartford,+1-297-555-0117,hello@lantern-catering-and-sons.example.com,Growth,152700,2019-06-04
+Upland Books LLC,West,Sacramento,+1-388-555-0148,hello@upland-books-llc.example.com,Pro,74600,2026-12-28
+Bright Books Inc.,South-East,Atlanta,+1-907-555-0191,hello@bright-books-inc.example.com,Starter,95000,2020-10-16
+Copper Tailors & Sons,North-East,Hartford,+1-512-555-0157,hello@copper-tailors-and-sons.example.com,Growth,180200,2014-07-07
+Redstone Books Inc.,West,Sacramento,+1-508-555-0156,hello@redstone-books-inc.example.com,Growth,224600,2016-06-04
+Silverleaf Pet Supply LLC,South-West,Austin,+1-264-555-0136,hello@silverleaf-pet-supply-llc.example.com,Starter,240600,2016-02-19
+Quarry Dental Co.,North-East,Albany,+1-404-555-0157,hello@quarry-dental-co.example.com,Starter,16500,2021-07-20
+Kestrel Garage LLC,South-West,Phoenix,+1-632-555-0104,hello@kestrel-garage-llc.example.com,Enterprise,71700,2015-03-08
+Yarrow Optics LLC,West,Reno,+1-465-555-0182,hello@yarrow-optics-llc.example.com,Growth,118700,2016-01-15
+Willow Catering Inc.,South-East,Atlanta,+1-781-555-0166,hello@willow-catering-inc.example.com,Pro,208100,2015-02-05
+Acme Studio Inc.,Midwest,Madison,+1-915-555-0164,hello@acme-studio-inc.example.com,Pro,215100,2019-11-12
+Pinecrest Studio Group,Midwest,Columbus,+1-696-555-0104,hello@pinecrest-studio-group.example.com,Growth,37000,2019-04-16
+Driftwood Bicycles LLC,South-East,Charlotte,+1-212-555-0111,hello@driftwood-bicycles-llc.example.com,Enterprise,146700,2014-02-05
+Pinecrest Fitness Partners,South-West,Tucson,+1-721-555-0121,hello@pinecrest-fitness-partners.example.com,Enterprise,96400,2026-07-14
+Willow Garage & Sons,North-East,Hartford,+1-232-555-0158,hello@willow-garage-and-sons.example.com,Pro,245600,2025-05-28
+Bright Pet Supply Partners,North-West,Portland,+1-577-555-0108,hello@bright-pet-supply-partners.example.com,Enterprise,80600,2018-09-06
+Harbor Catering & Sons,South-East,Orlando,+1-335-555-0126,hello@harbor-catering-and-sons.example.com,Pro,19300,2022-02-19
+Kestrel Tailors Partners,North-West,Boise,+1-610-555-0180,hello@kestrel-tailors-partners.example.com,Starter,153300,2017-07-09
+Yarrow Bakery & Sons,South-West,Austin,+1-209-555-0157,hello@yarrow-bakery-and-sons.example.com,Enterprise,21400,2015-10-18
+Tidewater Coffee & Sons,North-East,Providence,+1-880-555-0197,hello@tidewater-coffee-and-sons.example.com,Pro,189200,2019-12-15
+Harbor Bakery LLC,Midwest,Columbus,+1-766-555-0174,hello@harbor-bakery-llc.example.com,Starter,151400,2025-04-22
+Evergreen Fitness Inc.,Midwest,Madison,+1-416-555-0164,hello@evergreen-fitness-inc.example.com,Pro,110800,2015-03-01
+Tidewater Pharmacy Group,South-West,Albuquerque,+1-249-555-0197,hello@tidewater-pharmacy-group.example.com,Growth,92700,2017-06-28
+Upland Fitness LLC,South-East,Orlando,+1-418-555-0155,hello@upland-fitness-llc.example.com,Pro,141700,2022-08-07
+Northwind Hardware & Sons,North-West,Boise,+1-370-555-0172,hello@northwind-hardware-and-sons.example.com,Growth,133500,2016-11-05
+Bright Tailors LLC,West,Salt Lake City,+1-545-555-0103,hello@bright-tailors-llc.example.com,Enterprise,9400,2015-08-26
+Pinecrest Print Shop Co.,Midwest,Madison,+1-563-555-0170,hello@pinecrest-print-shop-co.example.com,Growth,238400,2020-04-27
+Yarrow Tailors Co.,West,Reno,+1-974-555-0172,hello@yarrow-tailors-co.example.com,Growth,18600,2018-05-03
+Kestrel Catering Group,Midwest,Chicago,+1-751-555-0116,hello@kestrel-catering-group.example.com,Pro,154100,2023-05-14
+Juniper Coffee LLC,West,Salt Lake City,+1-622-555-0103,hello@juniper-coffee-llc.example.com,Enterprise,6100,2018-01-19
+Granite Dental & Sons,North-East,Albany,+1-761-555-0127,hello@granite-dental-and-sons.example.com,Growth,26900,2025-11-14
+Ironwood Books LLC,South-East,Orlando,+1-941-555-0112,hello@ironwood-books-llc.example.com,Enterprise,5800,2018-01-15
+Copper Dental Group,Midwest,Madison,+1-297-555-0114,hello@copper-dental-group.example.com,Starter,190300,2023-09-02
+Pinecrest Garage Inc.,North-West,Portland,+1-710-555-0142,hello@pinecrest-garage-inc.example.com,Starter,214500,2026-05-19
+Willow Bakery Group,West,Sacramento,+1-751-555-0169,hello@willow-bakery-group.example.com,Pro,46500,2021-08-07
+Harbor Tailors Inc.,South-West,Phoenix,+1-881-555-0183,hello@harbor-tailors-inc.example.com,Enterprise,108500,2023-03-03
+Valley Catering Group,Midwest,Chicago,+1-855-555-0124,hello@valley-catering-group.example.com,Pro,67200,2014-08-23
+Ironwood Florist LLC,West,Reno,+1-897-555-0183,hello@ironwood-florist-llc.example.com,Growth,133300,2023-06-11
+Kestrel Bakery Co.,South-West,Tucson,+1-948-555-0109,hello@kestrel-bakery-co.example.com,Pro,49300,2021-06-10
+Driftwood Florist Inc.,North-West,Spokane,+1-244-555-0166,hello@driftwood-florist-inc.example.com,Growth,119900,2015-08-19
+Foxglove Pharmacy Inc.,South-East,Nashville,+1-481-555-0108,hello@foxglove-pharmacy-inc.example.com,Pro,207600,2022-04-08
+Northwind Dental LLC,Midwest,Omaha,+1-383-555-0170,hello@northwind-dental-llc.example.com,Starter,166500,2021-07-03
+Pinecrest Tailors & Sons,Midwest,Chicago,+1-291-555-0187,hello@pinecrest-tailors-and-sons.example.com,Starter,27300,2019-04-26
+Willow Books & Sons,South-West,Albuquerque,+1-353-555-0151,hello@willow-books-and-sons.example.com,Growth,166500,2023-10-17
+Bright Print Shop Inc.,North-West,Boise,+1-880-555-0167,hello@bright-print-shop-inc.example.com,Enterprise,131200,2014-09-22
+Redstone Catering Inc.,South-West,Albuquerque,+1-559-555-0130,hello@redstone-catering-inc.example.com,Enterprise,47800,2025-02-19
+Valley Coffee Co.,Midwest,Chicago,+1-519-555-0198,hello@valley-coffee-co.example.com,Growth,117500,2021-06-11
+Willow Tailors LLC,South-East,Nashville,+1-858-555-0184,hello@willow-tailors-llc.example.com,Enterprise,229000,2026-08-01
+Pinecrest Bakery & Sons,West,Reno,+1-918-555-0146,hello@pinecrest-bakery-and-sons.example.com,Starter,118000,2014-02-03
+Bright Fitness Co.,North-East,Albany,+1-805-555-0142,hello@bright-fitness-co.example.com,Starter,12100,2025-08-13
+Oakline Books Co.,South-East,Charlotte,+1-903-555-0156,hello@oakline-books-co.example.com,Growth,205000,2022-05-20
+Maple Pet Supply Co.,South-West,Phoenix,+1-561-555-0106,hello@maple-pet-supply-co.example.com,Starter,163400,2022-06-24
+Tidewater Books & Sons,West,Salt Lake City,+1-220-555-0157,hello@tidewater-books-and-sons.example.com,Starter,169800,2019-06-18
+Bright Hardware Inc.,South-East,Charlotte,+1-598-555-0130,hello@bright-hardware-inc.example.com,Pro,35800,2018-05-07
+Foxglove Coffee Group,West,Salt Lake City,+1-269-555-0140,hello@foxglove-coffee-group.example.com,Starter,62500,2018-03-08
+Redstone Florist Partners,Midwest,Omaha,+1-903-555-0197,hello@redstone-florist-partners.example.com,Enterprise,9900,2016-08-09
+Upland Bakery LLC,South-East,Atlanta,+1-429-555-0116,hello@upland-bakery-llc.example.com,Growth,72100,2016-01-15
+Evergreen Florist LLC,Midwest,Omaha,+1-447-555-0138,hello@evergreen-florist-llc.example.com,Pro,244700,2015-02-25
+Acme Catering Inc.,North-West,Portland,+1-581-555-0156,hello@acme-catering-inc.example.com,Starter,60600,2017-10-27
+Foxglove Books Inc.,North-East,Albany,+1-781-555-0161,hello@foxglove-books-inc.example.com,Starter,137800,2021-05-10
+Upland Optics Inc.,Midwest,Chicago,+1-410-555-0190,hello@upland-optics-inc.example.com,Starter,34600,2017-12-27
+Copper Bicycles Group,Midwest,Madison,+1-449-555-0130,hello@copper-bicycles-group.example.com,Starter,209300,2015-12-12
+Granite Tailors LLC,Midwest,Chicago,+1-404-555-0194,hello@granite-tailors-llc.example.com,Growth,138700,2024-01-06
+Evergreen Pharmacy & Sons,West,Salt Lake City,+1-646-555-0177,hello@evergreen-pharmacy-and-sons.example.com,Pro,190900,2014-03-05
+Upland Fitness & Sons,North-East,Albany,+1-887-555-0106,hello@upland-fitness-and-sons.example.com,Enterprise,162800,2018-06-06
+Willow Dental Partners,North-East,Albany,+1-507-555-0168,hello@willow-dental-partners.example.com,Growth,108500,2023-09-01
+Bright Tailors Group,South-West,Austin,+1-917-555-0151,hello@bright-tailors-group.example.com,Starter,239500,2019-01-22
+Bright Dental Inc.,West,Denver,+1-318-555-0145,hello@bright-dental-inc.example.com,Pro,95300,2016-09-08
+Harbor Pet Supply Inc.,North-West,Boise,+1-498-555-0180,hello@harbor-pet-supply-inc.example.com,Starter,150900,2025-01-25
+Yarrow Studio Partners,North-West,Spokane,+1-909-555-0171,hello@yarrow-studio-partners.example.com,Starter,87600,2025-07-18
+Valley Bakery & Sons,North-East,Albany,+1-562-555-0160,hello@valley-bakery-and-sons.example.com,Enterprise,155500,2017-04-13
+Granite Books & Sons,North-West,Boise,+1-482-555-0111,hello@granite-books-and-sons.example.com,Enterprise,21200,2020-03-03
+Oakline Pet Supply Partners,Midwest,Chicago,+1-436-555-0195,hello@oakline-pet-supply-partners.example.com,Growth,168800,2026-09-22
+Pinecrest Books LLC,Midwest,Madison,+1-898-555-0174,hello@pinecrest-books-llc.example.com,Starter,152500,2019-02-13
+Evergreen Pharmacy Co.,South-West,Austin,+1-626-555-0117,hello@evergreen-pharmacy-co.example.com,Pro,64200,2022-10-28
+Northwind Florist Partners,South-East,Orlando,+1-709-555-0138,hello@northwind-florist-partners.example.com,Enterprise,48100,2019-01-18
+Foxglove Pharmacy & Sons,North-East,Albany,+1-437-555-0153,hello@foxglove-pharmacy-and-sons.example.com,Growth,162700,2021-07-14
+Lantern Fitness Partners,Midwest,Chicago,+1-752-555-0115,hello@lantern-fitness-partners.example.com,Starter,114300,2016-03-12
+Pinecrest Optics Inc.,South-West,Tucson,+1-631-555-0149,hello@pinecrest-optics-inc.example.com,Pro,84800,2024-12-03
+Driftwood Pet Supply Co.,Midwest,Omaha,+1-568-555-0193,hello@driftwood-pet-supply-co.example.com,Pro,172500,2026-07-14
+Northwind Fitness & Sons,North-West,Spokane,+1-277-555-0115,hello@northwind-fitness-and-sons.example.com,Starter,162900,2022-07-20
+Copper Florist Group,West,Reno,+1-792-555-0178,hello@copper-florist-group.example.com,Enterprise,125800,2015-09-09
+Evergreen Bakery Group,Midwest,Madison,+1-754-555-0104,hello@evergreen-bakery-group.example.com,Starter,83100,2022-01-03
+Lantern Hardware & Sons,West,Denver,+1-201-555-0181,hello@lantern-hardware-and-sons.example.com,Starter,46300,2016-12-17
+Juniper Bakery & Sons,Midwest,Madison,+1-918-555-0143,hello@juniper-bakery-and-sons.example.com,Pro,99300,2016-07-23
+Driftwood Pharmacy Group,West,Denver,+1-535-555-0120,hello@driftwood-pharmacy-group.example.com,Pro,204900,2020-06-20
+Ironwood Pet Supply LLC,South-West,Tucson,+1-900-555-0136,hello@ironwood-pet-supply-llc.example.com,Starter,123300,2020-10-27
+Oakline Coffee & Sons,Midwest,Chicago,+1-864-555-0126,hello@oakline-coffee-and-sons.example.com,Pro,155700,2024-01-17
+Foxglove Florist Group,South-West,Phoenix,+1-468-555-0167,hello@foxglove-florist-group.example.com,Starter,220900,2023-11-06
+Quarry Tailors & Sons,North-West,Spokane,+1-512-555-0151,hello@quarry-tailors-and-sons.example.com,Growth,225400,2020-12-17
+Acme Florist Co.,Midwest,Columbus,+1-354-555-0122,hello@acme-florist-co.example.com,Growth,41800,2020-07-02
+Upland Hardware Group,North-East,Hartford,+1-506-555-0115,hello@upland-hardware-group.example.com,Starter,174300,2019-11-09
+Oakline Hardware & Sons,North-West,Seattle,+1-722-555-0186,hello@oakline-hardware-and-sons.example.com,Growth,45000,2019-02-27
+Kestrel Hardware Partners,Midwest,Omaha,+1-477-555-0156,hello@kestrel-hardware-partners.example.com,Starter,235700,2022-02-18
+Oakline Pharmacy & Sons,South-East,Nashville,+1-564-555-0152,hello@oakline-pharmacy-and-sons.example.com,Enterprise,38500,2020-01-02
+Silverleaf Studio Inc.,West,Sacramento,+1-712-555-0163,hello@silverleaf-studio-inc.example.com,Enterprise,4200,2026-04-19
+Copper Print Shop Partners,South-West,Austin,+1-217-555-0108,hello@copper-print-shop-partners.example.com,Starter,17800,2017-11-04
+Granite Bakery LLC,North-East,Boston,+1-385-555-0115,hello@granite-bakery-llc.example.com,Enterprise,226500,2015-08-18
+Driftwood Studio Inc.,Midwest,Madison,+1-202-555-0101,hello@driftwood-studio-inc.example.com,Growth,100700,2019-02-06
+Lantern Books Group,West,Sacramento,+1-224-555-0148,hello@lantern-books-group.example.com,Starter,139000,2022-04-14
+Pinecrest Books Group,South-East,Orlando,+1-247-555-0140,hello@pinecrest-books-group.example.com,Starter,154900,2021-05-26
+Yarrow Bakery Co.,Midwest,Chicago,+1-259-555-0109,hello@yarrow-bakery-co.example.com,Growth,71000,2021-04-13
+Upland Fitness Co.,North-East,Hartford,+1-630-555-0174,hello@upland-fitness-co.example.com,Starter,79200,2022-08-06
+Foxglove Garage & Sons,South-East,Atlanta,+1-925-555-0165,hello@foxglove-garage-and-sons.example.com,Starter,172800,2021-01-10
+Juniper Pharmacy & Sons,Midwest,Madison,+1-263-555-0180,hello@juniper-pharmacy-and-sons.example.com,Enterprise,106700,2020-08-27
+Kestrel Florist Partners,South-West,Austin,+1-814-555-0107,hello@kestrel-florist-partners.example.com,Starter,146500,2016-10-16
+Copper Coffee LLC,North-West,Boise,+1-543-555-0149,hello@copper-coffee-llc.example.com,Enterprise,122100,2015-10-18
+Harbor Print Shop Co.,South-East,Nashville,+1-949-555-0185,hello@harbor-print-shop-co.example.com,Growth,133800,2024-05-01
+Harbor Tailors Partners,North-East,Boston,+1-684-555-0152,hello@harbor-tailors-partners.example.com,Pro,18200,2018-03-25
+Quarry Catering Partners,Midwest,Columbus,+1-978-555-0110,hello@quarry-catering-partners.example.com,Pro,88500,2015-10-07
+Northwind Dental & Sons,North-West,Spokane,+1-709-555-0143,hello@northwind-dental-and-sons.example.com,Growth,216900,2022-12-20
+Pinecrest Dental Co.,Midwest,Columbus,+1-266-555-0150,hello@pinecrest-dental-co.example.com,Enterprise,137500,2019-07-20
+Driftwood Pet Supply LLC,South-East,Orlando,+1-264-555-0141,hello@driftwood-pet-supply-llc.example.com,Growth,125100,2015-07-25
+Upland Books Group,West,Denver,+1-972-555-0162,hello@upland-books-group.example.com,Starter,133900,2026-10-22
+Bright Pet Supply LLC,North-West,Spokane,+1-791-555-0159,hello@bright-pet-supply-llc.example.com,Starter,154000,2026-06-20
+Bright Bakery Partners,North-East,Providence,+1-663-555-0119,hello@bright-bakery-partners.example.com,Pro,90500,2026-05-23
+Driftwood Florist Co.,South-West,Austin,+1-575-555-0172,hello@driftwood-florist-co.example.com,Enterprise,52200,2024-06-03
+Oakline Catering & Sons,North-East,Boston,+1-435-555-0157,hello@oakline-catering-and-sons.example.com,Enterprise,94400,2022-12-07
+Upland Bicycles Partners,South-East,Orlando,+1-771-555-0143,hello@upland-bicycles-partners.example.com,Enterprise,64400,2022-12-08
+Bright Pet Supply Inc.,Midwest,Chicago,+1-726-555-0132,hello@bright-pet-supply-inc.example.com,Enterprise,134200,2022-10-12
+Granite Coffee & Sons,North-East,Hartford,+1-567-555-0115,hello@granite-coffee-and-sons.example.com,Starter,59900,2019-08-21
+Lantern Coffee Co.,South-West,Austin,+1-500-555-0199,hello@lantern-coffee-co.example.com,Growth,155400,2019-06-19
+Evergreen Print Shop Group,Midwest,Chicago,+1-747-555-0156,hello@evergreen-print-shop-group.example.com,Growth,190000,2017-02-25
+Redstone Pharmacy Inc.,South-East,Orlando,+1-852-555-0114,hello@redstone-pharmacy-inc.example.com,Starter,179500,2019-04-18
+Kestrel Pet Supply Inc.,Midwest,Madison,+1-232-555-0182,hello@kestrel-pet-supply-inc.example.com,Growth,243900,2019-01-18
+Yarrow Dental & Sons,West,Salt Lake City,+1-307-555-0119,hello@yarrow-dental-and-sons.example.com,Starter,241800,2019-03-14
+Juniper Florist & Sons,South-East,Orlando,+1-871-555-0164,hello@juniper-florist-and-sons.example.com,Pro,209400,2025-11-16
+Lantern Studio Inc.,North-East,Albany,+1-655-555-0174,hello@lantern-studio-inc.example.com,Growth,101500,2014-05-05
+Ironwood Print Shop Group,Midwest,Omaha,+1-239-555-0190,hello@ironwood-print-shop-group.example.com,Starter,115100,2023-01-27
+Pinecrest Bakery Co.,Midwest,Chicago,+1-941-555-0130,hello@pinecrest-bakery-co.example.com,Starter,91500,2022-02-17
+Bright Studio Co.,North-East,Albany,+1-563-555-0163,hello@bright-studio-co.example.com,Enterprise,29000,2024-05-26
+Foxglove Hardware Partners,West,Salt Lake City,+1-473-555-0101,hello@foxglove-hardware-partners.example.com,Starter,191100,2024-09-24
+Willow Studio Inc.,West,Sacramento,+1-741-555-0101,hello@willow-studio-inc.example.com,Growth,242800,2021-02-26
+Juniper Studio Partners,North-West,Spokane,+1-206-555-0155,hello@juniper-studio-partners.example.com,Growth,110300,2023-11-27
+Ironwood Hardware Partners,South-West,Albuquerque,+1-676-555-0169,hello@ironwood-hardware-partners.example.com,Pro,45100,2015-09-18
+Valley Pharmacy Inc.,Midwest,Columbus,+1-908-555-0107,hello@valley-pharmacy-inc.example.com,Growth,88500,2018-10-07
+Juniper Bicycles Partners,North-East,Boston,+1-436-555-0103,hello@juniper-bicycles-partners.example.com,Enterprise,129700,2018-04-12
+Willow Hardware Co.,South-East,Nashville,+1-297-555-0147,hello@willow-hardware-co.example.com,Enterprise,34700,2021-10-09
+Ironwood Bicycles Co.,Midwest,Chicago,+1-329-555-0116,hello@ironwood-bicycles-co.example.com,Pro,143900,2024-08-15
+Harbor Garage Inc.,Midwest,Omaha,+1-339-555-0129,hello@harbor-garage-inc.example.com,Growth,142100,2015-10-15
+Copper Books Inc.,West,Denver,+1-689-555-0120,hello@copper-books-inc.example.com,Starter,193100,2016-03-15
+Harbor Bicycles & Sons,Midwest,Columbus,+1-799-555-0103,hello@harbor-bicycles-and-sons.example.com,Enterprise,27300,2026-08-27
+Acme Dental Partners,West,Reno,+1-241-555-0163,hello@acme-dental-partners.example.com,Starter,11200,2018-04-22
+Valley Coffee & Sons,North-West,Spokane,+1-718-555-0174,hello@valley-coffee-and-sons.example.com,Pro,195600,2026-09-09
+Upland Florist Inc.,North-West,Portland,+1-394-555-0186,hello@upland-florist-inc.example.com,Pro,190600,2022-06-09
+Yarrow Tailors LLC,North-East,Boston,+1-713-555-0145,hello@yarrow-tailors-llc.example.com,Growth,172400,2016-10-24
+Redstone Dental Inc.,North-East,Albany,+1-849-555-0168,hello@redstone-dental-inc.example.com,Pro,131700,2019-02-18
+Granite Catering Group,North-West,Portland,+1-638-555-0114,hello@granite-catering-group.example.com,Pro,47500,2025-11-05
+Kestrel Pharmacy Group,Midwest,Columbus,+1-452-555-0189,hello@kestrel-pharmacy-group.example.com,Enterprise,143100,2026-02-28
+Juniper Optics LLC,South-West,Tucson,+1-346-555-0114,hello@juniper-optics-llc.example.com,Growth,223400,2015-12-17
+Evergreen Books Partners,South-East,Atlanta,+1-321-555-0135,hello@evergreen-books-partners.example.com,Growth,214300,2024-10-28
+Upland Books Partners,South-East,Charlotte,+1-604-555-0187,hello@upland-books-partners.example.com,Enterprise,185300,2014-11-12
+Granite Optics Inc.,West,Sacramento,+1-333-555-0151,hello@granite-optics-inc.example.com,Pro,148500,2022-09-14
+Copper Print Shop Group,South-West,Austin,+1-416-555-0174,hello@copper-print-shop-group.example.com,Enterprise,24300,2025-04-17
+Foxglove Studio Co.,South-West,Phoenix,+1-827-555-0112,hello@foxglove-studio-co.example.com,Enterprise,95900,2018-05-01
+Willow Coffee LLC,North-East,Boston,+1-450-555-0154,hello@willow-coffee-llc.example.com,Enterprise,195900,2016-02-08
+Maple Garage Group,South-West,Phoenix,+1-922-555-0128,hello@maple-garage-group.example.com,Pro,226400,2023-12-11
+Maple Fitness Group,South-West,Albuquerque,+1-383-555-0160,hello@maple-fitness-group.example.com,Enterprise,103600,2022-05-18
+Copper Optics LLC,North-West,Portland,+1-606-555-0101,hello@copper-optics-llc.example.com,Enterprise,199800,2017-04-16
+Bright Florist & Sons,West,Reno,+1-808-555-0141,hello@bright-florist-and-sons.example.com,Enterprise,123700,2021-06-13
+Valley Garage Group,West,Salt Lake City,+1-413-555-0133,hello@valley-garage-group.example.com,Pro,26900,2016-04-18
+Harbor Fitness Co.,West,Reno,+1-675-555-0178,hello@harbor-fitness-co.example.com,Growth,130400,2018-05-05
+Northwind Print Shop Group,Midwest,Columbus,+1-377-555-0124,hello@northwind-print-shop-group.example.com,Growth,193200,2020-05-11
+Quarry Pet Supply & Sons,North-East,Boston,+1-419-555-0129,hello@quarry-pet-supply-and-sons.example.com,Pro,233400,2023-02-12
+Bright Hardware LLC,South-East,Nashville,+1-876-555-0108,hello@bright-hardware-llc.example.com,Growth,249000,2019-09-02
+Valley Catering Partners,North-East,Providence,+1-309-555-0165,hello@valley-catering-partners.example.com,Pro,34400,2017-08-13
+Northwind Print Shop LLC,Midwest,Chicago,+1-227-555-0162,hello@northwind-print-shop-llc.example.com,Starter,102800,2020-09-14
+Tidewater Florist Group,North-West,Spokane,+1-438-555-0175,hello@tidewater-florist-group.example.com,Growth,139400,2026-07-21
+Willow Dental & Sons,North-East,Boston,+1-491-555-0100,hello@willow-dental-and-sons.example.com,Growth,70000,2026-09-05
+Oakline Dental LLC,North-East,Providence,+1-331-555-0110,hello@oakline-dental-llc.example.com,Growth,112200,2017-07-19
+Acme Bicycles & Sons,Midwest,Chicago,+1-234-555-0112,hello@acme-bicycles-and-sons.example.com,Pro,52100,2020-12-05
+Silverleaf Coffee Partners,Midwest,Madison,+1-683-555-0195,hello@silverleaf-coffee-partners.example.com,Growth,30900,2020-06-11
+Juniper Hardware & Sons,North-East,Hartford,+1-345-555-0163,hello@juniper-hardware-and-sons.example.com,Enterprise,116700,2017-12-24
+Ironwood Coffee & Sons,Midwest,Chicago,+1-236-555-0136,hello@ironwood-coffee-and-sons.example.com,Starter,15900,2024-06-06
+Acme Print Shop & Sons,North-West,Portland,+1-578-555-0193,hello@acme-print-shop-and-sons.example.com,Growth,77800,2019-04-27
+Bright Florist Co.,South-East,Orlando,+1-738-555-0131,hello@bright-florist-co.example.com,Enterprise,167600,2017-10-08
+Upland Pharmacy Inc.,West,Denver,+1-285-555-0125,hello@upland-pharmacy-inc.example.com,Growth,37600,2015-01-03
+Silverleaf Fitness Co.,Midwest,Madison,+1-739-555-0158,hello@silverleaf-fitness-co.example.com,Pro,182400,2025-02-27
+Tidewater Catering Partners,North-West,Portland,+1-789-555-0179,hello@tidewater-catering-partners.example.com,Pro,177800,2020-09-02
+Tidewater Books Co.,West,Salt Lake City,+1-633-555-0193,hello@tidewater-books-co.example.com,Growth,232600,2025-09-14
+Quarry Books Co.,West,Salt Lake City,+1-818-555-0147,hello@quarry-books-co.example.com,Growth,107900,2021-08-12
+Maple Pharmacy Partners,North-East,Hartford,+1-662-555-0147,hello@maple-pharmacy-partners.example.com,Starter,68600,2016-11-10
+Quarry Florist LLC,North-West,Spokane,+1-341-555-0162,hello@quarry-florist-llc.example.com,Pro,181900,2014-02-26
+Maple Print Shop Partners,North-West,Seattle,+1-422-555-0155,hello@maple-print-shop-partners.example.com,Starter,63200,2016-12-22
+Juniper Books Co.,North-West,Portland,+1-469-555-0100,hello@juniper-books-co.example.com,Enterprise,110300,2022-04-12
+Acme Pet Supply LLC,Midwest,Chicago,+1-209-555-0150,hello@acme-pet-supply-llc.example.com,Enterprise,174500,2017-05-13
+Copper Coffee Inc.,North-West,Seattle,+1-737-555-0154,hello@copper-coffee-inc.example.com,Starter,220300,2014-07-21
+Upland Pet Supply Co.,South-West,Austin,+1-406-555-0151,hello@upland-pet-supply-co.example.com,Growth,210300,2023-09-17
+Kestrel Print Shop & Sons,Midwest,Columbus,+1-241-555-0184,hello@kestrel-print-shop-and-sons.example.com,Starter,241000,2017-09-03
+Foxglove Bicycles Group,South-West,Phoenix,+1-877-555-0131,hello@foxglove-bicycles-group.example.com,Enterprise,88800,2023-07-03
+Granite Tailors & Sons,Midwest,Columbus,+1-709-555-0154,hello@granite-tailors-and-sons.example.com,Enterprise,60300,2019-03-14
+Kestrel Coffee & Sons,North-West,Spokane,+1-639-555-0162,hello@kestrel-coffee-and-sons.example.com,Growth,69500,2015-04-21
+Driftwood Hardware Partners,West,Reno,+1-742-555-0176,hello@driftwood-hardware-partners.example.com,Growth,31600,2022-03-17
+Redstone Coffee LLC,North-East,Hartford,+1-218-555-0177,hello@redstone-coffee-llc.example.com,Pro,209800,2015-01-05
+Maple Studio & Sons,West,Sacramento,+1-315-555-0110,hello@maple-studio-and-sons.example.com,Pro,79500,2019-04-24
+Bright Coffee & Sons,South-West,Phoenix,+1-225-555-0101,hello@bright-coffee-and-sons.example.com,Enterprise,98000,2019-07-12
+Harbor Dental Group,South-West,Tucson,+1-686-555-0107,hello@harbor-dental-group.example.com,Growth,163200,2017-04-22
+Yarrow Bicycles Inc.,North-East,Hartford,+1-949-555-0171,hello@yarrow-bicycles-inc.example.com,Enterprise,202000,2023-10-15
+Redstone Bicycles Co.,North-West,Seattle,+1-726-555-0177,hello@redstone-bicycles-co.example.com,Pro,195500,2026-12-24
+Quarry Florist Group,South-East,Atlanta,+1-757-555-0144,hello@quarry-florist-group.example.com,Growth,108400,2017-05-27
+Redstone Studio Co.,Midwest,Madison,+1-234-555-0110,hello@redstone-studio-co.example.com,Starter,27900,2019-09-13
+Willow Tailors & Sons,Midwest,Chicago,+1-415-555-0114,hello@willow-tailors-and-sons.example.com,Growth,225200,2020-01-03
+Acme Optics Inc.,North-East,Boston,+1-628-555-0181,hello@acme-optics-inc.example.com,Starter,59000,2016-10-04
+Northwind Books Co.,South-West,Austin,+1-246-555-0132,hello@northwind-books-co.example.com,Starter,155100,2026-10-22
+Granite Tailors Co.,West,Reno,+1-892-555-0166,hello@granite-tailors-co.example.com,Enterprise,47200,2019-04-06
+Evergreen Fitness Group,North-East,Boston,+1-380-555-0130,hello@evergreen-fitness-group.example.com,Pro,218400,2022-09-25
+Oakline Pet Supply Group,North-East,Providence,+1-537-555-0168,hello@oakline-pet-supply-group.example.com,Enterprise,200500,2026-04-02
+Bright Fitness & Sons,West,Salt Lake City,+1-843-555-0120,hello@bright-fitness-and-sons.example.com,Enterprise,134000,2017-07-18
+Tidewater Garage LLC,North-East,Providence,+1-694-555-0148,hello@tidewater-garage-llc.example.com,Enterprise,16500,2022-09-01
+Valley Pharmacy LLC,West,Denver,+1-325-555-0141,hello@valley-pharmacy-llc.example.com,Starter,167500,2019-10-28
+Acme Florist LLC,West,Sacramento,+1-580-555-0186,hello@acme-florist-llc.example.com,Growth,123800,2026-12-26
+Silverleaf Bakery Co.,North-West,Spokane,+1-621-555-0194,hello@silverleaf-bakery-co.example.com,Starter,124500,2020-04-13
+Bright Optics Partners,South-West,Austin,+1-375-555-0121,hello@bright-optics-partners.example.com,Enterprise,67600,2023-01-23
+Pinecrest Hardware & Sons,South-West,Phoenix,+1-373-555-0186,hello@pinecrest-hardware-and-sons.example.com,Starter,165500,2018-03-11
+Harbor Studio Inc.,North-East,Providence,+1-216-555-0149,hello@harbor-studio-inc.example.com,Pro,11600,2023-12-13
+Quarry Pharmacy & Sons,South-West,Phoenix,+1-535-555-0126,hello@quarry-pharmacy-and-sons.example.com,Enterprise,184600,2016-07-09
+Yarrow Tailors Partners,Midwest,Chicago,+1-909-555-0172,hello@yarrow-tailors-partners.example.com,Enterprise,237200,2017-12-13
+Northwind Pet Supply Group,Midwest,Chicago,+1-307-555-0129,hello@northwind-pet-supply-group.example.com,Growth,97700,2026-06-09
+Acme Garage Partners,North-East,Hartford,+1-871-555-0170,hello@acme-garage-partners.example.com,Enterprise,126300,2017-04-25
+Redstone Books Group,North-East,Boston,+1-736-555-0182,hello@redstone-books-group.example.com,Starter,48500,2023-02-08
+Harbor Pharmacy & Sons,West,Reno,+1-632-555-0103,hello@harbor-pharmacy-and-sons.example.com,Enterprise,228500,2023-04-19
+Harbor Bicycles LLC,South-East,Charlotte,+1-977-555-0102,hello@harbor-bicycles-llc.example.com,Starter,182000,2016-10-28
+Quarry Studio Partners,South-East,Orlando,+1-525-555-0163,hello@quarry-studio-partners.example.com,Growth,100800,2024-11-23
+Oakline Print Shop Group,Midwest,Omaha,+1-519-555-0114,hello@oakline-print-shop-group.example.com,Enterprise,13800,2020-03-20
+Northwind Coffee Group,South-East,Atlanta,+1-952-555-0160,hello@northwind-coffee-group.example.com,Pro,22300,2014-07-21
+Evergreen Bakery Co.,South-East,Nashville,+1-826-555-0164,hello@evergreen-bakery-co.example.com,Starter,95500,2026-02-25
+Evergreen Pet Supply Inc.,Midwest,Madison,+1-932-555-0160,hello@evergreen-pet-supply-inc.example.com,Growth,189900,2021-04-11
+Pinecrest Tailors Inc.,North-East,Boston,+1-630-555-0170,hello@pinecrest-tailors-inc.example.com,Growth,89800,2021-12-28
+Pinecrest Garage Partners,North-East,Boston,+1-594-555-0113,hello@pinecrest-garage-partners.example.com,Pro,221400,2015-07-18
+Granite Catering LLC,South-West,Austin,+1-668-555-0161,hello@granite-catering-llc.example.com,Growth,205200,2017-08-04
+Evergreen Garage Co.,North-East,Providence,+1-448-555-0187,hello@evergreen-garage-co.example.com,Pro,148700,2016-09-15
+Oakline Hardware Partners,South-West,Austin,+1-560-555-0125,hello@oakline-hardware-partners.example.com,Growth,153300,2021-01-27
+Ironwood Print Shop Inc.,South-West,Albuquerque,+1-589-555-0146,hello@ironwood-print-shop-inc.example.com,Pro,196900,2017-11-26
+Granite Books Co.,South-West,Phoenix,+1-864-555-0147,hello@granite-books-co.example.com,Enterprise,53800,2023-12-19
+Northwind Pharmacy Partners,South-West,Tucson,+1-373-555-0136,hello@northwind-pharmacy-partners.example.com,Growth,170000,2026-12-20
+Maple Bakery Group,West,Reno,+1-501-555-0198,hello@maple-bakery-group.example.com,Pro,238000,2023-06-14
+Yarrow Coffee Group,West,Sacramento,+1-572-555-0118,hello@yarrow-coffee-group.example.com,Growth,147900,2022-05-06
+Northwind Tailors Inc.,Midwest,Columbus,+1-837-555-0183,hello@northwind-tailors-inc.example.com,Enterprise,241000,2014-06-16
+Kestrel Studio LLC,South-West,Tucson,+1-728-555-0103,hello@kestrel-studio-llc.example.com,Pro,113600,2017-05-24
+Harbor Tailors & Sons,South-West,Austin,+1-388-555-0155,hello@harbor-tailors-and-sons.example.com,Pro,240600,2026-12-19
+Yarrow Studio & Sons,West,Denver,+1-893-555-0156,hello@yarrow-studio-and-sons.example.com,Starter,177900,2023-04-16
+Maple Print Shop LLC,North-East,Albany,+1-263-555-0182,hello@maple-print-shop-llc.example.com,Enterprise,191200,2018-12-10
+Acme Catering Partners,North-East,Albany,+1-796-555-0117,hello@acme-catering-partners.example.com,Growth,190500,2021-09-09
+Harbor Bakery Co.,South-West,Phoenix,+1-496-555-0152,hello@harbor-bakery-co.example.com,Starter,210800,2021-09-28
+Lantern Optics Partners,South-West,Albuquerque,+1-920-555-0171,hello@lantern-optics-partners.example.com,Growth,210100,2022-06-22
+Maple Tailors Group,Midwest,Madison,+1-284-555-0165,hello@maple-tailors-group.example.com,Pro,83000,2024-11-25
+Foxglove Optics LLC,Midwest,Columbus,+1-456-555-0123,hello@foxglove-optics-llc.example.com,Pro,150500,2019-08-15
+Kestrel Garage Partners,Midwest,Madison,+1-406-555-0107,hello@kestrel-garage-partners.example.com,Growth,116900,2026-07-04
+Upland Hardware Partners,South-East,Orlando,+1-752-555-0170,hello@upland-hardware-partners.example.com,Starter,83500,2020-05-28
+Oakline Studio LLC,South-West,Tucson,+1-420-555-0197,hello@oakline-studio-llc.example.com,Growth,207300,2016-08-14
+Tidewater Bakery LLC,South-West,Tucson,+1-853-555-0136,hello@tidewater-bakery-llc.example.com,Growth,40200,2022-01-24
+Kestrel Pharmacy Co.,South-East,Charlotte,+1-508-555-0187,hello@kestrel-pharmacy-co.example.com,Starter,76300,2023-06-07
+Juniper Florist Group,Midwest,Omaha,+1-351-555-0154,hello@juniper-florist-group.example.com,Growth,162900,2022-12-09
+Evergreen Hardware LLC,Midwest,Madison,+1-827-555-0100,hello@evergreen-hardware-llc.example.com,Pro,10900,2017-09-02
+Bright Studio & Sons,North-West,Seattle,+1-355-555-0139,hello@bright-studio-and-sons.example.com,Pro,28100,2014-04-18
+Quarry Books Inc.,South-West,Austin,+1-355-555-0142,hello@quarry-books-inc.example.com,Enterprise,207400,2022-12-21
+Granite Dental Co.,North-West,Spokane,+1-800-555-0125,hello@granite-dental-co.example.com,Growth,27300,2025-05-21
+Redstone Hardware LLC,North-West,Portland,+1-520-555-0190,hello@redstone-hardware-llc.example.com,Growth,66100,2016-01-21
+Juniper Bicycles LLC,West,Salt Lake City,+1-770-555-0130,hello@juniper-bicycles-llc.example.com,Growth,100800,2024-06-10
+Harbor Dental & Sons,South-East,Charlotte,+1-940-555-0137,hello@harbor-dental-and-sons.example.com,Growth,134900,2023-04-28
+Acme Bicycles Partners,Midwest,Omaha,+1-761-555-0186,hello@acme-bicycles-partners.example.com,Pro,249500,2016-03-13
+Oakline Catering Partners,North-West,Boise,+1-572-555-0179,hello@oakline-catering-partners.example.com,Enterprise,101300,2014-03-02
+Willow Coffee & Sons,North-West,Portland,+1-679-555-0169,hello@willow-coffee-and-sons.example.com,Growth,22600,2026-02-09
+Ironwood Studio & Sons,Midwest,Madison,+1-782-555-0132,hello@ironwood-studio-and-sons.example.com,Growth,38100,2016-05-13
+Valley Garage Co.,North-West,Spokane,+1-213-555-0178,hello@valley-garage-co.example.com,Enterprise,50200,2024-02-27
+Evergreen Garage LLC,North-West,Spokane,+1-712-555-0165,hello@evergreen-garage-llc.example.com,Growth,72600,2020-05-09
+Pinecrest Catering Co.,North-East,Providence,+1-217-555-0120,hello@pinecrest-catering-co.example.com,Enterprise,177400,2022-11-26
+Driftwood Garage LLC,North-East,Hartford,+1-260-555-0132,hello@driftwood-garage-llc.example.com,Starter,217300,2023-08-18
+Upland Bicycles Inc.,South-West,Albuquerque,+1-606-555-0125,hello@upland-bicycles-inc.example.com,Starter,144800,2026-01-08
+Maple Florist LLC,North-East,Albany,+1-369-555-0166,hello@maple-florist-llc.example.com,Growth,91800,2020-08-22
+Quarry Optics & Sons,South-West,Austin,+1-666-555-0154,hello@quarry-optics-and-sons.example.com,Growth,13900,2018-07-22
+Valley Coffee Group,South-West,Tucson,+1-956-555-0105,hello@valley-coffee-group.example.com,Growth,181400,2016-12-12
+Bright Garage LLC,Midwest,Omaha,+1-605-555-0180,hello@bright-garage-llc.example.com,Enterprise,78100,2015-07-07
+Tidewater Tailors Partners,North-West,Spokane,+1-900-555-0102,hello@tidewater-tailors-partners.example.com,Growth,141500,2019-05-18
+Silverleaf Fitness Partners,North-West,Boise,+1-479-555-0120,hello@silverleaf-fitness-partners.example.com,Growth,107900,2021-08-10
+Valley Print Shop Inc.,North-West,Portland,+1-425-555-0155,hello@valley-print-shop-inc.example.com,Enterprise,41600,2024-04-16
+Maple Fitness Inc.,Midwest,Omaha,+1-458-555-0115,hello@maple-fitness-inc.example.com,Starter,65000,2016-05-13
+Evergreen Fitness Co.,North-East,Boston,+1-285-555-0185,hello@evergreen-fitness-co.example.com,Starter,214100,2020-06-10
+Quarry Hardware & Sons,North-West,Boise,+1-749-555-0116,hello@quarry-hardware-and-sons.example.com,Starter,62800,2022-08-28
+Oakline Hardware Group,West,Sacramento,+1-632-555-0162,hello@oakline-hardware-group.example.com,Growth,208600,2022-09-12
+Redstone Dental & Sons,North-East,Hartford,+1-219-555-0124,hello@redstone-dental-and-sons.example.com,Starter,19800,2014-07-19
+Acme Print Shop Group,North-East,Hartford,+1-954-555-0183,hello@acme-print-shop-group.example.com,Growth,80900,2024-03-28
+Granite Studio Group,South-West,Austin,+1-702-555-0152,hello@granite-studio-group.example.com,Starter,54900,2024-09-24
+Granite Pharmacy Group,Midwest,Madison,+1-760-555-0130,hello@granite-pharmacy-group.example.com,Enterprise,55700,2020-07-26
+Harbor Pharmacy LLC,South-East,Atlanta,+1-512-555-0199,hello@harbor-pharmacy-llc.example.com,Pro,18800,2019-08-13
+Oakline Coffee Partners,North-West,Spokane,+1-595-555-0152,hello@oakline-coffee-partners.example.com,Enterprise,125300,2025-01-12
+Valley Coffee Inc.,Midwest,Madison,+1-472-555-0107,hello@valley-coffee-inc.example.com,Growth,209800,2014-01-23
+Valley Hardware Partners,North-East,Albany,+1-749-555-0196,hello@valley-hardware-partners.example.com,Starter,83000,2020-08-27
+Quarry Studio Group,West,Reno,+1-788-555-0148,hello@quarry-studio-group.example.com,Pro,86600,2023-12-02
+Ironwood Pet Supply & Sons,North-East,Boston,+1-775-555-0135,hello@ironwood-pet-supply-and-sons.example.com,Growth,31800,2019-12-17
+Acme Bakery & Sons,Midwest,Omaha,+1-443-555-0102,hello@acme-bakery-and-sons.example.com,Starter,72200,2018-07-24
+Pinecrest Fitness & Sons,North-West,Boise,+1-724-555-0169,hello@pinecrest-fitness-and-sons.example.com,Growth,101800,2016-01-26
+Juniper Bakery Inc.,Midwest,Madison,+1-222-555-0139,hello@juniper-bakery-inc.example.com,Starter,8700,2014-10-05
+Oakline Pet Supply LLC,Midwest,Madison,+1-804-555-0157,hello@oakline-pet-supply-llc.example.com,Enterprise,92100,2022-12-03
+Copper Fitness & Sons,South-East,Charlotte,+1-881-555-0121,hello@copper-fitness-and-sons.example.com,Starter,102200,2026-10-13
+Willow Tailors Inc.,North-West,Seattle,+1-480-555-0161,hello@willow-tailors-inc.example.com,Growth,233900,2026-11-27
+Silverleaf Studio & Sons,North-East,Albany,+1-414-555-0101,hello@silverleaf-studio-and-sons.example.com,Starter,220700,2015-02-02
+Quarry Print Shop Group,Midwest,Columbus,+1-456-555-0101,hello@quarry-print-shop-group.example.com,Enterprise,192000,2022-02-09
+Willow Pharmacy & Sons,West,Sacramento,+1-297-555-0162,hello@willow-pharmacy-and-sons.example.com,Growth,57600,2025-08-20
+Tidewater Coffee Partners,South-East,Nashville,+1-349-555-0128,hello@tidewater-coffee-partners.example.com,Pro,217000,2016-08-17
+Silverleaf Pharmacy & Sons,North-West,Spokane,+1-754-555-0181,hello@silverleaf-pharmacy-and-sons.example.com,Pro,111900,2018-03-16
+Upland Dental Partners,South-West,Austin,+1-670-555-0127,hello@upland-dental-partners.example.com,Enterprise,61700,2021-01-07
+Kestrel Florist LLC,West,Reno,+1-565-555-0145,hello@kestrel-florist-llc.example.com,Starter,173000,2014-08-01
+Ironwood Tailors & Sons,South-West,Albuquerque,+1-331-555-0193,hello@ironwood-tailors-and-sons.example.com,Starter,148700,2024-12-15
+Oakline Hardware Co.,South-West,Austin,+1-611-555-0154,hello@oakline-hardware-co.example.com,Enterprise,140400,2015-04-04
+Maple Studio LLC,West,Reno,+1-868-555-0125,hello@maple-studio-llc.example.com,Pro,75300,2014-10-02
+Ironwood Florist Inc.,North-East,Boston,+1-445-555-0143,hello@ironwood-florist-inc.example.com,Growth,119200,2015-05-28
+Pinecrest Florist LLC,North-West,Seattle,+1-321-555-0146,hello@pinecrest-florist-llc.example.com,Starter,161100,2020-10-11
+Copper Dental Inc.,West,Reno,+1-842-555-0103,hello@copper-dental-inc.example.com,Enterprise,58800,2019-09-21
+Pinecrest Fitness Co.,West,Denver,+1-293-555-0156,hello@pinecrest-fitness-co.example.com,Growth,227600,2022-02-15
+Redstone Garage LLC,West,Salt Lake City,+1-706-555-0188,hello@redstone-garage-llc.example.com,Growth,11500,2014-01-23
+Maple Hardware LLC,South-East,Orlando,+1-530-555-0144,hello@maple-hardware-llc.example.com,Starter,67500,2024-03-27
+Upland Optics LLC,North-West,Boise,+1-230-555-0160,hello@upland-optics-llc.example.com,Starter,212100,2023-02-28
+Willow Fitness LLC,West,Denver,+1-502-555-0145,hello@willow-fitness-llc.example.com,Growth,124900,2018-07-25
+Driftwood Bicycles Group,North-East,Boston,+1-982-555-0129,hello@driftwood-bicycles-group.example.com,Pro,11800,2021-10-21
+Oakline Fitness Co.,South-West,Albuquerque,+1-378-555-0170,hello@oakline-fitness-co.example.com,Starter,93800,2016-02-24
+Quarry Catering & Sons,South-East,Atlanta,+1-912-555-0176,hello@quarry-catering-and-sons.example.com,Growth,16900,2026-08-09
+Redstone Garage & Sons,South-East,Atlanta,+1-713-555-0183,hello@redstone-garage-and-sons.example.com,Enterprise,197000,2020-09-20
+Maple Tailors & Sons,North-West,Portland,+1-488-555-0126,hello@maple-tailors-and-sons.example.com,Growth,32800,2018-01-03
+Tidewater Fitness Partners,South-West,Phoenix,+1-312-555-0174,hello@tidewater-fitness-partners.example.com,Growth,194200,2025-12-11
+Copper Dental Partners,North-West,Spokane,+1-206-555-0183,hello@copper-dental-partners.example.com,Starter,232600,2026-04-27
+Northwind Bakery Partners,West,Reno,+1-491-555-0162,hello@northwind-bakery-partners.example.com,Enterprise,112800,2016-09-27
+Tidewater Pet Supply LLC,South-East,Nashville,+1-793-555-0175,hello@tidewater-pet-supply-llc.example.com,Starter,148900,2025-01-19
+Harbor Florist Inc.,North-West,Spokane,+1-890-555-0158,hello@harbor-florist-inc.example.com,Growth,240700,2020-07-22
+Evergreen Dental Inc.,South-East,Atlanta,+1-343-555-0149,hello@evergreen-dental-inc.example.com,Pro,163700,2017-07-23
+Evergreen Bicycles Partners,North-East,Hartford,+1-844-555-0187,hello@evergreen-bicycles-partners.example.com,Starter,242500,2014-05-02
+Juniper Bakery LLC,South-East,Orlando,+1-836-555-0140,hello@juniper-bakery-llc.example.com,Pro,16900,2025-09-11
+Pinecrest Tailors Group,North-West,Seattle,+1-885-555-0111,hello@pinecrest-tailors-group.example.com,Enterprise,82700,2022-01-21
+Foxglove Hardware LLC,Midwest,Madison,+1-305-555-0171,hello@foxglove-hardware-llc.example.com,Starter,230600,2026-05-15
+Willow Hardware LLC,South-West,Austin,+1-346-555-0102,hello@willow-hardware-llc.example.com,Starter,239100,2026-01-23
+Northwind Hardware Co.,Midwest,Madison,+1-638-555-0197,hello@northwind-hardware-co.example.com,Growth,223100,2021-06-09
+Acme Pharmacy Group,West,Denver,+1-536-555-0110,hello@acme-pharmacy-group.example.com,Enterprise,57900,2016-09-11
+Foxglove Pet Supply Partners,South-East,Orlando,+1-425-555-0157,hello@foxglove-pet-supply-partners.example.com,Enterprise,100500,2019-02-05
+Harbor Florist Co.,South-West,Albuquerque,+1-603-555-0142,hello@harbor-florist-co.example.com,Growth,108700,2022-08-12
+Kestrel Dental Co.,South-East,Orlando,+1-850-555-0171,hello@kestrel-dental-co.example.com,Pro,162900,2020-08-21
+Ironwood Catering Inc.,North-West,Spokane,+1-946-555-0170,hello@ironwood-catering-inc.example.com,Starter,236600,2024-08-11
+Ironwood Pet Supply Inc.,South-East,Nashville,+1-575-555-0129,hello@ironwood-pet-supply-inc.example.com,Growth,35100,2015-12-17
+Willow Print Shop Co.,South-West,Tucson,+1-214-555-0100,hello@willow-print-shop-co.example.com,Starter,149400,2017-09-04
+Juniper Tailors Inc.,South-East,Charlotte,+1-876-555-0149,hello@juniper-tailors-inc.example.com,Pro,157100,2022-01-13
+Copper Pharmacy LLC,West,Sacramento,+1-737-555-0173,hello@copper-pharmacy-llc.example.com,Starter,145100,2016-05-20
+Lantern Bicycles Co.,South-East,Orlando,+1-942-555-0115,hello@lantern-bicycles-co.example.com,Growth,46200,2024-02-12
+Ironwood Garage Partners,West,Reno,+1-882-555-0110,hello@ironwood-garage-partners.example.com,Starter,107600,2015-07-09
+Tidewater Optics LLC,Midwest,Chicago,+1-729-555-0175,hello@tidewater-optics-llc.example.com,Starter,239600,2018-04-26
+Kestrel Florist Inc.,West,Sacramento,+1-607-555-0187,hello@kestrel-florist-inc.example.com,Pro,139200,2015-09-15
+Juniper Garage Co.,South-East,Charlotte,+1-707-555-0135,hello@juniper-garage-co.example.com,Starter,190300,2018-10-26
+Valley Print Shop LLC,Midwest,Omaha,+1-939-555-0169,hello@valley-print-shop-llc.example.com,Enterprise,21900,2018-01-26
+Evergreen Hardware Group,North-East,Providence,+1-243-555-0129,hello@evergreen-hardware-group.example.com,Starter,75000,2019-09-02
+Bright Catering LLC,South-East,Orlando,+1-268-555-0153,hello@bright-catering-llc.example.com,Growth,115700,2015-12-08
+Tidewater Pharmacy Inc.,North-East,Boston,+1-650-555-0130,hello@tidewater-pharmacy-inc.example.com,Growth,130200,2014-09-05
+Maple Pet Supply LLC,Midwest,Columbus,+1-751-555-0112,hello@maple-pet-supply-llc.example.com,Growth,137800,2026-07-11
+Maple Catering & Sons,North-East,Hartford,+1-836-555-0191,hello@maple-catering-and-sons.example.com,Enterprise,114300,2017-01-28
+Harbor Garage Partners,Midwest,Omaha,+1-982-555-0118,hello@harbor-garage-partners.example.com,Enterprise,163500,2023-01-10
+Foxglove Studio Partners,West,Denver,+1-694-555-0109,hello@foxglove-studio-partners.example.com,Pro,227800,2019-06-26
+Kestrel Bakery Group,North-West,Boise,+1-225-555-0161,hello@kestrel-bakery-group.example.com,Starter,55500,2023-05-28
+Harbor Coffee Co.,North-West,Boise,+1-263-555-0109,hello@harbor-coffee-co.example.com,Pro,131000,2014-10-01
+Northwind Catering LLC,North-West,Boise,+1-438-555-0189,hello@northwind-catering-llc.example.com,Growth,202900,2014-08-11
+Ironwood Optics & Sons,South-East,Orlando,+1-741-555-0197,hello@ironwood-optics-and-sons.example.com,Pro,230900,2016-03-28
+Lantern Pet Supply Group,North-East,Boston,+1-633-555-0121,hello@lantern-pet-supply-group.example.com,Enterprise,159000,2024-10-27
+Lantern Tailors Partners,North-East,Albany,+1-283-555-0160,hello@lantern-tailors-partners.example.com,Enterprise,63800,2022-02-12
+Maple Dental Group,Midwest,Omaha,+1-325-555-0196,hello@maple-dental-group.example.com,Growth,16400,2025-03-22
+Silverleaf Garage Group,Midwest,Madison,+1-220-555-0187,hello@silverleaf-garage-group.example.com,Enterprise,111900,2014-10-22
+Kestrel Dental Group,North-West,Spokane,+1-706-555-0143,hello@kestrel-dental-group.example.com,Starter,148600,2021-07-25
+Foxglove Garage Group,West,Denver,+1-446-555-0183,hello@foxglove-garage-group.example.com,Growth,65900,2020-08-27
+Ironwood Dental Co.,North-East,Albany,+1-718-555-0162,hello@ironwood-dental-co.example.com,Enterprise,34300,2016-07-07
+Ironwood Florist Partners,South-East,Charlotte,+1-854-555-0170,hello@ironwood-florist-partners.example.com,Enterprise,30500,2018-04-12
+Juniper Pharmacy Co.,North-East,Albany,+1-915-555-0196,hello@juniper-pharmacy-co.example.com,Starter,245300,2026-04-28
+Lantern Bakery Partners,North-East,Providence,+1-271-555-0173,hello@lantern-bakery-partners.example.com,Starter,57700,2024-04-26
+Upland Garage Group,North-East,Albany,+1-833-555-0119,hello@upland-garage-group.example.com,Pro,3500,2018-06-21
+Yarrow Books Group,South-West,Phoenix,+1-600-555-0112,hello@yarrow-books-group.example.com,Growth,195300,2021-07-08
+Granite Garage Inc.,North-West,Portland,+1-675-555-0103,hello@granite-garage-inc.example.com,Growth,203700,2018-05-26
+Upland Tailors Co.,West,Reno,+1-582-555-0172,hello@upland-tailors-co.example.com,Enterprise,79400,2017-01-08
+Yarrow Books Partners,North-West,Boise,+1-738-555-0126,hello@yarrow-books-partners.example.com,Pro,163000,2021-07-02
+Quarry Florist Co.,North-West,Seattle,+1-571-555-0182,hello@quarry-florist-co.example.com,Enterprise,128800,2021-08-22
+Upland Studio LLC,North-West,Spokane,+1-747-555-0176,hello@upland-studio-llc.example.com,Starter,206800,2019-07-27
+Acme Bicycles Group,South-West,Albuquerque,+1-733-555-0135,hello@acme-bicycles-group.example.com,Enterprise,226600,2025-02-05
+Northwind Fitness LLC,North-West,Portland,+1-474-555-0133,hello@northwind-fitness-llc.example.com,Pro,83400,2018-10-28
+Silverleaf Print Shop Partners,South-West,Phoenix,+1-486-555-0106,hello@silverleaf-print-shop-partners.example.com,Growth,153500,2022-06-12
+Bright Pet Supply & Sons,North-East,Albany,+1-981-555-0165,hello@bright-pet-supply-and-sons.example.com,Growth,150000,2022-01-01
+Juniper Pharmacy Inc.,North-West,Boise,+1-327-555-0107,hello@juniper-pharmacy-inc.example.com,Enterprise,126700,2021-05-27
+Northwind Pharmacy Inc.,South-West,Austin,+1-601-555-0148,hello@northwind-pharmacy-inc.example.com,Pro,64600,2021-09-23
+Foxglove Garage Inc.,North-East,Albany,+1-919-555-0198,hello@foxglove-garage-inc.example.com,Enterprise,177500,2025-09-13
+Evergreen Bakery Partners,South-West,Tucson,+1-856-555-0147,hello@evergreen-bakery-partners.example.com,Enterprise,198800,2014-09-24
+Northwind Florist & Sons,North-East,Albany,+1-264-555-0165,hello@northwind-florist-and-sons.example.com,Pro,61900,2016-01-08
+Kestrel Pet Supply Partners,North-West,Boise,+1-800-555-0137,hello@kestrel-pet-supply-partners.example.com,Growth,21500,2026-12-10
+Granite Fitness Group,North-West,Spokane,+1-808-555-0189,hello@granite-fitness-group.example.com,Starter,143400,2015-07-24
+Silverleaf Catering LLC,South-West,Austin,+1-624-555-0196,hello@silverleaf-catering-llc.example.com,Growth,87600,2018-08-04
+Pinecrest Pet Supply Partners,North-West,Seattle,+1-527-555-0113,hello@pinecrest-pet-supply-partners.example.com,Growth,73900,2024-05-27
+Harbor Florist Group,South-West,Phoenix,+1-883-555-0155,hello@harbor-florist-group.example.com,Pro,99200,2019-09-10
+Pinecrest Hardware Inc.,North-East,Albany,+1-400-555-0165,hello@pinecrest-hardware-inc.example.com,Enterprise,62600,2026-12-15
+Lantern Books LLC,South-West,Tucson,+1-395-555-0161,hello@lantern-books-llc.example.com,Starter,42300,2019-07-20
+Silverleaf Florist Group,Midwest,Chicago,+1-505-555-0100,hello@silverleaf-florist-group.example.com,Starter,76900,2019-12-26
+Evergreen Print Shop & Sons,West,Reno,+1-416-555-0181,hello@evergreen-print-shop-and-sons.example.com,Starter,144000,2020-11-13
+Acme Pharmacy & Sons,Midwest,Omaha,+1-242-555-0199,hello@acme-pharmacy-and-sons.example.com,Pro,169400,2024-11-08
+Pinecrest Print Shop Group,Midwest,Madison,+1-447-555-0185,hello@pinecrest-print-shop-group.example.com,Growth,163700,2018-09-17
+Granite Dental Inc.,South-West,Albuquerque,+1-777-555-0112,hello@granite-dental-inc.example.com,Starter,101200,2018-01-17
+Foxglove Hardware Group,North-East,Providence,+1-243-555-0185,hello@foxglove-hardware-group.example.com,Enterprise,232300,2015-12-06
+Lantern Bakery Group,North-East,Hartford,+1-222-555-0112,hello@lantern-bakery-group.example.com,Starter,214000,2022-12-01
+Pinecrest Coffee Group,South-East,Charlotte,+1-501-555-0135,hello@pinecrest-coffee-group.example.com,Starter,108900,2016-12-06
+Driftwood Tailors Co.,Midwest,Columbus,+1-246-555-0181,hello@driftwood-tailors-co.example.com,Pro,231200,2021-10-22
+Copper Catering Partners,South-West,Phoenix,+1-689-555-0112,hello@copper-catering-partners.example.com,Enterprise,160800,2024-10-11
+Silverleaf Garage Co.,West,Salt Lake City,+1-337-555-0115,hello@silverleaf-garage-co.example.com,Growth,230700,2025-06-07
+Evergreen Pet Supply Co.,North-West,Spokane,+1-888-555-0128,hello@evergreen-pet-supply-co.example.com,Growth,53300,2024-12-22
+Upland Florist Partners,West,Denver,+1-233-555-0107,hello@upland-florist-partners.example.com,Enterprise,134500,2018-04-12
+Acme Coffee Group,North-West,Boise,+1-551-555-0114,hello@acme-coffee-group.example.com,Starter,246800,2019-08-04
+Copper Catering & Sons,Midwest,Madison,+1-796-555-0100,hello@copper-catering-and-sons.example.com,Enterprise,145400,2024-01-16
+Oakline Tailors Inc.,West,Denver,+1-789-555-0136,hello@oakline-tailors-inc.example.com,Pro,150900,2023-01-11
+Acme Hardware LLC,North-West,Boise,+1-989-555-0138,hello@acme-hardware-llc.example.com,Pro,175600,2017-07-01
+Acme Studio Group,South-West,Albuquerque,+1-518-555-0196,hello@acme-studio-group.example.com,Enterprise,171400,2016-02-13
+Evergreen Hardware & Sons,North-West,Seattle,+1-760-555-0134,hello@evergreen-hardware-and-sons.example.com,Enterprise,190200,2019-08-07
+Valley Studio Inc.,South-East,Nashville,+1-812-555-0174,hello@valley-studio-inc.example.com,Pro,105100,2019-01-02
+Kestrel Pharmacy LLC,South-West,Austin,+1-631-555-0189,hello@kestrel-pharmacy-llc.example.com,Starter,176100,2014-01-01
+Acme Optics Co.,North-West,Portland,+1-727-555-0122,hello@acme-optics-co.example.com,Growth,73500,2018-11-12
+Quarry Fitness & Sons,Midwest,Columbus,+1-677-555-0125,hello@quarry-fitness-and-sons.example.com,Enterprise,87500,2016-10-26
+Lantern Fitness Inc.,South-East,Atlanta,+1-854-555-0171,hello@lantern-fitness-inc.example.com,Growth,103500,2022-03-25
+Maple Garage Co.,South-East,Charlotte,+1-967-555-0193,hello@maple-garage-co.example.com,Starter,54600,2021-10-08
+Evergreen Tailors Group,North-East,Albany,+1-875-555-0106,hello@evergreen-tailors-group.example.com,Pro,47200,2026-03-17
+Yarrow Pharmacy Inc.,North-East,Providence,+1-389-555-0140,hello@yarrow-pharmacy-inc.example.com,Pro,194700,2016-07-08
+Evergreen Optics LLC,South-West,Austin,+1-980-555-0161,hello@evergreen-optics-llc.example.com,Pro,43400,2021-04-24
+Redstone Pharmacy LLC,South-West,Phoenix,+1-250-555-0121,hello@redstone-pharmacy-llc.example.com,Pro,202800,2018-07-06
+Juniper Coffee & Sons,South-West,Albuquerque,+1-887-555-0140,hello@juniper-coffee-and-sons.example.com,Pro,168800,2021-10-17
+Maple Catering Partners,South-East,Nashville,+1-632-555-0188,hello@maple-catering-partners.example.com,Enterprise,93600,2017-02-19
+Foxglove Fitness & Sons,North-East,Boston,+1-440-555-0155,hello@foxglove-fitness-and-sons.example.com,Starter,145400,2023-09-27
+Kestrel Pet Supply & Sons,South-West,Albuquerque,+1-451-555-0131,hello@kestrel-pet-supply-and-sons.example.com,Starter,84600,2021-11-16
+Redstone Optics Group,South-West,Tucson,+1-781-555-0123,hello@redstone-optics-group.example.com,Enterprise,154300,2019-06-15
+Tidewater Catering LLC,South-East,Nashville,+1-212-555-0125,hello@tidewater-catering-llc.example.com,Enterprise,165300,2025-11-05
+Maple Optics & Sons,South-East,Nashville,+1-215-555-0140,hello@maple-optics-and-sons.example.com,Pro,86900,2018-02-22
+Kestrel Books Partners,South-West,Phoenix,+1-929-555-0198,hello@kestrel-books-partners.example.com,Enterprise,69300,2024-07-13
+Valley Florist LLC,West,Salt Lake City,+1-734-555-0168,hello@valley-florist-llc.example.com,Starter,102000,2016-07-02
+Redstone Optics & Sons,North-West,Boise,+1-826-555-0194,hello@redstone-optics-and-sons.example.com,Pro,152700,2022-10-25
+Driftwood Pharmacy & Sons,North-East,Boston,+1-540-555-0168,hello@driftwood-pharmacy-and-sons.example.com,Starter,88800,2025-10-23
+Juniper Garage & Sons,Midwest,Madison,+1-656-555-0199,hello@juniper-garage-and-sons.example.com,Enterprise,64500,2021-06-08
+Yarrow Fitness LLC,North-West,Seattle,+1-210-555-0142,hello@yarrow-fitness-llc.example.com,Enterprise,84400,2026-01-11
+Driftwood Bicycles Partners,Midwest,Columbus,+1-504-555-0193,hello@driftwood-bicycles-partners.example.com,Growth,135300,2025-05-06
+Evergreen Studio Group,South-West,Albuquerque,+1-487-555-0137,hello@evergreen-studio-group.example.com,Starter,103000,2026-03-28
+Valley Pharmacy Co.,South-West,Phoenix,+1-522-555-0123,hello@valley-pharmacy-co.example.com,Pro,110600,2014-09-15
+Bright Books LLC,Midwest,Madison,+1-292-555-0134,hello@bright-books-llc.example.com,Pro,105300,2019-06-20
+Foxglove Fitness Partners,South-East,Nashville,+1-807-555-0112,hello@foxglove-fitness-partners.example.com,Growth,157000,2022-12-24
+Quarry Hardware Co.,North-East,Boston,+1-482-555-0160,hello@quarry-hardware-co.example.com,Starter,119600,2020-01-05
+Northwind Books LLC,Midwest,Chicago,+1-820-555-0168,hello@northwind-books-llc.example.com,Starter,99200,2024-01-06
+Maple Pharmacy Inc.,North-West,Portland,+1-457-555-0116,hello@maple-pharmacy-inc.example.com,Starter,236800,2026-01-19
+Copper Coffee Co.,Midwest,Omaha,+1-622-555-0137,hello@copper-coffee-co.example.com,Pro,180200,2016-01-16
+Evergreen Tailors LLC,North-East,Albany,+1-729-555-0196,hello@evergreen-tailors-llc.example.com,Enterprise,218700,2019-02-07
+Northwind Pet Supply Inc.,South-East,Orlando,+1-804-555-0134,hello@northwind-pet-supply-inc.example.com,Pro,63400,2020-08-04
+Bright Optics Inc.,North-East,Boston,+1-408-555-0122,hello@bright-optics-inc.example.com,Pro,27000,2016-11-10
+Pinecrest Dental & Sons,West,Denver,+1-882-555-0131,hello@pinecrest-dental-and-sons.example.com,Enterprise,174900,2021-03-23
+Granite Garage Partners,South-East,Charlotte,+1-833-555-0177,hello@granite-garage-partners.example.com,Enterprise,206000,2014-04-23
+Evergreen Optics Inc.,Midwest,Madison,+1-906-555-0118,hello@evergreen-optics-inc.example.com,Starter,187500,2018-07-01
+Evergreen Print Shop Co.,South-West,Tucson,+1-696-555-0112,hello@evergreen-print-shop-co.example.com,Pro,192400,2026-03-25
+Lantern Dental Partners,South-West,Phoenix,+1-318-555-0142,hello@lantern-dental-partners.example.com,Starter,124600,2016-05-01
+Valley Books & Sons,West,Reno,+1-514-555-0169,hello@valley-books-and-sons.example.com,Starter,152700,2017-03-05
+Juniper Dental Group,West,Salt Lake City,+1-675-555-0107,hello@juniper-dental-group.example.com,Growth,164800,2025-02-10
+Lantern Florist Group,North-West,Spokane,+1-663-555-0159,hello@lantern-florist-group.example.com,Enterprise,248300,2022-12-13
+Maple Studio Co.,North-East,Providence,+1-578-555-0104,hello@maple-studio-co.example.com,Growth,218700,2014-11-07
+Yarrow Catering Partners,North-West,Boise,+1-363-555-0134,hello@yarrow-catering-partners.example.com,Growth,81200,2015-12-06
+Driftwood Books LLC,South-West,Austin,+1-805-555-0138,hello@driftwood-books-llc.example.com,Starter,37500,2018-03-26
+Juniper Pharmacy Group,West,Reno,+1-237-555-0182,hello@juniper-pharmacy-group.example.com,Enterprise,219500,2025-05-12
+Yarrow Catering Inc.,North-West,Seattle,+1-585-555-0133,hello@yarrow-catering-inc.example.com,Growth,216200,2019-05-12
+Pinecrest Fitness Group,South-West,Phoenix,+1-340-555-0143,hello@pinecrest-fitness-group.example.com,Starter,53900,2021-11-09
+Oakline Florist & Sons,South-East,Nashville,+1-598-555-0105,hello@oakline-florist-and-sons.example.com,Starter,112000,2025-03-11
+Driftwood Catering LLC,Midwest,Madison,+1-848-555-0126,hello@driftwood-catering-llc.example.com,Enterprise,142700,2017-04-09
+Harbor Studio LLC,South-East,Nashville,+1-361-555-0174,hello@harbor-studio-llc.example.com,Enterprise,112900,2016-02-16
+Maple Garage Partners,South-West,Albuquerque,+1-408-555-0106,hello@maple-garage-partners.example.com,Pro,157600,2025-03-23
+Tidewater Print Shop Inc.,North-East,Providence,+1-606-555-0164,hello@tidewater-print-shop-inc.example.com,Starter,218300,2023-09-14
+Driftwood Bakery Inc.,South-East,Charlotte,+1-388-555-0142,hello@driftwood-bakery-inc.example.com,Enterprise,55600,2019-11-03
+Redstone Books LLC,South-West,Austin,+1-961-555-0153,hello@redstone-books-llc.example.com,Enterprise,243000,2016-11-05
+Redstone Hardware & Sons,North-East,Albany,+1-255-555-0169,hello@redstone-hardware-and-sons.example.com,Starter,40100,2023-05-03
+Harbor Pharmacy Co.,Midwest,Omaha,+1-312-555-0100,hello@harbor-pharmacy-co.example.com,Enterprise,209200,2016-06-15
+Oakline Catering Co.,North-West,Spokane,+1-920-555-0195,hello@oakline-catering-co.example.com,Pro,103800,2026-01-22
+Bright Print Shop & Sons,West,Reno,+1-761-555-0156,hello@bright-print-shop-and-sons.example.com,Growth,108000,2015-07-15
+Lantern Print Shop Co.,Midwest,Madison,+1-653-555-0196,hello@lantern-print-shop-co.example.com,Starter,166700,2021-03-15
+Kestrel Pet Supply Group,North-West,Spokane,+1-610-555-0162,hello@kestrel-pet-supply-group.example.com,Enterprise,69900,2015-09-10
+Copper Catering Co.,South-West,Phoenix,+1-547-555-0122,hello@copper-catering-co.example.com,Starter,234600,2025-06-11
+Acme Hardware Partners,South-West,Austin,+1-242-555-0133,hello@acme-hardware-partners.example.com,Pro,135000,2017-12-21
+Pinecrest Bicycles Co.,West,Sacramento,+1-494-555-0134,hello@pinecrest-bicycles-co.example.com,Growth,97000,2015-09-23
+Silverleaf Coffee Inc.,Midwest,Columbus,+1-860-555-0136,hello@silverleaf-coffee-inc.example.com,Growth,172900,2021-03-06
+Foxglove Tailors Inc.,North-West,Seattle,+1-374-555-0181,hello@foxglove-tailors-inc.example.com,Starter,44100,2024-10-18
+Granite Pharmacy LLC,North-West,Seattle,+1-336-555-0139,hello@granite-pharmacy-llc.example.com,Starter,60100,2014-02-17
+Silverleaf Florist Inc.,West,Denver,+1-505-555-0120,hello@silverleaf-florist-inc.example.com,Enterprise,212500,2021-10-20
+Lantern Books Inc.,South-West,Albuquerque,+1-573-555-0124,hello@lantern-books-inc.example.com,Growth,76500,2021-01-19
+Bright Bicycles Inc.,Midwest,Madison,+1-683-555-0123,hello@bright-bicycles-inc.example.com,Pro,224200,2020-02-05
+Valley Studio LLC,North-East,Boston,+1-435-555-0121,hello@valley-studio-llc.example.com,Starter,7000,2026-04-19
+Oakline Fitness LLC,South-West,Albuquerque,+1-871-555-0165,hello@oakline-fitness-llc.example.com,Growth,217600,2025-10-20
+Quarry Florist & Sons,South-East,Orlando,+1-753-555-0107,hello@quarry-florist-and-sons.example.com,Enterprise,94300,2018-08-14
+Lantern Fitness LLC,North-East,Albany,+1-855-555-0105,hello@lantern-fitness-llc.example.com,Enterprise,248000,2024-10-13
+Kestrel Catering Co.,South-West,Tucson,+1-213-555-0179,hello@kestrel-catering-co.example.com,Pro,141700,2018-08-26
+Redstone Garage Co.,North-East,Providence,+1-616-555-0147,hello@redstone-garage-co.example.com,Starter,67400,2024-08-06
+Silverleaf Bicycles Inc.,South-East,Charlotte,+1-870-555-0191,hello@silverleaf-bicycles-inc.example.com,Growth,227700,2020-12-20
+Harbor Pet Supply LLC,North-East,Providence,+1-715-555-0140,hello@harbor-pet-supply-llc.example.com,Starter,164300,2015-09-09
+Pinecrest Print Shop Inc.,North-West,Seattle,+1-311-555-0127,hello@pinecrest-print-shop-inc.example.com,Pro,140300,2016-05-09
+Evergreen Pharmacy Partners,Midwest,Columbus,+1-590-555-0159,hello@evergreen-pharmacy-partners.example.com,Starter,180500,2022-04-04
+Yarrow Studio LLC,North-East,Albany,+1-621-555-0175,hello@yarrow-studio-llc.example.com,Growth,195100,2022-09-02
+Pinecrest Pet Supply Inc.,West,Sacramento,+1-498-555-0160,hello@pinecrest-pet-supply-inc.example.com,Enterprise,74900,2024-06-25
+Ironwood Books Partners,Midwest,Madison,+1-701-555-0111,hello@ironwood-books-partners.example.com,Starter,7300,2026-11-07
+Foxglove Bakery LLC,West,Salt Lake City,+1-252-555-0198,hello@foxglove-bakery-llc.example.com,Growth,121800,2021-02-11
+Granite Florist Partners,North-West,Seattle,+1-761-555-0106,hello@granite-florist-partners.example.com,Starter,112400,2023-11-09
+Quarry Catering Co.,West,Salt Lake City,+1-233-555-0105,hello@quarry-catering-co.example.com,Growth,25400,2026-04-02
+Tidewater Dental Co.,North-West,Portland,+1-717-555-0145,hello@tidewater-dental-co.example.com,Pro,170200,2014-05-18
+Yarrow Studio Inc.,South-West,Austin,+1-428-555-0108,hello@yarrow-studio-inc.example.com,Enterprise,81500,2014-09-15
+Copper Bakery Co.,Midwest,Madison,+1-287-555-0173,hello@copper-bakery-co.example.com,Starter,98900,2016-04-13
+Ironwood Pet Supply Partners,West,Denver,+1-731-555-0117,hello@ironwood-pet-supply-partners.example.com,Pro,191200,2015-08-17
+Maple Bicycles Partners,Midwest,Madison,+1-544-555-0185,hello@maple-bicycles-partners.example.com,Enterprise,184600,2019-03-28
+Quarry Garage Inc.,Midwest,Columbus,+1-523-555-0141,hello@quarry-garage-inc.example.com,Starter,25300,2024-10-13
+Redstone Bicycles & Sons,South-East,Charlotte,+1-823-555-0161,hello@redstone-bicycles-and-sons.example.com,Starter,102700,2021-01-06
+Redstone Garage Group,North-West,Portland,+1-478-555-0167,hello@redstone-garage-group.example.com,Enterprise,167800,2022-07-23
+Ironwood Bakery & Sons,North-West,Spokane,+1-688-555-0127,hello@ironwood-bakery-and-sons.example.com,Enterprise,7700,2018-01-25
+Driftwood Tailors LLC,Midwest,Chicago,+1-856-555-0156,hello@driftwood-tailors-llc.example.com,Growth,29000,2019-03-27
+Copper Studio LLC,Midwest,Madison,+1-908-555-0135,hello@copper-studio-llc.example.com,Growth,88700,2018-05-18
+Pinecrest Dental Inc.,West,Sacramento,+1-573-555-0169,hello@pinecrest-dental-inc.example.com,Starter,7000,2024-03-23
+Willow Dental Co.,South-West,Austin,+1-211-555-0116,hello@willow-dental-co.example.com,Starter,15000,2019-01-27
+Granite Catering Inc.,North-West,Boise,+1-530-555-0162,hello@granite-catering-inc.example.com,Starter,98000,2021-05-23
+Tidewater Pharmacy Co.,South-West,Albuquerque,+1-986-555-0176,hello@tidewater-pharmacy-co.example.com,Starter,114100,2018-03-02
+Maple Tailors LLC,Midwest,Columbus,+1-429-555-0199,hello@maple-tailors-llc.example.com,Enterprise,125100,2017-02-09
+Pinecrest Optics LLC,North-West,Boise,+1-686-555-0180,hello@pinecrest-optics-llc.example.com,Growth,178100,2015-01-23
+Yarrow Catering Co.,North-East,Albany,+1-569-555-0188,hello@yarrow-catering-co.example.com,Pro,25200,2025-04-10
+Oakline Tailors Co.,South-West,Tucson,+1-872-555-0123,hello@oakline-tailors-co.example.com,Growth,73500,2022-06-15
+Maple Books Partners,South-West,Austin,+1-502-555-0144,hello@maple-books-partners.example.com,Pro,151200,2016-12-12
+Willow Tailors Co.,North-West,Seattle,+1-443-555-0189,hello@willow-tailors-co.example.com,Growth,110200,2018-10-25
+Redstone Tailors Group,West,Reno,+1-458-555-0133,hello@redstone-tailors-group.example.com,Starter,3500,2023-10-16
+Foxglove Tailors LLC,South-East,Atlanta,+1-562-555-0128,hello@foxglove-tailors-llc.example.com,Growth,91100,2024-09-15
+Juniper Bakery Partners,North-West,Seattle,+1-880-555-0145,hello@juniper-bakery-partners.example.com,Growth,229400,2024-12-06
+Yarrow Fitness & Sons,South-West,Tucson,+1-511-555-0126,hello@yarrow-fitness-and-sons.example.com,Starter,225500,2022-07-11
+Willow Dental Inc.,South-West,Austin,+1-514-555-0144,hello@willow-dental-inc.example.com,Enterprise,52900,2017-04-19
+Yarrow Bakery Inc.,North-West,Portland,+1-255-555-0136,hello@yarrow-bakery-inc.example.com,Growth,115800,2017-07-23
+Quarry Print Shop & Sons,North-West,Boise,+1-718-555-0137,hello@quarry-print-shop-and-sons.example.com,Enterprise,216100,2026-04-24
+Juniper Catering LLC,North-East,Boston,+1-522-555-0153,hello@juniper-catering-llc.example.com,Pro,222400,2021-10-19
+Northwind Optics Co.,Midwest,Columbus,+1-428-555-0116,hello@northwind-optics-co.example.com,Pro,119800,2023-10-13
+Oakline Bicycles Group,Midwest,Columbus,+1-874-555-0195,hello@oakline-bicycles-group.example.com,Growth,148200,2021-01-02
+Juniper Hardware Group,West,Salt Lake City,+1-392-555-0164,hello@juniper-hardware-group.example.com,Pro,223700,2023-09-14
+Kestrel Pharmacy & Sons,South-West,Austin,+1-461-555-0107,hello@kestrel-pharmacy-and-sons.example.com,Enterprise,247400,2016-05-20
+Bright Print Shop LLC,North-West,Boise,+1-211-555-0169,hello@bright-print-shop-llc.example.com,Pro,199900,2025-03-20
+Redstone Bakery Partners,North-East,Albany,+1-403-555-0157,hello@redstone-bakery-partners.example.com,Starter,59500,2026-04-19
+Quarry Garage Partners,West,Sacramento,+1-253-555-0158,hello@quarry-garage-partners.example.com,Growth,192200,2021-05-02
+Willow Pharmacy Co.,Midwest,Madison,+1-894-555-0110,hello@willow-pharmacy-co.example.com,Enterprise,165100,2016-04-26
+Tidewater Dental Partners,South-West,Phoenix,+1-417-555-0187,hello@tidewater-dental-partners.example.com,Pro,217900,2025-03-12
+Granite Tailors Inc.,West,Denver,+1-648-555-0143,hello@granite-tailors-inc.example.com,Enterprise,216500,2017-11-09
+Redstone Pharmacy & Sons,South-East,Atlanta,+1-734-555-0153,hello@redstone-pharmacy-and-sons.example.com,Starter,215200,2017-01-15
+Acme Catering & Sons,South-West,Tucson,+1-616-555-0152,hello@acme-catering-and-sons.example.com,Growth,18000,2022-09-20
+Foxglove Garage Co.,South-West,Phoenix,+1-617-555-0160,hello@foxglove-garage-co.example.com,Enterprise,200900,2021-02-12
+Willow Catering Group,North-West,Portland,+1-952-555-0112,hello@willow-catering-group.example.com,Growth,55700,2022-02-04
+Ironwood Fitness Group,North-West,Seattle,+1-840-555-0144,hello@ironwood-fitness-group.example.com,Growth,55000,2018-03-22
+Bright Books Co.,North-West,Seattle,+1-697-555-0140,hello@bright-books-co.example.com,Growth,135200,2016-01-05
+Tidewater Bakery Partners,Midwest,Omaha,+1-494-555-0101,hello@tidewater-bakery-partners.example.com,Enterprise,237800,2026-07-05
+Acme Optics & Sons,South-West,Tucson,+1-347-555-0142,hello@acme-optics-and-sons.example.com,Enterprise,208800,2025-01-09
+Acme Hardware Inc.,North-East,Hartford,+1-205-555-0160,hello@acme-hardware-inc.example.com,Enterprise,112100,2026-04-07
+Granite Florist Co.,West,Salt Lake City,+1-237-555-0169,hello@granite-florist-co.example.com,Starter,54800,2023-05-01
+Driftwood Bicycles Co.,South-East,Atlanta,+1-406-555-0184,hello@driftwood-bicycles-co.example.com,Enterprise,61200,2025-11-06
+Granite Bakery Partners,Midwest,Columbus,+1-633-555-0132,hello@granite-bakery-partners.example.com,Pro,147800,2023-03-27
+Driftwood Bicycles & Sons,South-West,Austin,+1-572-555-0161,hello@driftwood-bicycles-and-sons.example.com,Growth,73100,2022-10-23
+Evergreen Fitness LLC,South-West,Phoenix,+1-740-555-0174,hello@evergreen-fitness-llc.example.com,Pro,198000,2022-03-23
+Tidewater Coffee Inc.,South-West,Tucson,+1-386-555-0157,hello@tidewater-coffee-inc.example.com,Pro,64200,2023-07-12
+Oakline Studio Co.,Midwest,Omaha,+1-268-555-0157,hello@oakline-studio-co.example.com,Pro,163900,2014-09-02
+Foxglove Bakery Group,South-East,Nashville,+1-676-555-0131,hello@foxglove-bakery-group.example.com,Growth,180700,2023-03-07
+Silverleaf Dental LLC,North-West,Spokane,+1-980-555-0159,hello@silverleaf-dental-llc.example.com,Pro,64200,2014-07-18
+Lantern Florist & Sons,North-East,Providence,+1-295-555-0172,hello@lantern-florist-and-sons.example.com,Pro,164100,2026-12-28
+Evergreen Dental Partners,South-East,Nashville,+1-619-555-0193,hello@evergreen-dental-partners.example.com,Starter,212700,2020-05-10
+Driftwood Optics & Sons,South-East,Orlando,+1-838-555-0148,hello@driftwood-optics-and-sons.example.com,Starter,12700,2024-04-05
+Harbor Dental Partners,West,Sacramento,+1-343-555-0148,hello@harbor-dental-partners.example.com,Enterprise,95400,2020-09-21
+Yarrow Pharmacy Group,South-West,Austin,+1-478-555-0112,hello@yarrow-pharmacy-group.example.com,Pro,110400,2019-10-22
+Driftwood Studio Co.,South-West,Albuquerque,+1-795-555-0122,hello@driftwood-studio-co.example.com,Growth,228000,2020-09-13
+Quarry Hardware LLC,West,Sacramento,+1-925-555-0114,hello@quarry-hardware-llc.example.com,Pro,83600,2016-05-13
+Valley Bicycles Inc.,West,Reno,+1-947-555-0151,hello@valley-bicycles-inc.example.com,Starter,198400,2025-02-02
+Copper Bicycles & Sons,South-West,Phoenix,+1-685-555-0153,hello@copper-bicycles-and-sons.example.com,Enterprise,214900,2016-02-07
+Evergreen Florist Co.,North-West,Spokane,+1-793-555-0127,hello@evergreen-florist-co.example.com,Enterprise,124200,2025-05-10
+Bright Hardware Group,West,Sacramento,+1-702-555-0172,hello@bright-hardware-group.example.com,Starter,183700,2025-01-14
+Juniper Catering Group,South-East,Charlotte,+1-597-555-0150,hello@juniper-catering-group.example.com,Pro,119100,2017-12-25
+Granite Coffee LLC,South-West,Tucson,+1-424-555-0172,hello@granite-coffee-llc.example.com,Pro,92300,2025-10-22
+Copper Optics Partners,South-East,Orlando,+1-929-555-0170,hello@copper-optics-partners.example.com,Enterprise,33300,2014-06-23
+Tidewater Optics Inc.,North-East,Hartford,+1-363-555-0194,hello@tidewater-optics-inc.example.com,Pro,54500,2017-10-03
+Harbor Fitness & Sons,South-West,Tucson,+1-487-555-0160,hello@harbor-fitness-and-sons.example.com,Enterprise,239400,2022-06-06
+Valley Bakery LLC,Midwest,Chicago,+1-865-555-0131,hello@valley-bakery-llc.example.com,Growth,166800,2026-06-12
+Maple Pharmacy Group,Midwest,Madison,+1-219-555-0185,hello@maple-pharmacy-group.example.com,Enterprise,123100,2019-08-09
+Copper Pet Supply LLC,West,Salt Lake City,+1-846-555-0182,hello@copper-pet-supply-llc.example.com,Growth,219900,2019-04-18
+Harbor Coffee Group,North-East,Providence,+1-482-555-0139,hello@harbor-coffee-group.example.com,Growth,30800,2020-05-25
+Quarry Books & Sons,South-West,Phoenix,+1-495-555-0159,hello@quarry-books-and-sons.example.com,Enterprise,150700,2016-04-22
+Lantern Optics LLC,North-East,Albany,+1-708-555-0181,hello@lantern-optics-llc.example.com,Starter,185100,2019-12-14
+Yarrow Coffee Inc.,South-West,Tucson,+1-280-555-0161,hello@yarrow-coffee-inc.example.com,Growth,28900,2023-11-15
+Upland Catering Inc.,North-East,Hartford,+1-333-555-0180,hello@upland-catering-inc.example.com,Enterprise,188500,2026-08-07
+Foxglove Garage Partners,Midwest,Omaha,+1-851-555-0157,hello@foxglove-garage-partners.example.com,Growth,233100,2018-04-01
+Lantern Bicycles Partners,Midwest,Omaha,+1-493-555-0142,hello@lantern-bicycles-partners.example.com,Enterprise,42900,2018-01-11
+Redstone Coffee Partners,North-East,Providence,+1-411-555-0179,hello@redstone-coffee-partners.example.com,Growth,143400,2025-12-20
+Yarrow Bakery Partners,West,Denver,+1-648-555-0188,hello@yarrow-bakery-partners.example.com,Enterprise,152600,2019-02-14
+Driftwood Pharmacy Partners,North-West,Spokane,+1-556-555-0121,hello@driftwood-pharmacy-partners.example.com,Starter,224200,2015-05-10
+Ironwood Hardware Group,South-East,Charlotte,+1-916-555-0159,hello@ironwood-hardware-group.example.com,Starter,186100,2018-09-01
+Foxglove Fitness Co.,North-West,Seattle,+1-605-555-0187,hello@foxglove-fitness-co.example.com,Starter,85200,2025-12-22
+Granite Pharmacy Inc.,South-West,Austin,+1-989-555-0134,hello@granite-pharmacy-inc.example.com,Growth,139600,2023-04-03
+Quarry Bicycles Co.,South-East,Nashville,+1-830-555-0160,hello@quarry-bicycles-co.example.com,Pro,23100,2018-12-26
+Driftwood Studio Partners,West,Reno,+1-654-555-0159,hello@driftwood-studio-partners.example.com,Enterprise,159000,2018-02-28
+Evergreen Print Shop LLC,Midwest,Madison,+1-650-555-0197,hello@evergreen-print-shop-llc.example.com,Pro,152700,2026-01-17
+Tidewater Pet Supply Inc.,North-West,Portland,+1-253-555-0123,hello@tidewater-pet-supply-inc.example.com,Growth,233100,2018-04-11
+Yarrow Pharmacy LLC,North-West,Seattle,+1-510-555-0167,hello@yarrow-pharmacy-llc.example.com,Growth,137500,2026-10-27
+Northwind Pharmacy Group,Midwest,Columbus,+1-610-555-0123,hello@northwind-pharmacy-group.example.com,Growth,95200,2015-11-05
+Ironwood Pharmacy Inc.,North-West,Seattle,+1-304-555-0141,hello@ironwood-pharmacy-inc.example.com,Enterprise,166200,2019-08-09
+Juniper Tailors LLC,South-West,Albuquerque,+1-870-555-0168,hello@juniper-tailors-llc.example.com,Starter,182700,2025-01-15
+Granite Catering & Sons,North-West,Seattle,+1-741-555-0150,hello@granite-catering-and-sons.example.com,Starter,106600,2014-08-26
+Tidewater Bicycles Co.,West,Denver,+1-552-555-0128,hello@tidewater-bicycles-co.example.com,Enterprise,200600,2017-08-10
+Harbor Bicycles Partners,North-East,Hartford,+1-653-555-0193,hello@harbor-bicycles-partners.example.com,Enterprise,75800,2021-03-15
+Quarry Fitness Inc.,Midwest,Madison,+1-823-555-0173,hello@quarry-fitness-inc.example.com,Starter,19200,2021-10-25
+Ironwood Optics Inc.,North-West,Boise,+1-709-555-0165,hello@ironwood-optics-inc.example.com,Growth,45300,2020-12-23
+Acme Dental & Sons,North-East,Providence,+1-287-555-0188,hello@acme-dental-and-sons.example.com,Pro,249000,2016-06-11
+Quarry Fitness Co.,North-West,Boise,+1-787-555-0106,hello@quarry-fitness-co.example.com,Pro,45800,2021-09-26
+Quarry Optics LLC,South-East,Atlanta,+1-554-555-0132,hello@quarry-optics-llc.example.com,Starter,198000,2015-09-26
+Oakline Dental Co.,West,Salt Lake City,+1-462-555-0175,hello@oakline-dental-co.example.com,Starter,233300,2016-12-12
+Maple Pharmacy Co.,South-East,Charlotte,+1-391-555-0194,hello@maple-pharmacy-co.example.com,Pro,79500,2022-05-18
+Oakline Dental Group,North-West,Portland,+1-441-555-0102,hello@oakline-dental-group.example.com,Enterprise,156300,2020-11-20
+Yarrow Florist Partners,South-East,Orlando,+1-727-555-0124,hello@yarrow-florist-partners.example.com,Starter,222300,2022-02-28
+Kestrel Fitness LLC,West,Salt Lake City,+1-451-555-0194,hello@kestrel-fitness-llc.example.com,Growth,87600,2016-06-10
+Redstone Fitness Group,Midwest,Columbus,+1-471-555-0148,hello@redstone-fitness-group.example.com,Enterprise,162800,2020-02-12
+Silverleaf Bicycles Co.,West,Denver,+1-542-555-0157,hello@silverleaf-bicycles-co.example.com,Growth,131100,2023-03-22
+Harbor Books Inc.,South-West,Tucson,+1-533-555-0151,hello@harbor-books-inc.example.com,Growth,128900,2022-03-11
+Lantern Coffee LLC,North-East,Albany,+1-425-555-0136,hello@lantern-coffee-llc.example.com,Enterprise,196100,2019-01-08
+Oakline Studio & Sons,North-West,Portland,+1-467-555-0190,hello@oakline-studio-and-sons.example.com,Growth,21700,2023-03-07
+Oakline Studio Partners,North-West,Portland,+1-778-555-0152,hello@oakline-studio-partners.example.com,Enterprise,7300,2023-04-24
+Silverleaf Coffee Group,South-West,Phoenix,+1-942-555-0104,hello@silverleaf-coffee-group.example.com,Starter,195500,2019-09-18
+Willow Studio Group,South-East,Charlotte,+1-900-555-0116,hello@willow-studio-group.example.com,Enterprise,216200,2020-06-23
+Tidewater Florist Partners,North-West,Seattle,+1-771-555-0101,hello@tidewater-florist-partners.example.com,Growth,9900,2018-12-17
+Silverleaf Florist & Sons,West,Sacramento,+1-231-555-0108,hello@silverleaf-florist-and-sons.example.com,Growth,229400,2014-01-07
+Northwind Coffee Co.,Midwest,Madison,+1-834-555-0196,hello@northwind-coffee-co.example.com,Pro,186000,2024-04-24
+Juniper Florist LLC,North-East,Albany,+1-258-555-0106,hello@juniper-florist-llc.example.com,Pro,104400,2025-04-10
+Pinecrest Optics & Sons,Midwest,Madison,+1-739-555-0127,hello@pinecrest-optics-and-sons.example.com,Enterprise,152000,2015-08-17
+Copper Pharmacy Group,North-East,Albany,+1-573-555-0148,hello@copper-pharmacy-group.example.com,Starter,212800,2021-06-24
+Tidewater Hardware & Sons,South-West,Albuquerque,+1-248-555-0144,hello@tidewater-hardware-and-sons.example.com,Growth,231000,2020-02-27
+Quarry Catering Group,South-East,Nashville,+1-307-555-0102,hello@quarry-catering-group.example.com,Starter,17800,2017-03-20
+Upland Studio Partners,North-East,Providence,+1-852-555-0122,hello@upland-studio-partners.example.com,Enterprise,135600,2017-07-16
+Evergreen Florist Group,Midwest,Chicago,+1-694-555-0132,hello@evergreen-florist-group.example.com,Pro,175700,2018-01-07
+Ironwood Pharmacy & Sons,Midwest,Chicago,+1-506-555-0108,hello@ironwood-pharmacy-and-sons.example.com,Pro,182000,2024-09-25
+Tidewater Print Shop Partners,North-West,Seattle,+1-882-555-0101,hello@tidewater-print-shop-partners.example.com,Growth,149200,2023-01-01
+Copper Tailors Inc.,Midwest,Omaha,+1-869-555-0167,hello@copper-tailors-inc.example.com,Starter,61700,2018-08-25
+Evergreen Bakery & Sons,Midwest,Chicago,+1-439-555-0168,hello@evergreen-bakery-and-sons.example.com,Pro,47700,2016-02-21
+Kestrel Coffee Co.,South-West,Austin,+1-667-555-0184,hello@kestrel-coffee-co.example.com,Growth,157400,2021-02-23
+Tidewater Studio Partners,South-East,Atlanta,+1-468-555-0175,hello@tidewater-studio-partners.example.com,Growth,105800,2026-12-05
+Northwind Pharmacy & Sons,South-East,Charlotte,+1-464-555-0132,hello@northwind-pharmacy-and-sons.example.com,Growth,198500,2025-10-23
+Bright Pharmacy LLC,Midwest,Columbus,+1-291-555-0179,hello@bright-pharmacy-llc.example.com,Growth,79000,2025-06-28
+Oakline Print Shop Inc.,North-East,Boston,+1-434-555-0147,hello@oakline-print-shop-inc.example.com,Enterprise,41800,2018-03-27
+Bright Coffee Co.,West,Salt Lake City,+1-503-555-0176,hello@bright-coffee-co.example.com,Growth,149200,2022-03-04
+Tidewater Books LLC,South-East,Nashville,+1-639-555-0114,hello@tidewater-books-llc.example.com,Starter,66100,2024-08-26
+Willow Hardware & Sons,North-West,Boise,+1-769-555-0143,hello@willow-hardware-and-sons.example.com,Starter,33800,2015-05-09
+Tidewater Garage Partners,North-West,Spokane,+1-876-555-0108,hello@tidewater-garage-partners.example.com,Enterprise,110700,2021-11-09
+Willow Bakery Partners,West,Sacramento,+1-870-555-0164,hello@willow-bakery-partners.example.com,Enterprise,186000,2015-03-05
+Maple Tailors Co.,West,Denver,+1-961-555-0172,hello@maple-tailors-co.example.com,Growth,243900,2014-07-25
+Willow Print Shop & Sons,North-East,Boston,+1-571-555-0119,hello@willow-print-shop-and-sons.example.com,Growth,134100,2014-01-21
+Yarrow Bicycles LLC,Midwest,Columbus,+1-383-555-0176,hello@yarrow-bicycles-llc.example.com,Pro,130100,2023-09-12
+Harbor Studio Group,West,Reno,+1-911-555-0181,hello@harbor-studio-group.example.com,Growth,24200,2016-07-14
+Driftwood Coffee LLC,North-East,Boston,+1-874-555-0161,hello@driftwood-coffee-llc.example.com,Growth,153200,2020-05-09
+Willow Print Shop Inc.,South-West,Albuquerque,+1-547-555-0142,hello@willow-print-shop-inc.example.com,Pro,219500,2014-05-27
+Valley Pet Supply Partners,West,Salt Lake City,+1-919-555-0109,hello@valley-pet-supply-partners.example.com,Pro,104000,2015-02-01
+Harbor Hardware LLC,Midwest,Madison,+1-455-555-0113,hello@harbor-hardware-llc.example.com,Starter,45900,2020-12-25
+Quarry Dental Group,Midwest,Chicago,+1-722-555-0107,hello@quarry-dental-group.example.com,Pro,101800,2017-02-21
+Foxglove Catering Group,Midwest,Columbus,+1-549-555-0171,hello@foxglove-catering-group.example.com,Pro,168900,2017-05-12
+Harbor Books Group,North-West,Boise,+1-979-555-0193,hello@harbor-books-group.example.com,Starter,80400,2023-09-15
+Ironwood Fitness Inc.,South-East,Nashville,+1-563-555-0129,hello@ironwood-fitness-inc.example.com,Starter,72600,2020-10-03
+Foxglove Dental & Sons,South-West,Phoenix,+1-677-555-0124,hello@foxglove-dental-and-sons.example.com,Growth,54200,2022-04-14
+Valley Pet Supply Group,South-West,Phoenix,+1-315-555-0158,hello@valley-pet-supply-group.example.com,Enterprise,225400,2022-08-01
+Quarry Print Shop LLC,West,Reno,+1-690-555-0144,hello@quarry-print-shop-llc.example.com,Starter,146200,2017-06-27
+Valley Tailors Co.,South-West,Tucson,+1-809-555-0135,hello@valley-tailors-co.example.com,Enterprise,178900,2021-05-13
+Maple Fitness Partners,Midwest,Omaha,+1-545-555-0176,hello@maple-fitness-partners.example.com,Growth,41800,2016-11-09
+Yarrow Florist Group,South-East,Nashville,+1-492-555-0158,hello@yarrow-florist-group.example.com,Growth,93300,2018-10-09
+Silverleaf Garage Partners,Midwest,Columbus,+1-376-555-0179,hello@silverleaf-garage-partners.example.com,Pro,159100,2017-01-20
+Yarrow Tailors & Sons,South-West,Phoenix,+1-760-555-0109,hello@yarrow-tailors-and-sons.example.com,Growth,175500,2026-07-15
+Tidewater Pet Supply Partners,Midwest,Omaha,+1-577-555-0197,hello@tidewater-pet-supply-partners.example.com,Starter,177400,2018-05-10
+Northwind Tailors LLC,West,Salt Lake City,+1-398-555-0157,hello@northwind-tailors-llc.example.com,Growth,36600,2015-05-11
+Evergreen Books Co.,North-West,Spokane,+1-293-555-0168,hello@evergreen-books-co.example.com,Enterprise,64900,2020-01-23
+Tidewater Tailors Co.,South-West,Tucson,+1-348-555-0184,hello@tidewater-tailors-co.example.com,Starter,240300,2018-05-06
+Oakline Fitness Group,Midwest,Columbus,+1-736-555-0157,hello@oakline-fitness-group.example.com,Starter,231300,2021-04-15
+Willow Hardware Inc.,South-East,Nashville,+1-549-555-0167,hello@willow-hardware-inc.example.com,Growth,160300,2026-06-01
+Upland Print Shop Inc.,West,Salt Lake City,+1-523-555-0140,hello@upland-print-shop-inc.example.com,Enterprise,228900,2016-04-08
+Willow Pet Supply Inc.,North-West,Portland,+1-904-555-0165,hello@willow-pet-supply-inc.example.com,Enterprise,111700,2024-09-13
+Pinecrest Fitness Inc.,South-East,Nashville,+1-575-555-0170,hello@pinecrest-fitness-inc.example.com,Growth,3900,2018-09-18
+Valley Bakery Partners,West,Salt Lake City,+1-552-555-0175,hello@valley-bakery-partners.example.com,Starter,78200,2025-09-24
+Redstone Fitness Partners,North-East,Providence,+1-277-555-0150,hello@redstone-fitness-partners.example.com,Enterprise,78900,2020-06-28
+Granite Books Group,North-West,Spokane,+1-212-555-0165,hello@granite-books-group.example.com,Enterprise,246300,2025-03-27
+Foxglove Catering Partners,North-East,Albany,+1-955-555-0173,hello@foxglove-catering-partners.example.com,Enterprise,11300,2023-05-13
+Maple Fitness LLC,North-East,Hartford,+1-477-555-0164,hello@maple-fitness-llc.example.com,Starter,207900,2026-07-27
+Pinecrest Catering LLC,South-East,Nashville,+1-368-555-0162,hello@pinecrest-catering-llc.example.com,Growth,70600,2015-12-09
+Kestrel Fitness Co.,North-West,Boise,+1-385-555-0105,hello@kestrel-fitness-co.example.com,Enterprise,91700,2021-05-09
+Foxglove Florist & Sons,South-East,Atlanta,+1-779-555-0138,hello@foxglove-florist-and-sons.example.com,Growth,77900,2020-12-03
+Lantern Pharmacy Inc.,North-West,Portland,+1-971-555-0184,hello@lantern-pharmacy-inc.example.com,Enterprise,34400,2023-04-28
+Quarry Books Group,North-East,Albany,+1-624-555-0181,hello@quarry-books-group.example.com,Enterprise,85700,2019-03-20
+Redstone Tailors Partners,South-West,Austin,+1-795-555-0108,hello@redstone-tailors-partners.example.com,Starter,17400,2023-08-08
+Bright Print Shop Co.,North-West,Portland,+1-214-555-0143,hello@bright-print-shop-co.example.com,Pro,132600,2014-11-09
+Foxglove Pet Supply LLC,South-East,Orlando,+1-650-555-0180,hello@foxglove-pet-supply-llc.example.com,Enterprise,179700,2026-09-15
+Willow Garage Co.,North-East,Albany,+1-561-555-0193,hello@willow-garage-co.example.com,Pro,59900,2016-09-16
+Valley Dental Inc.,North-West,Boise,+1-675-555-0119,hello@valley-dental-inc.example.com,Enterprise,87300,2024-03-21
+Willow Books Group,South-West,Austin,+1-866-555-0121,hello@willow-books-group.example.com,Enterprise,64900,2020-02-21
+Oakline Garage Partners,North-East,Albany,+1-291-555-0144,hello@oakline-garage-partners.example.com,Pro,19600,2023-04-24
+Foxglove Books & Sons,South-East,Charlotte,+1-845-555-0192,hello@foxglove-books-and-sons.example.com,Enterprise,141500,2018-04-14
+Juniper Print Shop Inc.,South-West,Phoenix,+1-812-555-0156,hello@juniper-print-shop-inc.example.com,Growth,66400,2026-06-08
+Quarry Books LLC,North-East,Boston,+1-415-555-0159,hello@quarry-books-llc.example.com,Pro,150800,2020-06-19
+Evergreen Coffee LLC,West,Sacramento,+1-877-555-0135,hello@evergreen-coffee-llc.example.com,Enterprise,210400,2019-12-12
+Ironwood Bakery LLC,Midwest,Columbus,+1-506-555-0189,hello@ironwood-bakery-llc.example.com,Enterprise,84700,2016-01-22
+Juniper Dental Inc.,North-East,Boston,+1-647-555-0118,hello@juniper-dental-inc.example.com,Growth,168100,2023-04-13
+Granite Fitness LLC,West,Denver,+1-596-555-0170,hello@granite-fitness-llc.example.com,Growth,249400,2021-10-11
+Valley Pet Supply & Sons,South-East,Charlotte,+1-429-555-0115,hello@valley-pet-supply-and-sons.example.com,Starter,155900,2015-04-06
+Kestrel Studio Partners,South-East,Nashville,+1-503-555-0129,hello@kestrel-studio-partners.example.com,Enterprise,223200,2024-11-18
+Willow Coffee Co.,South-West,Tucson,+1-340-555-0132,hello@willow-coffee-co.example.com,Starter,176200,2021-04-27
+Tidewater Hardware Group,South-West,Phoenix,+1-976-555-0161,hello@tidewater-hardware-group.example.com,Starter,168800,2019-06-26
+Juniper Pharmacy LLC,South-East,Atlanta,+1-481-555-0170,hello@juniper-pharmacy-llc.example.com,Starter,200700,2015-11-09
+Ironwood Fitness Co.,South-West,Tucson,+1-346-555-0104,hello@ironwood-fitness-co.example.com,Starter,120900,2023-04-13
+Juniper Pharmacy Partners,West,Denver,+1-592-555-0180,hello@juniper-pharmacy-partners.example.com,Starter,118000,2016-05-04
+Lantern Hardware Inc.,South-West,Tucson,+1-685-555-0131,hello@lantern-hardware-inc.example.com,Starter,180900,2023-12-18
+Juniper Coffee Inc.,South-West,Phoenix,+1-707-555-0177,hello@juniper-coffee-inc.example.com,Starter,248400,2015-05-13
+Valley Dental LLC,North-West,Seattle,+1-591-555-0105,hello@valley-dental-llc.example.com,Enterprise,46600,2024-10-02
+Copper Fitness Group,South-East,Orlando,+1-424-555-0114,hello@copper-fitness-group.example.com,Pro,17500,2024-03-25
+Yarrow Garage Partners,North-West,Boise,+1-777-555-0145,hello@yarrow-garage-partners.example.com,Pro,241900,2020-04-17
+Lantern Pharmacy Group,Midwest,Madison,+1-878-555-0177,hello@lantern-pharmacy-group.example.com,Starter,70000,2023-09-17
+Kestrel Garage Inc.,North-West,Boise,+1-744-555-0155,hello@kestrel-garage-inc.example.com,Growth,137800,2014-12-03
+Foxglove Fitness LLC,South-West,Austin,+1-328-555-0189,hello@foxglove-fitness-llc.example.com,Enterprise,26500,2015-05-12
+Oakline Coffee Inc.,Midwest,Columbus,+1-382-555-0137,hello@oakline-coffee-inc.example.com,Starter,169300,2017-01-12
+Pinecrest Bicycles Partners,North-East,Hartford,+1-875-555-0180,hello@pinecrest-bicycles-partners.example.com,Starter,107600,2026-03-19
+Yarrow Pet Supply LLC,South-West,Tucson,+1-553-555-0178,hello@yarrow-pet-supply-llc.example.com,Enterprise,196800,2024-10-07
+Harbor Print Shop Group,West,Denver,+1-621-555-0120,hello@harbor-print-shop-group.example.com,Growth,52100,2015-11-14
+Foxglove Catering & Sons,North-East,Albany,+1-368-555-0108,hello@foxglove-catering-and-sons.example.com,Pro,66500,2018-08-12
+Silverleaf Bakery Group,South-East,Atlanta,+1-381-555-0140,hello@silverleaf-bakery-group.example.com,Growth,7000,2026-03-06
+Acme Books Group,North-West,Portland,+1-722-555-0157,hello@acme-books-group.example.com,Enterprise,155600,2019-07-23
+Yarrow Dental Co.,North-East,Albany,+1-777-555-0165,hello@yarrow-dental-co.example.com,Starter,195700,2016-03-25
+Harbor Florist & Sons,North-West,Seattle,+1-442-555-0143,hello@harbor-florist-and-sons.example.com,Growth,80500,2020-11-27
+Foxglove Pharmacy Co.,Midwest,Chicago,+1-483-555-0138,hello@foxglove-pharmacy-co.example.com,Enterprise,61500,2022-11-18
+Acme Pharmacy Co.,West,Denver,+1-537-555-0197,hello@acme-pharmacy-co.example.com,Growth,212600,2017-07-02
+Bright Fitness Partners,North-West,Portland,+1-870-555-0118,hello@bright-fitness-partners.example.com,Starter,18600,2015-11-14
+Silverleaf Optics Inc.,North-East,Boston,+1-281-555-0174,hello@silverleaf-optics-inc.example.com,Starter,148500,2022-05-05
+Redstone Print Shop & Sons,North-West,Spokane,+1-866-555-0180,hello@redstone-print-shop-and-sons.example.com,Pro,121100,2026-08-23
+Copper Studio Inc.,South-East,Charlotte,+1-822-555-0166,hello@copper-studio-inc.example.com,Pro,66400,2025-01-22
+Willow Optics Partners,South-West,Austin,+1-878-555-0179,hello@willow-optics-partners.example.com,Enterprise,99200,2018-06-06
+Acme Pet Supply Group,West,Salt Lake City,+1-765-555-0135,hello@acme-pet-supply-group.example.com,Pro,95600,2016-09-07
+Granite Tailors Partners,Midwest,Columbus,+1-449-555-0118,hello@granite-tailors-partners.example.com,Enterprise,222200,2017-11-18
+Valley Hardware Co.,South-West,Phoenix,+1-236-555-0104,hello@valley-hardware-co.example.com,Enterprise,40200,2021-02-15
+Driftwood Coffee & Sons,North-West,Spokane,+1-975-555-0188,hello@driftwood-coffee-and-sons.example.com,Growth,4000,2024-02-25
+Lantern Garage Co.,North-West,Seattle,+1-405-555-0172,hello@lantern-garage-co.example.com,Growth,242800,2025-09-26
+Northwind Pet Supply LLC,West,Reno,+1-264-555-0141,hello@northwind-pet-supply-llc.example.com,Pro,46000,2018-05-03
+Foxglove Optics Group,North-West,Portland,+1-272-555-0138,hello@foxglove-optics-group.example.com,Growth,200000,2023-07-13
+Quarry Coffee Partners,North-West,Boise,+1-762-555-0173,hello@quarry-coffee-partners.example.com,Growth,125300,2015-10-11
+Yarrow Fitness Inc.,South-West,Austin,+1-659-555-0127,hello@yarrow-fitness-inc.example.com,Pro,64500,2017-04-11
+Acme Hardware Co.,West,Sacramento,+1-424-555-0111,hello@acme-hardware-co.example.com,Growth,245400,2026-10-05
+Valley Tailors LLC,South-East,Orlando,+1-779-555-0179,hello@valley-tailors-llc.example.com,Enterprise,117900,2021-01-05
+Tidewater Florist LLC,North-West,Boise,+1-458-555-0180,hello@tidewater-florist-llc.example.com,Growth,168000,2025-02-07
+Tidewater Bicycles Inc.,North-East,Hartford,+1-563-555-0157,hello@tidewater-bicycles-inc.example.com,Enterprise,231200,2018-05-11
+Quarry Pharmacy Co.,North-West,Seattle,+1-444-555-0123,hello@quarry-pharmacy-co.example.com,Starter,170500,2019-06-01
+Silverleaf Coffee Co.,West,Sacramento,+1-638-555-0132,hello@silverleaf-coffee-co.example.com,Pro,131100,2018-02-22
+Granite Bicycles & Sons,Midwest,Chicago,+1-919-555-0179,hello@granite-bicycles-and-sons.example.com,Growth,101000,2025-05-23
+Valley Fitness LLC,Midwest,Omaha,+1-209-555-0153,hello@valley-fitness-llc.example.com,Enterprise,150700,2014-05-24
+Willow Pet Supply Partners,South-West,Albuquerque,+1-571-555-0110,hello@willow-pet-supply-partners.example.com,Starter,185500,2015-05-04
+Granite Garage Co.,South-West,Tucson,+1-676-555-0161,hello@granite-garage-co.example.com,Pro,148500,2022-03-06
+Valley Tailors Group,North-East,Hartford,+1-361-555-0150,hello@valley-tailors-group.example.com,Growth,62200,2024-10-16
+Ironwood Coffee Inc.,North-East,Albany,+1-839-555-0169,hello@ironwood-coffee-inc.example.com,Starter,69100,2018-09-12
+Upland Books Co.,Midwest,Madison,+1-596-555-0160,hello@upland-books-co.example.com,Growth,33900,2024-10-27
+Yarrow Garage Co.,North-East,Albany,+1-358-555-0135,hello@yarrow-garage-co.example.com,Starter,161800,2019-10-06
+Granite Studio & Sons,North-East,Hartford,+1-428-555-0163,hello@granite-studio-and-sons.example.com,Pro,42200,2015-08-13
+Foxglove Tailors Co.,South-West,Austin,+1-508-555-0197,hello@foxglove-tailors-co.example.com,Enterprise,75300,2020-06-25
+Quarry Studio LLC,North-West,Seattle,+1-618-555-0127,hello@quarry-studio-llc.example.com,Pro,186000,2026-01-14
+Tidewater Catering & Sons,South-West,Austin,+1-594-555-0126,hello@tidewater-catering-and-sons.example.com,Enterprise,110400,2020-04-10
+Lantern Pet Supply Co.,West,Salt Lake City,+1-904-555-0139,hello@lantern-pet-supply-co.example.com,Starter,30300,2018-11-09
+Northwind Tailors Co.,North-West,Portland,+1-654-555-0115,hello@northwind-tailors-co.example.com,Enterprise,169600,2014-09-25
+Granite Bakery Inc.,Midwest,Madison,+1-726-555-0189,hello@granite-bakery-inc.example.com,Pro,35200,2022-02-14
+Northwind Coffee Partners,North-West,Seattle,+1-566-555-0118,hello@northwind-coffee-partners.example.com,Starter,89100,2014-05-06
+Harbor Tailors Group,South-East,Atlanta,+1-230-555-0101,hello@harbor-tailors-group.example.com,Enterprise,143000,2021-03-27
+Acme Books Co.,South-East,Nashville,+1-464-555-0131,hello@acme-books-co.example.com,Pro,5000,2023-04-05
+Redstone Fitness Co.,North-West,Portland,+1-934-555-0140,hello@redstone-fitness-co.example.com,Pro,18200,2015-06-25
+Evergreen Catering Inc.,North-East,Hartford,+1-269-555-0167,hello@evergreen-catering-inc.example.com,Enterprise,97400,2019-10-01
+Silverleaf Optics Group,Midwest,Omaha,+1-863-555-0191,hello@silverleaf-optics-group.example.com,Enterprise,73000,2017-11-07
+Juniper Bicycles Group,West,Salt Lake City,+1-500-555-0187,hello@juniper-bicycles-group.example.com,Pro,43000,2024-07-13
+Lantern Pharmacy & Sons,North-West,Seattle,+1-706-555-0131,hello@lantern-pharmacy-and-sons.example.com,Pro,81100,2016-06-24
+Northwind Optics Inc.,West,Denver,+1-253-555-0110,hello@northwind-optics-inc.example.com,Pro,50700,2020-12-05
+Foxglove Bicycles Partners,Midwest,Columbus,+1-970-555-0171,hello@foxglove-bicycles-partners.example.com,Pro,179500,2026-11-24
+Silverleaf Florist Co.,West,Salt Lake City,+1-900-555-0103,hello@silverleaf-florist-co.example.com,Pro,153500,2015-08-10
+Redstone Studio LLC,South-East,Atlanta,+1-396-555-0109,hello@redstone-studio-llc.example.com,Starter,72200,2025-02-05
+Copper Print Shop & Sons,North-East,Providence,+1-723-555-0141,hello@copper-print-shop-and-sons.example.com,Starter,66600,2026-10-13
+Ironwood Fitness & Sons,Midwest,Madison,+1-587-555-0104,hello@ironwood-fitness-and-sons.example.com,Starter,147200,2019-05-12
+Quarry Hardware Partners,West,Sacramento,+1-843-555-0127,hello@quarry-hardware-partners.example.com,Enterprise,190400,2026-11-22
+Acme Garage Group,North-West,Portland,+1-900-555-0186,hello@acme-garage-group.example.com,Growth,27700,2020-04-07
+Yarrow Coffee LLC,South-West,Tucson,+1-680-555-0123,hello@yarrow-coffee-llc.example.com,Growth,130300,2021-04-08
+Juniper Optics Inc.,South-East,Nashville,+1-372-555-0197,hello@juniper-optics-inc.example.com,Enterprise,77900,2023-04-09
+Tidewater Hardware Inc.,North-East,Providence,+1-700-555-0101,hello@tidewater-hardware-inc.example.com,Enterprise,141900,2015-11-13
+Northwind Garage Partners,North-East,Albany,+1-584-555-0196,hello@northwind-garage-partners.example.com,Enterprise,233500,2022-04-17
+Lantern Tailors Co.,Midwest,Columbus,+1-931-555-0112,hello@lantern-tailors-co.example.com,Enterprise,117000,2020-11-03
+Pinecrest Coffee LLC,Midwest,Columbus,+1-839-555-0156,hello@pinecrest-coffee-llc.example.com,Enterprise,188600,2017-09-14
+Copper Pet Supply & Sons,West,Reno,+1-682-555-0160,hello@copper-pet-supply-and-sons.example.com,Growth,133000,2017-12-02
+Granite Books LLC,South-West,Albuquerque,+1-881-555-0101,hello@granite-books-llc.example.com,Growth,206300,2014-06-21
+Bright Bakery LLC,West,Denver,+1-340-555-0103,hello@bright-bakery-llc.example.com,Growth,31400,2014-08-22
+Lantern Florist LLC,North-West,Portland,+1-284-555-0138,hello@lantern-florist-llc.example.com,Growth,86900,2025-01-12
+Acme Tailors Inc.,West,Denver,+1-512-555-0113,hello@acme-tailors-inc.example.com,Starter,43400,2025-06-14
+Northwind Studio Inc.,Midwest,Omaha,+1-681-555-0165,hello@northwind-studio-inc.example.com,Enterprise,95300,2021-08-10
+Tidewater Catering Inc.,West,Reno,+1-780-555-0137,hello@tidewater-catering-inc.example.com,Growth,25900,2018-05-13
+Oakline Optics Co.,South-West,Albuquerque,+1-535-555-0143,hello@oakline-optics-co.example.com,Enterprise,112600,2024-06-05
+Harbor Dental Inc.,South-West,Austin,+1-525-555-0161,hello@harbor-dental-inc.example.com,Starter,126200,2020-07-15
+Quarry Pet Supply LLC,South-West,Phoenix,+1-718-555-0116,hello@quarry-pet-supply-llc.example.com,Starter,226700,2015-06-14
+Maple Fitness Co.,West,Reno,+1-376-555-0140,hello@maple-fitness-co.example.com,Enterprise,204100,2021-08-15
+Harbor Bakery & Sons,South-East,Charlotte,+1-548-555-0147,hello@harbor-bakery-and-sons.example.com,Starter,22600,2017-06-14
+Redstone Studio & Sons,South-West,Albuquerque,+1-574-555-0186,hello@redstone-studio-and-sons.example.com,Pro,60200,2022-11-17
+Tidewater Dental Inc.,South-West,Austin,+1-337-555-0101,hello@tidewater-dental-inc.example.com,Enterprise,71800,2020-07-08
+Silverleaf Studio LLC,South-East,Atlanta,+1-699-555-0139,hello@silverleaf-studio-llc.example.com,Enterprise,81900,2025-04-09
+Quarry Garage Co.,West,Reno,+1-324-555-0103,hello@quarry-garage-co.example.com,Starter,19300,2018-01-16
+Silverleaf Tailors Partners,West,Denver,+1-360-555-0154,hello@silverleaf-tailors-partners.example.com,Enterprise,121800,2019-08-06
+Willow Studio LLC,South-West,Phoenix,+1-419-555-0147,hello@willow-studio-llc.example.com,Growth,89300,2014-11-20
+Valley Catering Co.,North-East,Albany,+1-560-555-0124,hello@valley-catering-co.example.com,Growth,84000,2018-03-02
+Silverleaf Tailors LLC,Midwest,Omaha,+1-493-555-0130,hello@silverleaf-tailors-llc.example.com,Pro,88500,2025-09-27
+Valley Florist Co.,North-West,Seattle,+1-448-555-0126,hello@valley-florist-co.example.com,Starter,208900,2018-05-19
+Upland Tailors Group,North-East,Boston,+1-979-555-0104,hello@upland-tailors-group.example.com,Pro,182100,2019-11-17
+Tidewater Dental Group,South-West,Austin,+1-981-555-0137,hello@tidewater-dental-group.example.com,Enterprise,230300,2023-05-21
+Redstone Pharmacy Group,Midwest,Chicago,+1-319-555-0161,hello@redstone-pharmacy-group.example.com,Pro,81400,2019-12-28
+Upland Dental & Sons,North-East,Boston,+1-868-555-0111,hello@upland-dental-and-sons.example.com,Growth,178200,2025-10-24
+Evergreen Garage & Sons,North-West,Portland,+1-623-555-0174,hello@evergreen-garage-and-sons.example.com,Starter,178800,2026-07-11
+Lantern Catering Inc.,South-West,Austin,+1-563-555-0149,hello@lantern-catering-inc.example.com,Pro,166900,2023-11-04
+Oakline Bicycles LLC,Midwest,Columbus,+1-467-555-0189,hello@oakline-bicycles-llc.example.com,Growth,141200,2016-03-14
+Northwind Tailors Partners,Midwest,Columbus,+1-472-555-0105,hello@northwind-tailors-partners.example.com,Pro,39900,2018-01-26
+Tidewater Catering Co.,North-East,Hartford,+1-767-555-0170,hello@tidewater-catering-co.example.com,Growth,243700,2022-06-03
+Upland Bakery & Sons,Midwest,Chicago,+1-931-555-0157,hello@upland-bakery-and-sons.example.com,Starter,127200,2021-08-27
+Northwind Catering Group,South-East,Orlando,+1-985-555-0191,hello@northwind-catering-group.example.com,Pro,13000,2024-04-17
+Granite Print Shop Co.,North-West,Spokane,+1-737-555-0128,hello@granite-print-shop-co.example.com,Enterprise,187800,2022-09-16
+Lantern Fitness & Sons,North-West,Spokane,+1-398-555-0174,hello@lantern-fitness-and-sons.example.com,Enterprise,245300,2020-01-05
+Upland Garage Partners,Midwest,Columbus,+1-927-555-0112,hello@upland-garage-partners.example.com,Pro,124000,2022-06-08
+Northwind Garage & Sons,West,Salt Lake City,+1-925-555-0131,hello@northwind-garage-and-sons.example.com,Growth,35500,2023-09-18
+Northwind Tailors & Sons,West,Salt Lake City,+1-414-555-0126,hello@northwind-tailors-and-sons.example.com,Pro,229400,2019-12-05
+Evergreen Pet Supply LLC,West,Reno,+1-616-555-0149,hello@evergreen-pet-supply-llc.example.com,Starter,89200,2025-02-23
+Tidewater Florist Co.,North-East,Providence,+1-823-555-0165,hello@tidewater-florist-co.example.com,Starter,77300,2026-09-08
+Harbor Catering Co.,South-East,Orlando,+1-701-555-0178,hello@harbor-catering-co.example.com,Pro,10600,2025-03-17
+Ironwood Fitness Partners,North-West,Spokane,+1-756-555-0187,hello@ironwood-fitness-partners.example.com,Enterprise,106600,2024-03-08
+Tidewater Florist Inc.,Midwest,Omaha,+1-828-555-0186,hello@tidewater-florist-inc.example.com,Starter,202400,2023-12-13
+Willow Florist Inc.,North-East,Boston,+1-281-555-0199,hello@willow-florist-inc.example.com,Enterprise,50400,2026-09-09
+Valley Fitness & Sons,West,Denver,+1-516-555-0126,hello@valley-fitness-and-sons.example.com,Enterprise,39800,2021-08-03
+Valley Studio Co.,West,Reno,+1-905-555-0199,hello@valley-studio-co.example.com,Starter,93000,2026-04-02
+Upland Catering Partners,North-West,Seattle,+1-535-555-0109,hello@upland-catering-partners.example.com,Pro,28400,2016-05-12
+Willow Coffee Group,North-East,Hartford,+1-507-555-0121,hello@willow-coffee-group.example.com,Pro,238800,2020-11-23
+Evergreen Pet Supply & Sons,Midwest,Chicago,+1-520-555-0197,hello@evergreen-pet-supply-and-sons.example.com,Growth,46500,2023-03-25
+Juniper Bicycles & Sons,South-East,Atlanta,+1-317-555-0149,hello@juniper-bicycles-and-sons.example.com,Starter,188100,2017-09-15
+Acme Fitness Group,South-West,Phoenix,+1-532-555-0183,hello@acme-fitness-group.example.com,Growth,34600,2022-09-12
+Harbor Coffee Partners,South-East,Charlotte,+1-365-555-0119,hello@harbor-coffee-partners.example.com,Pro,226400,2023-06-22
+Evergreen Hardware Inc.,South-West,Phoenix,+1-277-555-0161,hello@evergreen-hardware-inc.example.com,Enterprise,24900,2024-11-06
+Tidewater Coffee Co.,West,Reno,+1-211-555-0103,hello@tidewater-coffee-co.example.com,Starter,46800,2018-10-09
+Willow Tailors Partners,Midwest,Columbus,+1-256-555-0130,hello@willow-tailors-partners.example.com,Growth,196800,2022-01-21
+Silverleaf Coffee & Sons,North-East,Albany,+1-729-555-0116,hello@silverleaf-coffee-and-sons.example.com,Starter,234700,2025-05-19
+Copper Hardware LLC,West,Denver,+1-721-555-0177,hello@copper-hardware-llc.example.com,Growth,226300,2015-11-09
+Tidewater Studio & Sons,West,Salt Lake City,+1-580-555-0113,hello@tidewater-studio-and-sons.example.com,Starter,236600,2020-10-12
+Lantern Print Shop Inc.,North-East,Boston,+1-866-555-0173,hello@lantern-print-shop-inc.example.com,Enterprise,186100,2015-09-21
+Juniper Print Shop LLC,South-West,Phoenix,+1-697-555-0145,hello@juniper-print-shop-llc.example.com,Growth,164200,2022-02-15
+Evergreen Bicycles & Sons,South-West,Phoenix,+1-271-555-0111,hello@evergreen-bicycles-and-sons.example.com,Growth,217600,2014-12-02
+Valley Garage Partners,West,Reno,+1-411-555-0196,hello@valley-garage-partners.example.com,Pro,72000,2014-04-03
+Copper Bicycles Partners,South-West,Phoenix,+1-240-555-0157,hello@copper-bicycles-partners.example.com,Starter,84000,2015-01-25
+Granite Optics & Sons,North-West,Portland,+1-586-555-0124,hello@granite-optics-and-sons.example.com,Starter,226900,2015-05-23
+Copper Books & Sons,South-West,Albuquerque,+1-237-555-0110,hello@copper-books-and-sons.example.com,Growth,55000,2023-05-27
+Juniper Books Group,North-West,Seattle,+1-607-555-0149,hello@juniper-books-group.example.com,Pro,192600,2024-04-01
+Upland Books & Sons,South-West,Phoenix,+1-279-555-0127,hello@upland-books-and-sons.example.com,Pro,246500,2026-05-13
+Redstone Bicycles Group,North-West,Boise,+1-639-555-0185,hello@redstone-bicycles-group.example.com,Growth,42200,2017-08-15
+Upland Bakery Group,North-East,Albany,+1-897-555-0139,hello@upland-bakery-group.example.com,Growth,147900,2022-01-07
+Harbor Books LLC,South-East,Nashville,+1-881-555-0146,hello@harbor-books-llc.example.com,Enterprise,95700,2019-11-07
+Harbor Print Shop Partners,Midwest,Columbus,+1-483-555-0138,hello@harbor-print-shop-partners.example.com,Pro,16100,2024-09-05
+Bright Dental LLC,North-West,Seattle,+1-672-555-0137,hello@bright-dental-llc.example.com,Enterprise,176800,2022-12-21
+Foxglove Coffee LLC,Midwest,Columbus,+1-285-555-0197,hello@foxglove-coffee-llc.example.com,Growth,163000,2026-03-18
+Silverleaf Dental Group,North-West,Portland,+1-826-555-0102,hello@silverleaf-dental-group.example.com,Growth,60700,2018-01-24
+Ironwood Bakery Inc.,South-West,Albuquerque,+1-612-555-0183,hello@ironwood-bakery-inc.example.com,Growth,6100,2017-01-21
+Upland Bicycles Co.,West,Reno,+1-370-555-0188,hello@upland-bicycles-co.example.com,Pro,79500,2014-03-08
+Kestrel Print Shop Co.,North-West,Spokane,+1-402-555-0114,hello@kestrel-print-shop-co.example.com,Starter,222800,2025-01-20
+Acme Bakery Inc.,North-West,Seattle,+1-604-555-0136,hello@acme-bakery-inc.example.com,Pro,200000,2025-09-17
+Acme Studio Partners,South-West,Albuquerque,+1-966-555-0125,hello@acme-studio-partners.example.com,Pro,33900,2016-01-07
+Northwind Books & Sons,Midwest,Madison,+1-493-555-0120,hello@northwind-books-and-sons.example.com,Pro,129500,2016-08-23
+Redstone Books Co.,North-West,Boise,+1-426-555-0141,hello@redstone-books-co.example.com,Enterprise,222800,2019-07-19
+Quarry Tailors Co.,South-West,Austin,+1-864-555-0109,hello@quarry-tailors-co.example.com,Starter,144200,2024-02-08
+Tidewater Bicycles & Sons,South-East,Charlotte,+1-783-555-0137,hello@tidewater-bicycles-and-sons.example.com,Pro,175200,2021-11-24
+Lantern Fitness Group,West,Sacramento,+1-228-555-0157,hello@lantern-fitness-group.example.com,Starter,36500,2019-04-09
+Granite Print Shop Partners,West,Sacramento,+1-450-555-0119,hello@granite-print-shop-partners.example.com,Enterprise,146500,2025-12-24
+Juniper Optics Co.,South-West,Albuquerque,+1-460-555-0150,hello@juniper-optics-co.example.com,Pro,158900,2018-12-06
+Harbor Hardware & Sons,North-East,Albany,+1-486-555-0173,hello@harbor-hardware-and-sons.example.com,Pro,234400,2020-02-19
+Oakline Pharmacy Inc.,North-West,Boise,+1-464-555-0199,hello@oakline-pharmacy-inc.example.com,Pro,176300,2016-02-14
+Upland Pharmacy Partners,South-West,Tucson,+1-295-555-0171,hello@upland-pharmacy-partners.example.com,Enterprise,125500,2024-02-19
+Driftwood Bakery Group,Midwest,Columbus,+1-406-555-0112,hello@driftwood-bakery-group.example.com,Pro,134100,2015-07-15
+Quarry Print Shop Inc.,North-East,Hartford,+1-255-555-0178,hello@quarry-print-shop-inc.example.com,Pro,244100,2023-09-24
+Willow Bakery & Sons,West,Sacramento,+1-400-555-0108,hello@willow-bakery-and-sons.example.com,Pro,187200,2020-11-02
+Maple Catering LLC,South-East,Orlando,+1-797-555-0106,hello@maple-catering-llc.example.com,Growth,36000,2021-09-08
+Kestrel Pet Supply LLC,Midwest,Columbus,+1-384-555-0125,hello@kestrel-pet-supply-llc.example.com,Enterprise,249100,2022-03-09
+Granite Optics Group,North-East,Albany,+1-826-555-0124,hello@granite-optics-group.example.com,Growth,167000,2022-07-11
+Redstone Florist & Sons,South-West,Tucson,+1-444-555-0146,hello@redstone-florist-and-sons.example.com,Enterprise,109800,2018-11-18
+Acme Studio Co.,West,Sacramento,+1-896-555-0132,hello@acme-studio-co.example.com,Growth,144900,2019-02-11
+Oakline Studio Inc.,North-West,Boise,+1-924-555-0111,hello@oakline-studio-inc.example.com,Growth,174600,2020-01-12
+Pinecrest Tailors LLC,Midwest,Omaha,+1-399-555-0187,hello@pinecrest-tailors-llc.example.com,Starter,108400,2014-06-15
+Lantern Optics & Sons,North-West,Boise,+1-907-555-0141,hello@lantern-optics-and-sons.example.com,Pro,249100,2023-12-05
+Harbor Studio Co.,South-West,Phoenix,+1-514-555-0168,hello@harbor-studio-co.example.com,Starter,180700,2014-03-18
+Granite Garage & Sons,West,Salt Lake City,+1-354-555-0180,hello@granite-garage-and-sons.example.com,Starter,150300,2020-01-01
+Silverleaf Pet Supply Partners,North-West,Boise,+1-361-555-0191,hello@silverleaf-pet-supply-partners.example.com,Enterprise,227900,2023-02-04
+Driftwood Fitness & Sons,North-East,Hartford,+1-328-555-0193,hello@driftwood-fitness-and-sons.example.com,Pro,23400,2020-09-26
+Maple Dental & Sons,Midwest,Omaha,+1-412-555-0101,hello@maple-dental-and-sons.example.com,Starter,240200,2015-08-21
+Harbor Optics Inc.,South-West,Austin,+1-643-555-0130,hello@harbor-optics-inc.example.com,Pro,65800,2020-11-08
+Northwind Bakery LLC,West,Salt Lake City,+1-539-555-0129,hello@northwind-bakery-llc.example.com,Pro,54800,2020-12-08
+Pinecrest Pet Supply Co.,South-West,Phoenix,+1-857-555-0114,hello@pinecrest-pet-supply-co.example.com,Starter,17100,2024-06-25
+Silverleaf Bakery Partners,North-West,Portland,+1-691-555-0186,hello@silverleaf-bakery-partners.example.com,Enterprise,146200,2014-09-02
+Quarry Coffee & Sons,West,Salt Lake City,+1-645-555-0143,hello@quarry-coffee-and-sons.example.com,Enterprise,147800,2023-01-27
+Redstone Dental Partners,Midwest,Omaha,+1-530-555-0139,hello@redstone-dental-partners.example.com,Growth,151600,2025-10-12
+Quarry Bakery Inc.,North-West,Portland,+1-961-555-0147,hello@quarry-bakery-inc.example.com,Pro,146700,2015-07-02
+Oakline Garage & Sons,Midwest,Madison,+1-776-555-0148,hello@oakline-garage-and-sons.example.com,Pro,140500,2015-11-08
+Acme Tailors Partners,South-East,Atlanta,+1-924-555-0185,hello@acme-tailors-partners.example.com,Growth,84900,2015-03-19
+Oakline Catering Group,North-West,Spokane,+1-213-555-0114,hello@oakline-catering-group.example.com,Growth,51400,2015-02-14
+Copper Optics & Sons,South-West,Phoenix,+1-660-555-0108,hello@copper-optics-and-sons.example.com,Starter,29500,2016-08-15
+Tidewater Coffee LLC,Midwest,Chicago,+1-595-555-0173,hello@tidewater-coffee-llc.example.com,Enterprise,5300,2015-10-11
+Tidewater Hardware Partners,North-West,Portland,+1-583-555-0136,hello@tidewater-hardware-partners.example.com,Growth,220300,2017-01-27
+Juniper Dental & Sons,North-West,Portland,+1-256-555-0138,hello@juniper-dental-and-sons.example.com,Growth,10300,2014-09-28
+Kestrel Optics Group,West,Sacramento,+1-425-555-0142,hello@kestrel-optics-group.example.com,Growth,34900,2021-08-19
+Acme Fitness Partners,West,Sacramento,+1-556-555-0185,hello@acme-fitness-partners.example.com,Starter,200200,2020-04-26
+Northwind Catering Partners,South-West,Austin,+1-576-555-0166,hello@northwind-catering-partners.example.com,Starter,77400,2019-01-21
+Granite Tailors Group,South-East,Atlanta,+1-521-555-0104,hello@granite-tailors-group.example.com,Starter,111300,2017-03-11
+Oakline Optics Partners,North-East,Albany,+1-523-555-0174,hello@oakline-optics-partners.example.com,Starter,233400,2015-06-06
+Quarry Fitness LLC,North-West,Portland,+1-866-555-0188,hello@quarry-fitness-llc.example.com,Enterprise,135400,2018-01-21
+Pinecrest Fitness LLC,Midwest,Chicago,+1-214-555-0107,hello@pinecrest-fitness-llc.example.com,Growth,109700,2020-01-18
+Pinecrest Catering Group,North-East,Albany,+1-423-555-0161,hello@pinecrest-catering-group.example.com,Enterprise,170700,2017-03-17
+Copper Tailors Co.,North-West,Portland,+1-675-555-0175,hello@copper-tailors-co.example.com,Starter,199500,2026-07-01
+Copper Pet Supply Group,Midwest,Chicago,+1-899-555-0141,hello@copper-pet-supply-group.example.com,Starter,119500,2022-04-02
+Kestrel Bakery & Sons,Midwest,Columbus,+1-271-555-0102,hello@kestrel-bakery-and-sons.example.com,Pro,176000,2015-12-19
+Evergreen Tailors Inc.,West,Reno,+1-231-555-0114,hello@evergreen-tailors-inc.example.com,Pro,86600,2017-06-27
+Acme Print Shop Partners,South-West,Austin,+1-803-555-0127,hello@acme-print-shop-partners.example.com,Growth,200000,2025-10-23
+Willow Optics LLC,South-West,Phoenix,+1-367-555-0193,hello@willow-optics-llc.example.com,Pro,238300,2014-10-20
+Juniper Fitness Co.,North-West,Spokane,+1-382-555-0182,hello@juniper-fitness-co.example.com,Pro,177300,2026-08-04
+Valley Print Shop Co.,West,Salt Lake City,+1-930-555-0114,hello@valley-print-shop-co.example.com,Enterprise,98400,2023-06-24
+Foxglove Hardware & Sons,North-West,Seattle,+1-648-555-0196,hello@foxglove-hardware-and-sons.example.com,Growth,56300,2017-07-05
+Redstone Bicycles Partners,Midwest,Chicago,+1-333-555-0161,hello@redstone-bicycles-partners.example.com,Enterprise,153400,2017-07-21
+Valley Fitness Co.,South-East,Nashville,+1-508-555-0167,hello@valley-fitness-co.example.com,Growth,65700,2014-04-16
+Tidewater Fitness Group,North-East,Hartford,+1-518-555-0193,hello@tidewater-fitness-group.example.com,Starter,6100,2014-03-04
+Juniper Tailors Partners,South-East,Orlando,+1-617-555-0157,hello@juniper-tailors-partners.example.com,Pro,221200,2021-05-11
+Lantern Bakery Co.,Midwest,Madison,+1-868-555-0135,hello@lantern-bakery-co.example.com,Starter,188400,2021-01-04
+Evergreen Garage Inc.,South-East,Nashville,+1-557-555-0128,hello@evergreen-garage-inc.example.com,Enterprise,229500,2017-05-09
+Willow Optics & Sons,West,Sacramento,+1-407-555-0184,hello@willow-optics-and-sons.example.com,Pro,107100,2018-06-14

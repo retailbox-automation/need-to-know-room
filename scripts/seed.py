@@ -125,28 +125,35 @@ def link_people(stand, state, bridge_id):
         print("link: @%s -> Switch user %s" % (username, email))
 
 
-def ensure_keeper(stand, state):
-    keeper = state.get("keeper")
-    agents = {a["name"]: a for a in stand.gw("GET", "/agents")}
-    if keeper and "keeper" in agents:
-        print("keeper: already registered (%s)" % keeper["id"])
-        return keeper
+AGENTS = {
+    "keeper": "Holds the customer list. Hands out one field, once, after the owner approves.",
+    "desk": "Helps contractors. Holds no customer data; asks keeper.",
+}
+
+
+def ensure_agent(stand, state, name):
+    """Register a scripted agent through the agent bridge, owned by the admin.
+
+    The registration key is a personal key of the Switch admin, so the agent's
+    owner is the admin, the same person alex is linked to. keeper's rule
+    "owner_agents" relies on keeper and desk having that same owner.
+    """
+    agent = state.get(name)
+    registered = {a["name"] for a in stand.gw("GET", "/agents")}
+    if agent and name in registered:
+        print("%s: already registered (%s)" % (name, agent["id"]))
+        return agent
     if "registration_key" not in state:
         state["registration_key"] = stand.gw("POST", "/api-keys",
                                              {"label": "need-to-know-room seed"})["key"]
     result = stand.agent("POST", "/agents", state["registration_key"], {
-        "name": "keeper",
-        "display_name": "keeper",
-        "description": "Holds the customer list. Hands out one field, once, "
-                       "after the owner approves.",
-        "connector_type": "custom",
-        "integration_profile": KEEPER_PROFILE,
-        "overwrite": True,
+        "name": name, "display_name": name, "description": AGENTS[name],
+        "connector_type": "custom", "integration_profile": KEEPER_PROFILE, "overwrite": True,
     })
-    keeper = {"id": result["id"], "api_key": result["api_key"]}
-    state["keeper"] = keeper
-    print("keeper: registered (%s)" % keeper["id"])
-    return keeper
+    agent = {"id": result["id"], "api_key": result["api_key"]}
+    state[name] = agent
+    print("%s: registered (%s)" % (name, agent["id"]))
+    return agent
 
 
 def ensure_rooms(stand, state, bridge_id):
@@ -171,21 +178,37 @@ def ensure_rooms(stand, state, bridge_id):
     return room_ids
 
 
+def desk_policy(room_ids):
+    """desk answers anyone in #contractors, and no agent: keeper's replies
+    must not wake desk, or the two would talk to each other forever."""
+    return {"rules": [{"rooms": [room_ids["contractors"]], "users": "*", "agents": []}]}
+
+
 def main():
+    desk_mode = "claude" if "--desk" in sys.argv and "claude" in sys.argv else "stub"
     stand = Stand()
     state = load_state()
+    state["owner"] = "alex"
     ensure_people(stand, state)
     save_state(state)
     bridge_id = mattermost_bridge(stand)
     state["bridge_id"] = bridge_id
     link_people(stand, state, bridge_id)
-    keeper = ensure_keeper(stand, state)
+    keeper = ensure_agent(stand, state, "keeper")
     save_state(state)
     room_ids = ensure_rooms(stand, state, bridge_id)
     save_state(state)
     stand.gw("PUT", "/agents/%s/addressing-policy" % keeper["id"],
              {"policy": keeper_policy(room_ids)})
     print("keeper policy: set for #core, #contractors, #owner-desk")
+    if desk_mode == "stub":
+        # Tier A: a scripted desk, so the workflow runs with no model account.
+        # Tier B (agents/desk/README.md) replaces it with a Claude Code desk.
+        desk = ensure_agent(stand, state, "desk")
+        save_state(state)
+        stand.gw("POST", "/rooms/%s/agents" % room_ids["contractors"], {"agent_ids": [desk["id"]]})
+        stand.gw("PUT", "/agents/%s/addressing-policy" % desk["id"], {"policy": desk_policy(room_ids)})
+        print("desk (scripted): in #contractors, answers people only")
     # Switch keeps each room's approvals (who answered what, and when) and
     # serves them to the room's members. The admin joins each room's chat so
     # scripts/audit.py can read that record.
@@ -193,6 +216,7 @@ def main():
     for room_id in room_ids.values():
         stand.gw("POST", "/chats/%s/members" % room_id, {"user_id": me["id"]})
     print("audit: the admin can read each room's approval record")
+    save_state(state)
     print("state written to .stand/state.json")
 
 
