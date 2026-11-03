@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+"""Seed the Need-to-Know Room workspace on a stack started by scripts/up.sh.
+
+Idempotent: run it as many times as you like. It creates or reuses:
+  * three Mattermost people: alex (owner), sam (employee), dana (contractor);
+  * a link from alex's Mattermost account to the Switch admin, so Switch knows
+    alex is the owner of the agents (owner-only addressing depends on it);
+  * keeper, a scripted Switch agent (no LLM) that holds the customer data,
+    registered through the agent bridge with a personal registration key so it
+    belongs to the same owner as everything else;
+  * three private rooms bridged to Mattermost: #core, #contractors, #owner-desk;
+  * keeper's addressing policy: who may talk to keeper, room by room.
+
+Everything it learns (ids, keys, passwords of the demo people) goes to
+.stand/state.json (mode 600), which keeper, verify.sh and audit.py read.
+"""
+import os
+import secrets
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from switchlib import ApiError, Stand, load_state, save_state  # noqa: E402
+
+PEOPLE = {
+    "alex": {"first_name": "Alex", "last_name": "Morgan", "nickname": "owner"},
+    "sam": {"first_name": "Sam", "last_name": "Patel", "nickname": "sales"},
+    "dana": {"first_name": "Dana", "last_name": "Lee", "nickname": "contractor"},
+}
+ROOMS = {
+    "core": {"people": ["alex", "sam"],
+             "description": "Employees. Customer data may be shared here."},
+    "contractors": {"people": ["alex", "dana"],
+                    "description": "Contractors and the desk assistant."},
+    "owner-desk": {"people": ["alex"],
+                   "description": "Owner only. Approvals for data requests."},
+}
+KEEPER_PROFILE = {
+    "connection_model": "always_on",
+    "message_exchange": True,
+    "pre_invocation_mediation": [],
+    "post_invocation_mediation": [],
+    "event_reporting": [],
+}
+
+
+def keeper_policy(room_ids):
+    """Who may address keeper, room by room. Any rule that matches allows it.
+
+    Dimensions default to "*" (anyone), so users/agents are spelled out as []
+    wherever they must not get through.
+    """
+    return {"rules": [
+        # #core: every person in the room may ask keeper; no agent may.
+        {"rooms": [room_ids["core"]], "users": "*", "agents": []},
+        # #contractors: only the owner and the owner's own agents (desk).
+        # Dana is in the room but matches no rule, so Switch refuses her.
+        {"rooms": [room_ids["contractors"]], "users": [], "agents": [],
+         "owner": True, "owner_agents": True},
+        # #owner-desk: only the owner.
+        {"rooms": [room_ids["owner-desk"]], "users": [], "agents": [], "owner": True},
+    ]}
+
+
+def ensure_people(stand, state):
+    env = stand.env
+    token = stand.mm_login(env["MATTERMOST_ADMIN_USER"], env["MATTERMOST_ADMIN_PASSWORD"])
+    team = stand.mm_call("GET", "/teams/name/" + env.get("MATTERMOST_TEAM_NAME", "switch"), token)
+    people = state.setdefault("people", {})
+    for username, profile in PEOPLE.items():
+        person = people.get(username, {})
+        password = person.get("password") or secrets.token_urlsafe(18)
+        try:
+            user = stand.mm_call("GET", "/users/username/" + username, token)
+            # Known account but we lost its password: reset it as the admin.
+            if not person.get("password"):
+                stand.mm_call("PUT", "/users/%s/password" % user["id"], token,
+                              {"new_password": password})
+        except ApiError as exc:
+            if exc.status != 404:
+                raise
+            user = stand.mm_call("POST", "/users", token, dict(
+                profile, username=username, password=password,
+                email="%s@n2k.example" % username))
+        stand.mm_call("PUT", "/users/%s/patch" % user["id"], token, profile)
+        stand.mm_call("POST", "/teams/%s/members" % team["id"], token,
+                      {"team_id": team["id"], "user_id": user["id"]})
+        people[username] = {"id": user["id"], "password": password}
+    print("people: " + ", ".join("@" + p for p in people))
+
+
+def mattermost_bridge(stand):
+    for bridge in stand.gw("GET", "/collaborations"):
+        if bridge["bridge_type"] == "mattermost":
+            return bridge["bridge_id"]
+    raise RuntimeError("no Mattermost bridge; did scripts/up.sh finish?")
+
+
+def link_owner(stand, state, bridge_id):
+    alex = state["people"]["alex"]
+    linked = stand.gw("GET", "/auth/me/identities")
+    if any(i["external_user_id"] == alex["id"] for i in linked):
+        print("owner link: @alex already linked to the Switch admin")
+        return
+    stand.gw("POST", "/collaborations/%s/identities" % bridge_id,
+             {"external_user_id": alex["id"], "username": "alex"})
+    print("owner link: @alex -> Switch admin")
+
+
+def ensure_keeper(stand, state):
+    keeper = state.get("keeper")
+    agents = {a["name"]: a for a in stand.gw("GET", "/agents")}
+    if keeper and "keeper" in agents:
+        print("keeper: already registered (%s)" % keeper["id"])
+        return keeper
+    if "registration_key" not in state:
+        state["registration_key"] = stand.gw("POST", "/api-keys",
+                                             {"label": "need-to-know-room seed"})["key"]
+    result = stand.agent("POST", "/agents", state["registration_key"], {
+        "name": "keeper",
+        "display_name": "keeper",
+        "description": "Holds the customer list. Hands out one field, once, "
+                       "after the owner approves.",
+        "connector_type": "custom",
+        "integration_profile": KEEPER_PROFILE,
+        "overwrite": True,
+    })
+    keeper = {"id": result["id"], "api_key": result["api_key"]}
+    state["keeper"] = keeper
+    print("keeper: registered (%s)" % keeper["id"])
+    return keeper
+
+
+def ensure_rooms(stand, state, bridge_id):
+    existing = {r["name"]: r for r in stand.gw("GET", "/rooms")}
+    room_ids = {}
+    for name, spec in ROOMS.items():
+        room = existing.get(name)
+        if room is None:
+            room = stand.gw("POST", "/rooms", {
+                "name": name,
+                "description": spec["description"],
+                "channel_type": "channel_private",
+                "bridge_id": bridge_id,
+                "agent_names": ["keeper"],
+                "user_names": spec["people"],
+            })
+            print("room: created #%s (%s)" % (name, room["id"]))
+        else:
+            print("room: #%s exists (%s)" % (name, room["id"]))
+        room_ids[name] = room["id"]
+    state["rooms"] = room_ids
+    return room_ids
+
+
+def main():
+    stand = Stand()
+    state = load_state()
+    ensure_people(stand, state)
+    save_state(state)
+    bridge_id = mattermost_bridge(stand)
+    state["bridge_id"] = bridge_id
+    link_owner(stand, state, bridge_id)
+    keeper = ensure_keeper(stand, state)
+    save_state(state)
+    room_ids = ensure_rooms(stand, state, bridge_id)
+    save_state(state)
+    stand.gw("PUT", "/agents/%s/addressing-policy" % keeper["id"],
+             {"policy": keeper_policy(room_ids)})
+    print("keeper policy: set for #core, #contractors, #owner-desk")
+    print("state written to .stand/state.json")
+
+
+if __name__ == "__main__":
+    main()
