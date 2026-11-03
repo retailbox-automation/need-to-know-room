@@ -186,6 +186,13 @@ def main():
     stand.gw("PUT", "/agents/%s/addressing-policy" % keeper["id"],
              {"policy": keeper_policy(room_ids)})
     print("keeper policy: set for #core, #contractors, #owner-desk")
+    # Switch keeps each room's approvals (who answered what, and when) and
+    # serves them to the room's members. The admin joins each room's chat so
+    # scripts/audit.py can read that record.
+    me = stand.gw("GET", "/auth/me")
+    for room_id in room_ids.values():
+        stand.gw("POST", "/chats/%s/members" % room_id, {"user_id": me["id"]})
+    print("audit: the admin can read each room's approval record")
     print("state written to .stand/state.json")
 
 
