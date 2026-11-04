@@ -16,6 +16,7 @@ behaves as described in the README.
                                                         log agree on who opened what
   6  (Claude Code desk only) dana asks desk to read  -> desk answers, and the file's contents
      a file in its own working directory                never appear: it has no file tools
+  7  the Switch template in templates/               -> Switch's own validator accepts it
 """
 import json
 import os
@@ -174,6 +175,13 @@ def main():
         else:
             d.check(6, not loaded, "desk was given no CLAUDE.md or rules from this machine%s"
                     % ("" if not loaded else ": " + ", ".join(sorted(loaded)[:5])))
+
+    # 7. The same rooms and desk as a Switch template: Switch's own validator must accept it.
+    with open(os.path.join(ROOT, "templates", "need-to-know.v2.template.yaml")) as fh:
+        lint = d.s.gw("POST", "/templates/validate", {"content": fh.read()})
+    d.check(7, lint["ok"] and not lint["errors"],
+            "Switch validates templates/need-to-know.v2.template.yaml (%d errors, %d warnings)"
+            % (len(lint["errors"]), len(lint["warnings"])))
     return finish(d)
 
 

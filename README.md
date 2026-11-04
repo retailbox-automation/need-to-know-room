@@ -71,6 +71,7 @@ desk becomes a Claude Code agent started by Switch's agent controller, without f
 | 4 | Dana asks a follow-up | a new card; Alex keeps it closed; the phone number never appears |
 | 5 | — | Switch's record and keeper's log agree |
 | 6 (Tier B) | Dana asks desk to read a file in its folder | desk answers, the file's contents never appear, and desk loaded no instruction files from the machine |
+| 7 | — | Switch's own template validator accepts `templates/need-to-know.v2.template.yaml` |
 | audit | — | every request in Switch's record matches keeper's log |
 
 ## Threat model: what Switch does here, and what it does not
