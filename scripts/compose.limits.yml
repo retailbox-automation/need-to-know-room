@@ -1,0 +1,17 @@
+# Optional memory caps for the Switch stack, for a machine whose Docker VM is
+# shared with other work. scripts/up.sh adds this file when N2K_MEM_LIMITS=1.
+# Total for the long-running services: 2.5 GiB. A service that hits its cap is
+# killed and restarted by Docker; nothing outside this compose project is touched.
+services:
+  postgres:
+    mem_limit: 384m
+  init-db:
+    mem_limit: 256m
+  mattermost:
+    mem_limit: 1280m
+  switch:
+    mem_limit: 640m
+  gateway:
+    mem_limit: 256m
+  setup:
+    mem_limit: 256m

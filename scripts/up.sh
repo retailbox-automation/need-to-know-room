@@ -12,6 +12,8 @@
 # Ports default to 28000 (API), 23000 (gateway UI), 28065 (Mattermost) and
 # 25432 (Postgres) so they rarely clash with anything already running.
 # Override with N2K_API_PORT, N2K_GATEWAY_PORT, N2K_MM_PORT, N2K_PG_PORT.
+# N2K_MEM_LIMITS=1 caps the stack's memory (scripts/compose.limits.yml), for a
+# Docker VM shared with other work.
 set -euo pipefail
 
 SWITCH_TAG="switch-v0.31.0"
@@ -29,8 +31,13 @@ need() { command -v "$1" >/dev/null 2>&1 || { echo "Missing required tool: $1" >
 need docker; need curl; need openssl; need python3
 docker compose version >/dev/null 2>&1 || { echo "Docker Compose v2 is required (docker compose ...)." >&2; exit 1; }
 
+FILES=(-f "${STAND}/compose.yml")
+if [ "${N2K_MEM_LIMITS:-0}" = "1" ]; then
+  FILES+=(-f "${ROOT}/scripts/compose.limits.yml")
+fi
+
 compose() {
-  docker compose -p "$PROJECT" --env-file "${STAND}/.env" -f "${STAND}/compose.yml" \
+  docker compose -p "$PROJECT" --env-file "${STAND}/.env" "${FILES[@]}" \
     --profile collab --profile gateway "$@"
 }
 
