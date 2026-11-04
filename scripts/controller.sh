@@ -28,11 +28,13 @@ ENV_FILE="${STAND}/agents.env"
 LOG="${STAND}/logs/controller.log"
 PIDFILE="${STAND}/controller.pid"
 
-[ -s "${STAND}/.env" ] || { echo "Start the stack first: ./scripts/up.sh" >&2; exit 1; }
-API_PORT="$(sed -n 's/^API_HOST_PORT=//p' "${STAND}/.env")"
+need_stack() {
+  [ -s "${STAND}/.env" ] || { echo "Start the stack first: ./scripts/up.sh" >&2; exit 1; }
+  API_PORT="$(sed -n 's/^API_HOST_PORT=//p' "${STAND}/.env")"
+}
 
 # The agents' environment: an empty home and only what a CLI needs to run.
-mkdir -p "$DESK_HOME"; chmod 700 "$DESK_HOME"
+mkdir -p "$DESK_HOME"; chmod 700 "$STAND" "$DESK_HOME"
 CLEAN=(env -i HOME="$DESK_HOME" PATH="$PATH" USER="${USER:-$(id -un)}" LOGNAME="${USER:-$(id -un)}"
        SHELL=/bin/bash LANG="${LANG:-en_US.UTF-8}" TMPDIR="${TMPDIR:-/tmp}")
 
@@ -61,7 +63,7 @@ case "${1:-}" in
     echo "installed: $("$BIN" --version 2>/dev/null || echo "$BIN")"
     ;;
   enroll)
-    need_bin
+    need_bin; need_stack
     code="$(python3 - "$ROOT/scripts" <<'PY'
 import sys
 sys.path.insert(0, sys.argv[1])
