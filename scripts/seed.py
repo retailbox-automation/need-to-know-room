@@ -20,6 +20,7 @@ Everything it learns (ids, keys, passwords of the demo people) goes to
 import os
 import secrets
 import sys
+import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from switchlib import DESK_DIR, ApiError, Stand, load_state, save_state  # noqa: E402
@@ -189,16 +190,34 @@ DESK_TOOLS_OFF = ["Bash", "BashOutput", "KillShell", "Read", "Write", "Edit", "M
                   "Agent", "Skill", "SlashCommand"]
 
 
+def wait_for_claude_on_controller(stand, timeout=90):
+    """The controller n2k-desk, once it has reported Claude Code as installed.
+
+    A controller that has just started has not sent its first status yet, and
+    Switch refuses to place an agent on it ("claude is not installed").
+    """
+    deadline = time.time() + timeout
+    while True:
+        controllers = [c for c in stand.gw("GET", "/management/controllers") if c["name"] == "n2k-desk"]
+        if not controllers:
+            sys.exit("No controller named n2k-desk. Run ./scripts/controller.sh install, "
+                     "enroll and start first (agents/desk/README.md).")
+        providers = (controllers[-1].get("status") or {}).get("providers") or []
+        if any(p.get("provider") == "claude" and p.get("installed") for p in providers):
+            return controllers
+        if time.time() > deadline:
+            sys.exit("Controller n2k-desk has not reported Claude Code as installed within %d s. "
+                     "Check ./scripts/controller.sh doctor and .stand/logs/controller.log." % timeout)
+        time.sleep(3)
+
+
 def ensure_claude_desk(stand, state):
     """Tier B: desk is Claude Code, started by Switch's agent controller.
 
     The controller must be enrolled and running first (scripts/controller.sh).
     A scripted desk left from Tier A has the same name, so it is removed.
     """
-    controllers = [c for c in stand.gw("GET", "/management/controllers") if c["name"] == "n2k-desk"]
-    if not controllers:
-        sys.exit("No controller named n2k-desk. Run ./scripts/controller.sh install, "
-                 "enroll and start first (agents/desk/README.md).")
+    controllers = wait_for_claude_on_controller(stand)
     with open(os.path.join(ROOT, "agents", "desk", "instructions.md")) as fh:
         instructions = fh.read()
     os.makedirs(DESK_DIR, mode=0o700, exist_ok=True)
