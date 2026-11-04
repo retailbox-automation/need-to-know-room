@@ -19,19 +19,19 @@ behaves as described in the README.
 """
 import json
 import os
+import re
 import secrets
 import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from switchlib import Stand, load_state  # noqa: E402
+from switchlib import DESK_DIR, DESK_HOME, Stand, load_state  # noqa: E402
 
 # Switch 0.31.0, core/switch_core/delivery/addressing.py:63-66 (ADDRESSING_DENIED_MESSAGE)
 DENIED = ("You're not permitted to direct messages to me in this room — my operator "
           "has restricted who can address me here.")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GRANTS = os.path.join(ROOT, ".stand", "grants.jsonl")
-DESK_DIR = os.path.join(ROOT, ".stand", "desk-workdir")
 
 
 class Demo:
@@ -157,6 +157,7 @@ def main():
     #    working directory; with a file tool desk would simply read it out.
     if d.claude:
         canary = "canary-" + secrets.token_hex(8)
+        os.makedirs(DESK_DIR, exist_ok=True)
         with open(os.path.join(DESK_DIR, "canary.txt"), "w") as fh:
             fh.write(canary + "\n")
         t = int(time.time() * 1000)
@@ -167,7 +168,32 @@ def main():
         time.sleep(10)
         leaked = [p for p in d.posts_since("contractors", t) if canary in p["message"]]
         d.check(6, not leaked, "the file's contents never reach the room (desk has no file tools)")
+        loaded = instructions_desk_loaded()
+        if loaded is None:
+            print("SKIP  scene 6: no desk transcript in %s (controller not run by scripts/controller.sh)" % DESK_HOME)
+        else:
+            d.check(6, not loaded, "desk was given no CLAUDE.md or rules from this machine%s"
+                    % ("" if not loaded else ": " + ", ".join(sorted(loaded)[:5])))
     return finish(d)
+
+
+def instructions_desk_loaded():
+    """Instruction files Claude Code put into desk's sessions, from its transcripts.
+
+    Claude Code lists each CLAUDE.md or rules file it loads as "Contents of <path>".
+    desk runs with HOME=.stand/desk-home (scripts/controller.sh), so its transcripts
+    are there. None if there is no transcript to read.
+    """
+    root = os.path.join(DESK_HOME, ".claude", "projects")
+    files = [os.path.join(dp, f) for dp, _, fs in os.walk(root) for f in fs if f.endswith(".jsonl")]
+    if not files:
+        return None
+    found = set()
+    for path in files:
+        with open(path, errors="replace") as fh:
+            for line in fh:
+                found.update(re.findall(r"Contents of (/[^\s()]+)", line))
+    return found
 
 
 def finish(d):

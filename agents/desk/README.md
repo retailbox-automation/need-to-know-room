@@ -39,6 +39,13 @@ What desk is given (`scripts/seed.py`, `ensure_claude_desk`):
   Scene 6 of `verify.py` checks this: it puts a fresh secret in desk's working
   directory, asks desk for it, and fails if the secret reaches the room.
 - **No permission bypass:** `auto_mode` and `auto_approve` are off.
+- **A working directory outside your home folder** (`/tmp/need-to-know-room-desk-<uid>`,
+  `N2K_DESK_DIR` to change it). Claude Code reads `.claude/CLAUDE.md` and
+  `.claude/rules/` from every parent folder of its working directory, so a
+  folder under `~` hands desk your personal instructions even with an empty
+  HOME. We found this on our own stand: desk had loaded 27 instruction files
+  from the machine owner's `~/.claude`. Scene 6 of `verify.py` now reads desk's
+  transcripts and fails if any such file was loaded.
 - **An empty home.** `controller.sh` runs the controller, and the Claude Code it
   starts, with `HOME=.stand/desk-home` and a minimal environment. desk never
   sees your own `~/.claude`: no settings, hooks, MCP servers, memory or

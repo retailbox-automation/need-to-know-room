@@ -18,6 +18,12 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STAND = os.path.join(ROOT, ".stand")
 STATE_PATH = os.path.join(STAND, "state.json")
+# desk's working directory (Tier B). Deliberately outside your home folder:
+# Claude Code reads .claude/CLAUDE.md and .claude/rules/ from every parent
+# folder of its working directory, so a folder under ~ would hand desk your
+# personal instructions, whatever HOME it runs with.
+DESK_DIR = os.environ.get("N2K_DESK_DIR") or "/tmp/need-to-know-room-desk-%d" % os.getuid()
+DESK_HOME = os.path.join(STAND, "desk-home")
 
 
 class ApiError(Exception):

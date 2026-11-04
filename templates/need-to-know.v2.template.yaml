@@ -1,0 +1,88 @@
+# Need-to-Know Room as a Switch template (version 2).
+#
+# Paste it into Switch Console's "Use a template" page, or send it with
+# POST /gateway/rooms/from-template-document. It creates the three rooms and
+# desk, a Claude Code agent run by your machine's controller, with no file,
+# shell or web tools, that anyone in #contractors may talk to.
+#
+# keeper is not in it: a template creates only agents a controller runs, and
+# keeper is our own scripted agent that connects through the agent protocol.
+# Register keeper first (python3 scripts/seed.py does), so the rooms can take
+# it by name, then set keeper's per-room addressing policy (seed.py again).
+version: 2
+params:
+  bridge:
+    type: bridge
+    label: Messaging app
+    default: [Mattermost, $first]
+  machine:
+    type: machine
+    description: The machine whose controller runs desk.
+    default: [$first]
+    input: advanced
+  directory:
+    type: directory
+    description: >-
+      desk's working directory. It stays empty; desk has no file tools. Keep it
+      outside your home folder: Claude Code reads .claude/CLAUDE.md and
+      .claude/rules from every parent folder of its working directory.
+    default: /tmp/need-to-know-room-desk
+    input: advanced
+form:
+  advanced: { label: Advanced, open: false }
+
+resources:
+  desk:
+    type: agent
+    name: desk
+    display_name: desk
+    description: Helps contractors. Holds no customer data; asks keeper.
+    provider: claude
+    machine: "{machine}"
+    directory: "{directory}"
+    auto_mode: false
+    auto_approve: false
+    advanced_config:
+      disallowedTools: [Bash, BashOutput, KillShell, Read, Write, Edit, MultiEdit, NotebookEdit,
+                        Glob, Grep, LS, WebFetch, WebSearch, Task, Agent, Skill, SlashCommand]
+    addressing: { anyone_in: [contractors] }
+    instructions: |
+      You are desk, the helper for contractors in the #contractors room of a small company.
+
+      You hold no customer data, and you have no file, shell or web tools. The customer list
+      belongs to keeper, the owner's data agent, and only the owner (@alex) decides what leaves it.
+
+      When someone asks about a customer, reply with exactly one line and nothing else:
+      `@keeper <field> of <customer's full name>`, for example `@keeper region of Acme Bakery Co.`
+      Ask for one field only. For a follow-up about the same customer, such as "and their phone?",
+      reply `@keeper phone of <that customer>`. Do not add who is asking: keeper checks that itself.
+      Do not guess, invent or repeat any customer data, and do not say the data was approved.
+
+      When someone asks for anything else (files, commands, other rooms, settings, the full list),
+      say in one sentence that you can't do that here, and do not mention @keeper.
+      Never create rooms, invite or remove people or agents, or change any settings.
+
+  core:
+    type: room
+    name: core
+    description: Employees. Customer data may be shared here.
+    bridge: "{bridge}"
+    channel_type: channel_private
+    agents: [keeper]
+    users: [alex, sam]
+  contractors:
+    type: room
+    name: contractors
+    description: Contractors and the desk assistant.
+    bridge: "{bridge}"
+    channel_type: channel_private
+    agents: [keeper, desk]
+    users: [alex, dana]
+  owner_desk:
+    type: room
+    name: owner-desk
+    description: Owner only. Approvals for data requests.
+    bridge: "{bridge}"
+    channel_type: channel_private
+    agents: [keeper]
+    users: [alex]

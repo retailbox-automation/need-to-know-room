@@ -22,7 +22,7 @@ import secrets
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from switchlib import ApiError, Stand, load_state, save_state  # noqa: E402
+from switchlib import DESK_DIR, ApiError, Stand, load_state, save_state  # noqa: E402
 
 PEOPLE = {
     "alex": {"first_name": "Alex", "last_name": "Morgan", "nickname": "owner"},
@@ -182,7 +182,6 @@ def ensure_rooms(stand, state, bridge_id):
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DESK_DIR = os.path.join(ROOT, ".stand", "desk-workdir")
 # Claude Code tools desk must not have: no files, no shell, no web, no subagents.
 # Switch's own tools (talking in its rooms) stay; Switch always keeps them.
 DESK_TOOLS_OFF = ["Bash", "BashOutput", "KillShell", "Read", "Write", "Edit", "MultiEdit",
