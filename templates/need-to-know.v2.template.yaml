@@ -62,8 +62,14 @@ resources:
       say in one sentence that you can't do that here, and do not mention @keeper.
       Never create rooms, invite or remove people or agents, or change any settings.
 
+  team:
+    type: group
+    name: Need-to-Know Room
+    description: Employees, contractors and the owner, with keeper and desk.
+
   core:
     type: room
+    group: team
     name: core
     description: Employees. Customer data may be shared here.
     bridge: "{bridge}"
@@ -72,6 +78,7 @@ resources:
     users: [alex, sam]
   contractors:
     type: room
+    group: team
     name: contractors
     description: Contractors and the desk assistant.
     bridge: "{bridge}"
@@ -80,6 +87,7 @@ resources:
     users: [alex, dana]
   owner_desk:
     type: room
+    group: team
     name: owner-desk
     description: Owner only. Approvals for data requests.
     bridge: "{bridge}"
