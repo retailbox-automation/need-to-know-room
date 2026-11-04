@@ -1,0 +1,66 @@
+# desk — the contractors' helper
+
+desk sits in `#contractors`. It holds no customer data. When a contractor asks
+about a customer, desk passes the question to `@keeper`, and keeper asks the
+owner with an approval card that only the owner can answer.
+
+There are two desks. The workflow and every check are the same with either.
+
+| | Tier A (default) | Tier B |
+|---|---|---|
+| What runs | `desk_stub.py`, a short script | Claude Code, started by Switch's agent controller |
+| Accounts needed | none | a Claude Code login (`claude setup-token`) |
+| Seed with | `python3 scripts/seed.py` | `python3 scripts/seed.py --desk claude` |
+
+## Tier B: Claude Code as desk
+
+You need Node 22.13+ and the `claude` CLI on your `PATH`, on a stack already
+started with `./scripts/up.sh`.
+
+```bash
+claude setup-token                       # prints a long-lived token for your account
+umask 077; printf 'CLAUDE_CODE_OAUTH_TOKEN=%s\n' '<paste token>' > .stand/agents.env
+
+./scripts/controller.sh install          # switch-agent-controller 0.31.0, into .stand/controller
+./scripts/controller.sh enroll           # one-time code from the local Switch
+./scripts/controller.sh start            # background process, log in .stand/logs/controller.log
+./scripts/controller.sh doctor           # expect: claude installed, signed in
+python3 scripts/seed.py --desk claude    # replaces the scripted desk with Claude Code
+./scripts/verify.sh                      # scenes 1-6 and the audit
+```
+
+What desk is given (`scripts/seed.py`, `ensure_claude_desk`):
+
+- **Instructions:** [`instructions.md`](instructions.md). It forwards one field
+  request to `@keeper` and never repeats or invents customer data.
+- **No file, shell or web tools.** Switch passes `disallowedTools` to Claude Code
+  (Bash, Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, subagents and
+  others). Switch's own room tools stay, because Switch always keeps them.
+  Scene 6 of `verify.py` checks this: it puts a fresh secret in desk's working
+  directory, asks desk for it, and fails if the secret reaches the room.
+- **No permission bypass:** `auto_mode` and `auto_approve` are off.
+- **An empty home.** `controller.sh` runs the controller, and the Claude Code it
+  starts, with `HOME=.stand/desk-home` and a minimal environment. desk never
+  sees your own `~/.claude`: no settings, hooks, MCP servers, memory or
+  history. The controller keeps its credential in a file in
+  `.stand/controller-data`, not in your keychain. Nothing is installed as a
+  service; `./scripts/controller.sh stop` ends it.
+
+## The token stays on your machine
+
+The token is read only by the controller on your machine, from
+`.stand/agents.env` (mode 600, never committed). Switch here runs on your own
+machine as well.
+
+Only Alex, Sam and Dana, the demo people, are in these rooms. Before you let
+anyone else into a room with desk, give desk a token of its own. A person who
+can talk to an agent can try to make it reveal its environment, and that is
+where the token lives.
+
+## What Switch enforces, and what it does not
+
+Switch decides who may wake keeper in which room, and who may press keeper's
+card. The words desk writes to keeper come from a model. Dana can push desk to
+name another customer or another person. keeper never takes the requester
+from desk's text: it reads who last spoke in the room from Switch's history,
+and it names that person on the card the owner sees.

@@ -9,7 +9,10 @@ Idempotent: run it as many times as you like. It creates or reuses:
     registered through the agent bridge with a personal registration key so it
     belongs to the same owner as everything else;
   * three private rooms bridged to Mattermost: #core, #contractors, #owner-desk;
-  * keeper's addressing policy: who may talk to keeper, room by room.
+  * keeper's addressing policy: who may talk to keeper, room by room;
+  * desk in #contractors: a scripted stand-in (Tier A, default), or with
+    `--desk claude` a Claude Code agent run by Switch's agent controller
+    (Tier B; start scripts/controller.sh first, see agents/desk/README.md).
 
 Everything it learns (ids, keys, passwords of the demo people) goes to
 .stand/state.json (mode 600), which keeper, verify.sh and audit.py read.
@@ -178,6 +181,54 @@ def ensure_rooms(stand, state, bridge_id):
     return room_ids
 
 
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DESK_DIR = os.path.join(ROOT, ".stand", "desk-workdir")
+# Claude Code tools desk must not have: no files, no shell, no web, no subagents.
+# Switch's own tools (talking in its rooms) stay; Switch always keeps them.
+DESK_TOOLS_OFF = ["Bash", "BashOutput", "KillShell", "Read", "Write", "Edit", "MultiEdit",
+                  "NotebookEdit", "Glob", "Grep", "LS", "WebFetch", "WebSearch", "Task",
+                  "Agent", "Skill", "SlashCommand"]
+
+
+def ensure_claude_desk(stand, state):
+    """Tier B: desk is Claude Code, started by Switch's agent controller.
+
+    The controller must be enrolled and running first (scripts/controller.sh).
+    A scripted desk left from Tier A has the same name, so it is removed.
+    """
+    controllers = [c for c in stand.gw("GET", "/management/controllers") if c["name"] == "n2k-desk"]
+    if not controllers:
+        sys.exit("No controller named n2k-desk. Run ./scripts/controller.sh install, "
+                 "enroll and start first (agents/desk/README.md).")
+    with open(os.path.join(ROOT, "agents", "desk", "instructions.md")) as fh:
+        instructions = fh.read()
+    os.makedirs(DESK_DIR, mode=0o700, exist_ok=True)
+    placement = {
+        "controller_id": controllers[-1]["id"],
+        "desired_state": "running",
+        "definition": {
+            "provider": "claude", "instructions": instructions,
+            "advanced_config": {"disallowedTools": DESK_TOOLS_OFF},
+            "auto_mode": False, "auto_approve": False, "directory": DESK_DIR,
+        },
+    }
+    managed = {a["name"]: a for a in stand.gw("GET", "/management/agents")}
+    if "desk" in managed:
+        agent_id = managed["desk"]["agent_id"]
+        stand.gw("PUT", "/management/agents/" + agent_id, placement)
+        print("desk (Claude Code): definition updated (%s)" % agent_id)
+    else:
+        if any(a["name"] == "desk" for a in stand.gw("GET", "/agents")):
+            stand.gw("DELETE", "/agents/by-name/desk")
+            print("desk: removed the scripted stand-in")
+        created = stand.gw("POST", "/management/agents", dict(
+            placement, name="desk", display_name="desk", description=AGENTS["desk"]))
+        agent_id = created["agent_id"]
+        print("desk (Claude Code): created on controller n2k-desk (%s)" % agent_id)
+    state["desk"] = {"id": agent_id, "managed": True}
+    return state["desk"]
+
+
 def desk_policy(room_ids):
     """desk answers anyone in #contractors, and no agent: keeper's replies
     must not wake desk, or the two would talk to each other forever."""
@@ -205,10 +256,13 @@ def main():
         # Tier A: a scripted desk, so the workflow runs with no model account.
         # Tier B (agents/desk/README.md) replaces it with a Claude Code desk.
         desk = ensure_agent(stand, state, "desk")
-        save_state(state)
-        stand.gw("POST", "/rooms/%s/agents" % room_ids["contractors"], {"agent_ids": [desk["id"]]})
-        stand.gw("PUT", "/agents/%s/addressing-policy" % desk["id"], {"policy": desk_policy(room_ids)})
-        print("desk (scripted): in #contractors, answers people only")
+    else:
+        desk = ensure_claude_desk(stand, state)
+    save_state(state)
+    stand.gw("POST", "/rooms/%s/agents" % room_ids["contractors"], {"agent_ids": [desk["id"]]})
+    stand.gw("PUT", "/agents/%s/addressing-policy" % desk["id"], {"policy": desk_policy(room_ids)})
+    print("desk (%s): in #contractors, answers people only"
+          % ("scripted" if desk_mode == "stub" else "Claude Code"))
     # Switch keeps each room's approvals (who answered what, and when) and
     # serves them to the room's members. The admin joins each room's chat so
     # scripts/audit.py can read that record.
