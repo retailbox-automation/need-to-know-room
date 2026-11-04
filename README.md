@@ -23,6 +23,8 @@ Asked in the chat of the Switch kickoff stream on 2 November 2026:
 
 > how do i stop random people in the channel from triggering an agent that has prod access? asking for my security team
 
+It is a common worry: in a 2026 vendor survey, 67% of organizations using AI agents said they suspect their agents have already accessed data beyond their intended scope ([Akeyless, May 2026](https://www.prnewswire.com/il/news-releases/two-thirds-of-enterprises-suspect-ai-agents-have-already-accessed-unauthorized-data-akeyless-finds-302769768.html); a suspicion, not confirmed incidents).
+
 A shared agent in a team chat usually runs with the access of whoever set it up. Everyone in the channel can ask it anything, and the only thing between a contractor and the customer list is a sentence in the prompt. Need-to-Know Room moves that boundary into Switch: who may talk to the agent that holds the data, in which room, and who may approve a release.
 
 ## How Switch is used
