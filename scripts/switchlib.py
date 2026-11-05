@@ -57,16 +57,19 @@ def desk_tools_beyond_allowlist(advanced_config, transcript_lines):
     else:
         extra.update(set(allowed) - set(DESK_TOOLS) - {"mcp__switch"})  # Switch adds its server itself
     extra.update(set(DESK_SWITCH_TOOLS_OFF) - set(advanced_config.get("disallowedTools") or []))
-    offered = set()
+    deferred, sent = set(), set()
     for line in transcript_lines:
         try:
-            attachment = json.loads(line).get("attachment")
+            event = json.loads(line)
         except ValueError:
             continue
+        attachment = event.get("attachment")
         if isinstance(attachment, dict) and attachment.get("type") == "deferred_tools_delta":
-            offered.update(attachment.get("addedNames") or [])
-            offered.difference_update(attachment.get("removedNames") or [])
-    return sorted(extra | (offered - set(DESK_TOOLS)))
+            deferred.update(attachment.get("addedNames") or [])
+            deferred.difference_update(attachment.get("removedNames") or [])
+        if event.get("type") == "api-request-shape":   # the tools the latest request carried
+            sent = {tool.get("name") for tool in (event.get("shape") or {}).get("tools") or []}
+    return sorted(extra | ((deferred | sent) - set(DESK_TOOLS)))
 
 
 class ApiError(Exception):

@@ -75,5 +75,5 @@ where the token lives.
 Switch decides who may wake keeper in which room, and who may press keeper's
 card. The words desk writes to keeper come from a model. Dana can push desk to
 name another customer or another person. keeper never takes the requester
-from desk's text: it reads who last spoke in the room from Switch's history,
+from desk's text: it reads who last addressed desk from Switch's history,
 and it names that person on the card the owner sees.

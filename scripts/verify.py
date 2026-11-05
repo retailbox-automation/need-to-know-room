@@ -7,7 +7,7 @@ desk must be running
 (python3 agents/keeper/keeper.py and python3 agents/desk/desk_stub.py). Exit code 0 only if every scene
 behaves as described in the README.
 
-  1  dana asks keeper directly in #contractors      -> Switch refuses, keeper never sees it
+  1  dana asks keeper directly in #contractors      -> Switch refuses, keeper is never woken
   2  sam asks keeper the same thing in #core         -> keeper answers
   3  dana asks desk for one field                    -> approval card; dana's press is refused,
                                                         alex's press releases that field once

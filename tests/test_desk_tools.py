@@ -53,6 +53,16 @@ class Allowlist(unittest.TestCase):
         lines = [delta(["CronCreate"]), delta([], ["CronCreate"])]
         self.assertEqual(desk_tools_beyond_allowlist(GOOD, lines), [])
 
+    def test_a_tool_sent_to_the_model_up_front_fails(self):
+        # Claude Code records the tools of each request; a tool it always loads never shows up as a delta
+        line = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "ToolSearch"}, {"name": "Workflow"}]}})
+        self.assertEqual(desk_tools_beyond_allowlist(GOOD, [line]), ["Workflow"])
+
+    def test_only_the_latest_request_counts(self):
+        old = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "Workflow"}]}})
+        new = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "ToolSearch"}]}})
+        self.assertEqual(desk_tools_beyond_allowlist(GOOD, [old, new]), [])
+
     def test_switch_adding_its_own_server_to_the_allowlist_is_not_counted(self):
         conf = dict(GOOD, tools=list(DESK_BUILTIN_TOOLS) + ["mcp__switch"])
         self.assertEqual(desk_tools_beyond_allowlist(conf, []), [])
