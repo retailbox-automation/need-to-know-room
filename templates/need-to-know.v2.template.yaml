@@ -43,8 +43,9 @@ resources:
     auto_mode: false
     auto_approve: false
     advanced_config:
-      disallowedTools: [Bash, BashOutput, KillShell, Read, Write, Edit, MultiEdit, NotebookEdit,
-                        Glob, Grep, LS, WebFetch, WebSearch, Task, Agent, Skill, SlashCommand]
+      # Only talking in the room. Switch always keeps its own server, so the rest of it is closed by name.
+      tools: [ToolSearch]
+      disallowedTools: [mcp__switch__add_users_to_room, mcp__switch__archive_room, mcp__switch__assume_role, mcp__switch__attach_reference_to_room, mcp__switch__connect_to_room, mcp__switch__create_agent, mcp__switch__create_reference, mcp__switch__create_room, mcp__switch__create_room_document, mcp__switch__create_room_from_yaml, mcp__switch__create_room_group, mcp__switch__define_role, mcp__switch__delete_role, mcp__switch__delete_room_document, mcp__switch__delete_template, mcp__switch__download_attachment, mcp__switch__edit_role, mcp__switch__get_advanced_config, mcp__switch__get_agent_detail, mcp__switch__get_my_context, mcp__switch__get_role_detail, mcp__switch__get_room_detail, mcp__switch__get_room_group_detail, mcp__switch__get_template, mcp__switch__get_template_guide, mcp__switch__invite_agent_to_room, mcp__switch__link_rooms, mcp__switch__list_agents, mcp__switch__list_all_references, mcp__switch__list_all_rooms, mcp__switch__list_bridges, mcp__switch__list_linked_rooms, mcp__switch__list_machines, mcp__switch__list_managed_agents, mcp__switch__list_participants, mcp__switch__list_reference_types, mcp__switch__list_references, mcp__switch__list_roles, mcp__switch__list_room_groups, mcp__switch__list_rooms, mcp__switch__list_templates, mcp__switch__load_internal_documents, mcp__switch__read_context, mcp__switch__release_role, mcp__switch__remove_agent_from_room, mcp__switch__remove_agent_service, mcp__switch__request_agent_deletion, mcp__switch__run_template, mcp__switch__save_template, mcp__switch__send_attachment, mcp__switch__set_agent_service, mcp__switch__unarchive_room, mcp__switch__unlink_rooms, mcp__switch__update_agent_detail, mcp__switch__update_room, mcp__switch__update_room_document, mcp__switch__update_template]
     addressing: { anyone_in: [contractors] }
     instructions: |
       You are desk, the helper for contractors in the #contractors room of a small company.

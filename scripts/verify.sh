@@ -42,6 +42,7 @@ fi
 
 start keeper "$KEEPER"
 if [ "$claude_desk" = "True" ]; then
+  stop desk "$DESK"                       # the scripted desk from Tier A, if it is still running
   "${ROOT}/scripts/controller.sh" start   # desk itself is run by Switch's agent controller
 else
   start desk "$DESK"

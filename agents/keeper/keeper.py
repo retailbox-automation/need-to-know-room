@@ -80,8 +80,9 @@ class Keeper:
                                  self.me["api_key"])["participants"]
         return {p["name"] for p in parts if p["type"] == "user"}
 
-    def requester_behind(self, room_id):
-        """Who an agent is asking for: the last person who spoke in the room.
+    def requester_behind(self, room_id, via):
+        """Who an agent is asking for: the last person who addressed that agent in the room,
+        or, if nobody did, the last person who spoke.
 
         The agent's own text is written by a model and could name anyone, so
         keeper never takes the requester from it. Switch's room history says
@@ -91,10 +92,15 @@ class Keeper:
         history = self.stand.agent(
             "GET", "/agents/%s/rooms/%s/history?limit=20" % (self.me["id"], room_id),
             self.me["api_key"])["events"]
+        tagged = re.compile(r"@%s\b" % re.escape(via), re.I)
+        last = None
         for event in reversed(history):
             if event.get("sender_name") in humans:
-                return event["sender_name"], event.get("body", "")
-        return None, ""
+                found = event["sender_name"], event.get("body", "")
+                if tagged.search(found[1]):
+                    return found
+                last = last or found
+        return last or (None, "")
 
     # Understanding a request -----------------------------------------------
     def find_customer(self, text):
@@ -132,7 +138,7 @@ class Keeper:
         on_behalf = sender not in self.humans_in(room_id)
         requester = sender
         if on_behalf:
-            requester, _ = self.requester_behind(room_id)
+            requester, _ = self.requester_behind(room_id, sender)
             if requester is None:
                 self.say(room_id, "@%s I can't tell who is asking, so I won't open anything." % sender)
                 return
@@ -168,7 +174,9 @@ class Keeper:
             return
         with self.lock:
             self.context[requester] = (customer, time.time())
-        if room == "core" or requester == self.owner:
+        # Through another agent, the owner always gets a card: who really asked is read
+        # from the room's history, and that alone must never release a field.
+        if room == "core" or (requester == self.owner and via is None):
             self.say(room_id, "%s: %s = %s" % (customer["customer"], field, customer[field]))
             return
         self.ask_owner(room_id, requester, via, customer, field)

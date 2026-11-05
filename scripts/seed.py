@@ -23,7 +23,8 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from switchlib import DESK_DIR, ApiError, Stand, load_state, save_state  # noqa: E402
+from switchlib import (DESK_BUILTIN_TOOLS, DESK_DIR, DESK_SWITCH_TOOLS_OFF, ApiError, Stand,  # noqa: E402
+                       load_state, save_state)
 
 PEOPLE = {
     "alex": {"first_name": "Alex", "last_name": "Morgan", "nickname": "owner"},
@@ -183,13 +184,6 @@ def ensure_rooms(stand, state, bridge_id):
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Claude Code tools desk must not have: no files, no shell, no web, no subagents.
-# Switch's own tools (talking in its rooms) stay; Switch always keeps them.
-DESK_TOOLS_OFF = ["Bash", "BashOutput", "KillShell", "Read", "Write", "Edit", "MultiEdit",
-                  "NotebookEdit", "Glob", "Grep", "LS", "WebFetch", "WebSearch", "Task",
-                  "Agent", "Skill", "SlashCommand"]
-
-
 def wait_for_claude_on_controller(stand, timeout=90):
     """The controller n2k-desk, once it has reported Claude Code as installed.
 
@@ -226,7 +220,7 @@ def ensure_claude_desk(stand, state):
         "desired_state": "running",
         "definition": {
             "provider": "claude", "instructions": instructions,
-            "advanced_config": {"disallowedTools": DESK_TOOLS_OFF},
+            "advanced_config": {"tools": list(DESK_BUILTIN_TOOLS), "disallowedTools": list(DESK_SWITCH_TOOLS_OFF)},
             "auto_mode": False, "auto_approve": False, "directory": DESK_DIR,
         },
     }

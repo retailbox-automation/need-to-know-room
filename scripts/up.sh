@@ -61,7 +61,13 @@ PY
 
 case "${1:-up}" in
   down)    compose down; exit 0 ;;
-  destroy) compose down -v; exit 0 ;;
+  destroy)
+    # The stand's own state goes with its volumes: stale keys and grants would fail the next run.
+    "${ROOT}/scripts/verify.sh" stop >/dev/null 2>&1 || true
+    "${ROOT}/scripts/controller.sh" stop >/dev/null 2>&1 || true
+    compose down -v
+    rm -rf "${STAND}/state.json" "${STAND}/grants.jsonl" "${STAND}/controller-data" "${STAND}/desk-home"
+    exit 0 ;;
   up)      ;;
   *) echo "usage: $0 [up|down|destroy]" >&2; exit 2 ;;
 esac
@@ -127,7 +133,7 @@ cat <<EOF
 
 Switch ${SWITCH_VERSION} is running.
   API          http://127.0.0.1:${API_PORT}
-  Mattermost   http://127.0.0.1:${MM_PORT}
+  Mattermost   http://localhost:${MM_PORT}   (use localhost: on 127.0.0.1 its live updates do not connect)
   Gateway UI   http://127.0.0.1:${GATEWAY_PORT}
 Next: python3 scripts/seed.py
 EOF
