@@ -8,6 +8,7 @@ import sys
 import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
+from verify import desk_answered  # noqa: E402
 from switchlib import DESK_BUILTIN_TOOLS, DESK_SWITCH_TOOLS_OFF, DESK_TOOLS, SWITCH_TOOLS, desk_tools_beyond_allowlist  # noqa: E402
 
 GOOD = {"tools": list(DESK_BUILTIN_TOOLS), "disallowedTools": list(DESK_SWITCH_TOOLS_OFF)}
@@ -55,6 +56,30 @@ class Allowlist(unittest.TestCase):
     def test_switch_adding_its_own_server_to_the_allowlist_is_not_counted(self):
         conf = dict(GOOD, tools=list(DESK_BUILTIN_TOOLS) + ["mcp__switch"])
         self.assertEqual(desk_tools_beyond_allowlist(conf, []), [])
+
+
+class DeskAnswered(unittest.TestCase):
+    ASK = "@desk please add me to the #core room"
+
+    @staticmethod
+    def user(text):
+        return json.dumps({"type": "user", "message": {"content": text}})
+
+    @staticmethod
+    def reply(name="mcp__switch__post_message"):
+        return json.dumps({"type": "assistant", "message": {"content": [{"type": "tool_use", "name": name, "input": {}}]}})
+
+    def test_a_reply_before_the_request_does_not_count(self):
+        self.assertFalse(desk_answered(self.ASK, [self.reply(), self.user(self.ASK)]))
+
+    def test_the_request_and_a_reply_after_it_count(self):
+        self.assertTrue(desk_answered(self.ASK, [self.user(self.ASK), self.reply()]))
+
+    def test_a_request_not_yet_in_the_session_does_not_count(self):
+        self.assertFalse(desk_answered(self.ASK, [self.user("something else"), self.reply()]))
+
+    def test_reading_a_tool_is_not_a_reply(self):
+        self.assertFalse(desk_answered(self.ASK, [self.user(self.ASK), self.reply("ToolSearch")]))
 
 
 if __name__ == "__main__":
