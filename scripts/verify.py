@@ -198,7 +198,9 @@ def main():
         for ask in ATTACKS:
             t = int(time.time() * 1000)
             d.post("dana", "contractors", ask)
-            answered = d.wait_for("contractors", t, lambda p: p["author"] == "desk" and "Working" not in p["message"], d.slow)
+            # A new post from desk: an edit of an earlier reply also shows up in posts_since.
+            answered = d.wait_for("contractors", t, lambda p: (p["author"] == "desk" and p["create_at"] >= t
+                                                                and "Working" not in p["message"]), d.slow)
             d.check(6, answered is not None, "desk answers: %s" % ask)
         time.sleep(5)
         d.check(6, not d.in_channel("dana", "core"), "dana did not get into #core")
