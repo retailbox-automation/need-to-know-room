@@ -4,16 +4,22 @@ A team chat where an AI agent that holds customer data answers each person only 
 
 Built for the Flip the Switch hackathon, Track 01 (Best Business Workflow), on Switch 0.31.0 with Mattermost.
 
+**[Watch the 2-minute demo](__VIDEO_URL__)**: real Mattermost, real Switch and a real Claude Code agent, recorded from the stack this repo starts.
+
+| Dana asks keeper for the list: Switch refuses | Dana presses the owner's card: Switch refuses |
+|---|---|
+| ![Switch's refusal in the thread](docs/img/refused-by-switch.jpg) | ![The private refusal under the approval card](docs/img/press-refused.jpg) |
+
 ## Judge it in 90 seconds
 
-| Claim | Where it lives | What you will see |
-|---|---|---|
-| A contractor's request is refused by Switch, not by a model. keeper never receives it. | Switch's `ADDRESSING_DENIED_MESSAGE` (`core/switch_core/delivery/addressing.py:63-66` at tag `switch-v0.31.0`); keeper's per-room policy in [`scripts/seed.py`](scripts/seed.py) (`keeper_policy`) | `verify.py` scene 1: the reply is that exact sentence, and keeper posts nothing |
-| The same request from an employee in another room goes through | the `#core` rule in `keeper_policy` | scene 2 |
-| Only the owner can approve. The contractor sees the card, but her press is refused | Switch lets only people who may address an agent answer its cards (`session_activity/service.py:571-602`); keeper opens its own card through `POST /agent-sessions/{id}/approvals` | scene 3: Dana's press changes nothing, Alex's press releases the field |
-| One field, once. A follow-up needs a new approval | [`agents/keeper/keeper.py`](agents/keeper/keeper.py) (our code, no language model) | scenes 3 and 4 |
-| Switch keeps the record of every answer, and ours must match it | `GET /gateway/chats/{room}/activity` (`gateway/chats.py:310`); [`scripts/audit.py`](scripts/audit.py) joins it with keeper's log and exits 1 on any disagreement | scene 5 and the audit table at the end of `verify.sh` |
-| The Claude Code agent in the room (desk) cannot read files and does not see its host's private instructions | `disallowedTools` and a working directory outside the home folder, set in [`scripts/seed.py`](scripts/seed.py) (`ensure_claude_desk`) | scene 6 (Tier B): a fresh secret in desk's folder never reaches the room; desk's transcript shows no instruction files loaded |
+| Claim | Where it lives | What you will see | In the video |
+|---|---|---|---|
+| A contractor's request is refused by Switch, not by a model. keeper never receives it. | Switch's `ADDRESSING_DENIED_MESSAGE` (`core/switch_core/delivery/addressing.py:63-66` at tag `switch-v0.31.0`); keeper's per-room policy in [`scripts/seed.py`](scripts/seed.py) (`keeper_policy`) | `verify.py` scene 1: the reply is that exact sentence, and keeper posts nothing | 0:14 |
+| The same request from an employee in another room goes through | the `#core` rule in `keeper_policy` | scene 2 | 0:41 |
+| Only the owner can approve. The contractor sees the card, but her press is refused | Switch lets only people who may address an agent answer its cards (`session_activity/service.py:571-602`); keeper opens its own card through `POST /agent-sessions/{id}/approvals` | scene 3: Dana's press changes nothing, Alex's press releases the field | 0:58 |
+| One field, once. A follow-up needs a new approval | [`agents/keeper/keeper.py`](agents/keeper/keeper.py) (our code, no language model) | scenes 3 and 4 | 1:08, 1:15 |
+| Switch keeps the record of every answer, and ours must match it | `GET /gateway/chats/{room}/activity` (`gateway/chats.py:310`); [`scripts/audit.py`](scripts/audit.py) joins it with keeper's log and exits 1 on any disagreement | scene 5 and the audit table at the end of `verify.sh` | 1:33 |
+| The Claude Code agent in the room (desk) cannot read files and does not see its host's private instructions | `disallowedTools` and a working directory outside the home folder, set in [`scripts/seed.py`](scripts/seed.py) (`ensure_claude_desk`) | scene 6 (Tier B): a fresh secret in desk's folder never reaches the room; desk's transcript shows no instruction files loaded | 1:23 |
 
 One command checks all of it on a running stack: `./scripts/verify.sh` (exit code 0 only if every scene passes and the audit agrees).
 
@@ -29,6 +35,8 @@ A shared agent in a team chat usually runs with the access of whoever set it up.
 
 ## How Switch is used
 
+![Three rooms, two agents: who may talk to keeper is set per room in Switch](docs/img/rooms.png)
+
 | Step | Switch does | Our code does |
 |---|---|---|
 | Dana (contractor) asks keeper for the full list in `#contractors` | refuses her with its own message, by keeper's addressing policy for that room; keeper is never woken | sets the policy (`seed.py`) |
@@ -38,6 +46,8 @@ A shared agent in a team chat usually runs with the access of whoever set it up.
 | keeper asks the owner | renders the approval card with buttons in Mattermost and decides who may press it | keeper opens the card with customer, field and requester |
 | Alex (owner) presses Open once | records the answer and delivers the outcome to keeper | keeper posts that one field, once, and logs the grant |
 | Anyone asks "who opened what?" | keeps every card's answer, who answered and when, for 7 days (`session_activity/maintenance.py:28`) | `audit.py` joins it with keeper's log |
+
+![What Switch enforces and what our code decides](docs/img/switch-vs-our-code.png)
 
 Remove Switch and nothing here holds: there are no rooms, no identities, no policy and no cards, only a bot that answers everyone with its owner's access.
 
@@ -58,6 +68,8 @@ python3 scripts/seed.py    # people, rooms, keeper, policies
 ```
 
 Then open Mattermost at http://127.0.0.1:28065 and sign in as `alex`, `sam` or `dana` (passwords are in `.stand/state.json`) to try to get past keeper yourself. `./scripts/up.sh down` stops the stack and keeps its data; `./scripts/up.sh destroy` removes it.
+
+If a port is taken, set `N2K_API_PORT`, `N2K_GATEWAY_PORT`, `N2K_MM_PORT` or `N2K_PG_PORT` before `up.sh`. If Mattermost exits with `exec format error`, your Docker has no amd64 emulation (Platform findings, 8).
 
 ## Tier B: Claude Code as desk
 
@@ -100,16 +112,19 @@ Found while building this on Switch 0.31.0. Each was seen on our stand; code ref
 6. **A chat account not linked to a Switch user gets a different refusal** ("this chat account isn't linked") instead of the room policy's; `seed.py` links every demo person.
 7. **The room activity record (`/gateway/chats/{room}/activity`) returns 403 to the admin** until the admin joins that chat.
 8. **Mattermost 11.9.0 is amd64-only** (the compose file sets `platform: linux/amd64`); on a Docker host without amd64 emulation it exits at once with `exec format error`.
+9. **The buttons on Switch's cards carry no action `type`.** `answer_actions` (`bridges/collaboration/mattermost/callback.py:183-209`) sends `id`, `name` and `integration`. Mattermost 11.9.0 requires `button` or `select` (`server/public/model/integration_action.go:179`) and logs "Invalid post props. In a future version this will result in an error" (`server/public/model/post.go:717`); we counted 17 such lines in one run of the demo. The buttons work today.
+10. **A refused press shows only in the card's thread.** Our Mattermost runs with `CollapsedThreads=always_on`, and it attaches the private refusal to the card's thread (`server/channels/app/integration_action.go:231-234`), so someone who presses a card in the channel view sees nothing happen unless that thread is open. The video opens the thread first for this reason.
 
 ## How AI was used
 
 - desk is a Claude Code agent, run by Switch's agent controller (Tier B).
 - keeper uses no language model, on purpose: what leaves the data store is decided by deterministic code.
 - The code was written with Claude Code as a coding assistant, from a design we wrote and approved before the build window; every change was checked with the scripts in this repo (`verify.sh`, `tests/`).
+- The video's narration is generated with ElevenLabs from a clone of the author's own voice. Its screens are recordings of the running stack, and its diagrams are drawn by code.
 
 ## Disclosure
 
-Everything in this repository was written during the hackathon window (first commit on 3 November 2026, 18:31 UTC). Switch is used as released (Apache-2.0 with the Commons Clause): `up.sh` downloads its compose file from the release tag and nothing of Switch is copied here. All customer data is synthetic (`data/generate.py`, seeded); no real customer, client or person appears.
+Everything in this repository was written during the hackathon window (first commit on 3 November 2026, 18:31 UTC). Switch is used as released (Apache-2.0 with the Commons Clause): `up.sh` downloads its compose file from the release tag and nothing of Switch is copied here. All customer data is synthetic (`data/generate.py`, seeded); no real customer, client or person appears. Music in the video: "Digital Technology" by AtlasAudio, [Pixabay Content License](https://pixabay.com/service/license-summary/).
 
 ## License
 

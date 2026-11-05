@@ -44,8 +44,8 @@ class JoinTest(unittest.TestCase):
     def test_release_without_any_card(self):
         self.assertTrue(checks([], [grant("r1")])["r1"].startswith("MISMATCH"))
 
-    def test_release_while_card_still_pending(self):
-        got = checks([card("r1", state="pending", answer=None, at=None)], [grant("r1")])
+    def test_release_while_card_still_open(self):
+        got = checks([card("r1", state="open", answer=None, at=None)], [grant("r1")])
         self.assertTrue(got["r1"].startswith("MISMATCH"))
 
     def test_grant_older_than_switch_retention_is_not_a_mismatch(self):
@@ -60,11 +60,14 @@ class JoinTest(unittest.TestCase):
         got = checks([card("r1", at="2026-11-05T14:59:50Z")], [])
         self.assertEqual(got["r1"], "keeper is settling it")
 
-    def test_pending_and_expired_cards(self):
-        got = checks([card("r1", state="pending", answer=None, at=None),
-                      card("r2", state="expired", answer=None, at=None)], [])
+    def test_open_expired_and_closed_cards(self):
+        # Switch 0.31.0 card states: open, answered, expired, closed (session_activity/service.py)
+        got = checks([card("r1", state="open", answer=None, at=None),
+                      card("r2", state="expired", answer=None, at=None),
+                      card("r3", state="closed", answer=None, at=None)], [])
         self.assertEqual(got["r1"], "waiting for an answer")
         self.assertEqual(got["r2"], "closed without an answer (expired)")
+        self.assertEqual(got["r3"], "closed without an answer (closed)")
 
     def test_other_agents_cards_are_left_out(self):
         self.assertEqual(checks([card("r9", agent="agent-desk")], []), {})

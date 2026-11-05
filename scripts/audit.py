@@ -66,7 +66,7 @@ def join(approvals, grants, keeper_id, now):
             row["check"] = "MISMATCH: answered, but keeper never acted"
         elif card["state"] == "answered":
             row["check"] = "keeper is settling it"
-        elif card["state"] != "pending":
+        elif card["state"] != "open":
             row["check"] = "closed without an answer (%s)" % card["state"]
         rows.append(row)
     return sorted(rows, key=lambda r: r["answered_at"] or "")
