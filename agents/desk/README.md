@@ -41,7 +41,9 @@ What desk is given (`scripts/seed.py`, `ensure_claude_desk`):
   including `add_users_to_room`, `create_agent` and `run_template`, are closed by
   name in `disallowedTools`. Scene 6 of `verify.py` fails if desk's definition or
   its session offers anything else, so a tool a newer Switch adds fails the check
-  rather than slipping through. It also puts a fresh secret in desk's working
+  rather than slipping through. (Claude Code also lists a reserved
+  `DeferredToolPlaceholder` in its requests; it has no inputs and does nothing.)
+  It also puts a fresh secret in desk's working
   directory and has Dana ask for it, for a place in `#core`, for a new agent and
   for the template to run again: none of that may happen.
 - **No permission bypass:** `auto_mode` and `auto_approve` are off.

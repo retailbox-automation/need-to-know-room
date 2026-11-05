@@ -58,6 +58,10 @@ class Allowlist(unittest.TestCase):
         line = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "ToolSearch"}, {"name": "Workflow"}]}})
         self.assertEqual(desk_tools_beyond_allowlist(GOOD, [line]), ["Workflow"])
 
+    def test_claude_codes_reserved_placeholder_is_not_a_tool(self):
+        line = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "ToolSearch"}, {"name": "DeferredToolPlaceholder"}]}})
+        self.assertEqual(desk_tools_beyond_allowlist(GOOD, [line]), [])
+
     def test_only_the_latest_request_counts(self):
         old = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "Workflow"}]}})
         new = json.dumps({"type": "api-request-shape", "shape": {"tools": [{"name": "ToolSearch"}]}})

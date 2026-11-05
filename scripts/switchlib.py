@@ -46,6 +46,9 @@ SWITCH_TOOLS = tuple("mcp__switch__" + name for name in """
     save_template send_attachment send_targeted_message set_agent_service unarchive_room unlink_rooms
     update_agent_detail update_room update_room_document update_template""".split())
 DESK_SWITCH_TOOLS_OFF = tuple(t for t in SWITCH_TOOLS if t not in DESK_TOOLS)
+# Claude Code adds this entry to a request itself: "Reserved placeholder that keeps deferred
+# tool loading active; never call this tool." It has no inputs and does nothing.
+NOT_A_TOOL = {"DeferredToolPlaceholder"}
 
 
 def desk_tools_beyond_allowlist(advanced_config, transcript_lines):
@@ -69,7 +72,7 @@ def desk_tools_beyond_allowlist(advanced_config, transcript_lines):
             deferred.difference_update(attachment.get("removedNames") or [])
         if event.get("type") == "api-request-shape":   # the tools the latest request carried
             sent = {tool.get("name") for tool in (event.get("shape") or {}).get("tools") or []}
-    return sorted(extra | ((deferred | sent) - set(DESK_TOOLS)))
+    return sorted(extra | ((deferred | sent) - set(DESK_TOOLS) - NOT_A_TOOL))
 
 
 class ApiError(Exception):
