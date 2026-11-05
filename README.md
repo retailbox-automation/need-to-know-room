@@ -4,7 +4,11 @@ A team chat where an AI agent that holds customer data answers each person only 
 
 Built for the Flip the Switch hackathon, Track 01 (Best Business Workflow), on Switch 0.31.0 with Mattermost.
 
-**[Watch the 2-minute demo](__VIDEO_URL__)**: real Mattermost, real Switch and a real Claude Code agent, recorded from the stack this repo starts.
+**[Watch the 2-minute demo](__VIDEO_URL__)**: real Mattermost, real Switch and a real Claude Code agent, recorded from the stack this repo starts (before we narrowed desk's tools further; nothing on screen changed).
+
+Two agents share the rooms. **keeper** holds the customer list and has no language model. **desk** is Claude Code, helps contractors and holds no data. A sentence in a prompt can be argued with, and a role check inside an agent still wakes the agent. Here Switch stops the request before keeper is woken, and only the owner's press on its card can release a field.
+
+![Three rooms, two agents: who may talk to keeper is set per room in Switch](docs/img/rooms.png)
 
 | Dana asks keeper for the list: Switch refuses | Dana presses the owner's card: Switch refuses |
 |---|---|
@@ -14,7 +18,7 @@ Built for the Flip the Switch hackathon, Track 01 (Best Business Workflow), on S
 
 | Claim | Where it lives | What you will see | In the video |
 |---|---|---|---|
-| A contractor's request is refused by Switch, not by a model. keeper is never woken: Switch marks the message as not addressed to it (`core/switch_core/delivery/recipient.py:1503-1530`), and keeper's stream carries addressed messages only | Switch's `ADDRESSING_DENIED_MESSAGE` (`core/switch_core/delivery/addressing.py:63-66` at tag `switch-v0.31.0`); keeper's per-room policy in [`scripts/seed.py`](scripts/seed.py) (`keeper_policy`) | `verify.py` scene 1: the reply is that exact sentence, shown under keeper's name, and keeper's code posts nothing | 0:14 |
+| A contractor's request is refused by Switch, not by a model. keeper is never woken: Switch marks the message as not addressed to it (`core/switch_core/delivery/recipient.py:1503-1535`), and keeper's stream carries addressed messages only | Switch's `ADDRESSING_DENIED_MESSAGE` (`core/switch_core/delivery/addressing.py:63-66` at tag `switch-v0.31.0`); keeper's per-room policy in [`scripts/seed.py`](scripts/seed.py) (`keeper_policy`) | `verify.py` scene 1: the reply is that exact sentence, shown under keeper's name, and keeper's code posts nothing | 0:14 |
 | The same request from an employee in another room goes through | the `#core` rule in `keeper_policy` | scene 2 | 0:41 |
 | Only the owner can approve. The contractor sees the card, but her press is refused | Switch lets only people who may address an agent answer its cards (`core/switch_core/session_activity/service.py:571-602`); keeper opens its own card through `POST /agent-sessions/{id}/approvals` | scene 3: Dana's press changes nothing, Alex's press releases the field | 0:58 |
 | One field, once. A follow-up needs a new approval | [`agents/keeper/keeper.py`](agents/keeper/keeper.py) (our code, no language model). Anything that comes through desk gets a card, even if the owner asked | scenes 3 and 4 | 1:08, 1:15 |
@@ -35,7 +39,7 @@ A shared agent in a team chat usually runs with the access of whoever set it up.
 
 ## How Switch is used
 
-![Three rooms, two agents: who may talk to keeper is set per room in Switch](docs/img/rooms.png)
+`#owner-desk` is the owner's private line to keeper; the demo itself runs in `#contractors` and `#core`.
 
 | Step | Switch does | Our code does |
 |---|---|---|
@@ -88,6 +92,26 @@ desk becomes a Claude Code agent started by Switch's agent controller, with tool
 | 7 | — | Switch's own template validator accepts `templates/need-to-know.v2.template.yaml` |
 | audit | — | every request in Switch's record matches keeper's log |
 
+A real run from a clean clone (Tier A, Python 3.9):
+
+```
+PASS  scene 1: dana -> @keeper in #contractors is refused by Switch with its own message
+PASS  scene 1: keeper posted nothing to dana
+PASS  scene 2: sam -> @keeper in #core gets the summary
+PASS  scene 3: desk asks keeper; keeper opens a card naming dana, region, Acme Bakery Co.
+PASS  scene 3: dana's own press is refused: card still open, nothing released
+PASS  scene 3: alex's press releases exactly that field
+PASS  scene 3: the card now reads 'Chosen by @alex'
+PASS  scene 4: the follow-up opens a new card (approvals do not carry over)
+PASS  scene 4: alex keeps it closed
+PASS  scene 4: the phone number never appears in #contractors
+PASS  scene 5: Switch's approval record matches keeper's grants log (2 entries)
+PASS  scene 7: Switch validates templates/need-to-know.v2.template.yaml (0 errors, 0 warnings)
+
+All scenes passed.
+PASSED: every scene, and the record matches.
+```
+
 ## Threat model: what Switch does here, and what it does not
 
 Switch enforces who may wake keeper in each room, who may answer keeper's cards, and the record of answers. It does not:
@@ -114,7 +138,7 @@ Found while building this on Switch 0.31.0. Each was seen on our stand; code ref
 7. **The room activity record (`/gateway/chats/{room}/activity`) returns 403 to the admin** until the admin joins that chat.
 8. **Mattermost 11.9.0 is amd64-only** (the compose file sets `platform: linux/amd64`); on a Docker host without amd64 emulation it exits at once with `exec format error`.
 9. **The buttons on Switch's cards carry no action `type`.** `answer_actions` (`bridges/collaboration/mattermost/callback.py:183-209`) sends `id`, `name` and `integration`. Mattermost 11.9.0 requires `button` or `select` (`server/public/model/integration_action.go:179`) and logs "Invalid post props. In a future version this will result in an error" (`server/public/model/post.go:717`); we counted 17 such lines in one run of the demo. The buttons work today.
-10. **A managed agent carries its owner's rights, and Switch's room-admin tools are always offered.** An agent created by the admin may add people to any room (`core/switch_core/bridges/agent/protocol/agent_core.py:3209-3262`). A `tools` allowlist always gets the whole `mcp__switch` server added (`console/packages/plugins/src/agents/impl/claude/subagents.ts:185-188`), so the 57 tools desk does not need can only be closed one by one in `disallowedTools`. Before we closed them, desk was offered `add_users_to_room`, `create_agent` and `run_template`, and the prompt was all that stopped them. An allowlist that covers the server's tools would make this one line.
+10. **A managed agent carries its owner's rights, and Switch's room-admin tools are always offered.** An agent created by the admin may add people to any room (`core/switch_core/bridges/agent/protocol/agent_core.py:3209-3275`). A `tools` allowlist always gets the whole `mcp__switch` server added (`console/packages/plugins/src/agents/impl/claude/subagents.ts:185-188`), so the 57 tools desk does not need can only be closed one by one in `disallowedTools`. Before we closed them, desk was offered `add_users_to_room`, `create_agent` and `run_template`, and the prompt was all that stopped them. An allowlist that covers the server's tools would make this one line.
 11. **A refused press shows only in the card's thread.** Our Mattermost runs with `CollapsedThreads=always_on`, and it attaches the private refusal to the card's thread (`server/channels/app/integration_action.go:231-234`), so someone who presses a card in the channel view sees nothing happen unless that thread is open. The video opens the thread first for this reason.
 
 ## How AI was used
