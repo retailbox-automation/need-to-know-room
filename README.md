@@ -4,7 +4,7 @@ A team chat where an AI agent that holds customer data answers each person only 
 
 Built for the Flip the Switch hackathon, Track 01 (Best Business Workflow), on Switch 0.31.0 with Mattermost.
 
-**[Watch the 2-minute demo](__VIDEO_URL__)**: real Mattermost, real Switch and a real Claude Code agent, recorded from the stack this repo starts (before we narrowed desk's tools further; nothing on screen changed).
+**[Watch the 2-minute demo](https://youtu.be/i-u7XrK-fXg)**: real Mattermost, real Switch and a real Claude Code agent, recorded from the stack this repo starts (before we narrowed desk's tools further; nothing on screen changed).
 
 Two agents share the rooms. **keeper** holds the customer list and has no language model. **desk** is Claude Code, helps contractors and holds no data. A sentence in a prompt can be argued with, and a role check inside an agent still wakes the agent. Here Switch stops the request before keeper is woken, and only the owner's press on its card can release a field.
 
