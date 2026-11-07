@@ -1,5 +1,9 @@
 # Need-to-Know Room
 
+[![tests](https://github.com/retailbox-automation/need-to-know-room/actions/workflows/tests.yml/badge.svg)](https://github.com/retailbox-automation/need-to-know-room/actions/workflows/tests.yml)
+
+On a fresh clone (7 November 2026): `verify.sh` passes **12 of 12** checks, the audit matches Switch's record on **2 of 2** requests, and **32** unit tests run on every push.
+
 A team chat where an AI agent that holds customer data answers each person only with what they may know. A contractor can ask for one field of one customer; the owner approves it with a button; the agent hands out exactly that field, once. Who may reach the agent and who may approve is enforced by [Switch](https://github.com/sandbox-quantum/switch), not by a prompt. Remove Switch and nothing here holds: there are no rooms, no identities, no policy and no cards, only a bot that answers everyone with its owner's access.
 
 On top of per-room isolation, a contractor gets a field only through the owner's press on a Switch approval card, exactly once, and the audit exits 1 if keeper's own log ever disagrees with Switch's record of who answered what.
