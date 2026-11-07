@@ -1,6 +1,8 @@
 # Need-to-Know Room
 
-A team chat where an AI agent that holds customer data answers each person only with what they may know. A contractor can ask for one field of one customer; the owner approves it with a button; the agent hands out exactly that field, once. Who may reach the agent and who may approve is enforced by [Switch](https://github.com/sandbox-quantum/switch), not by a prompt.
+A team chat where an AI agent that holds customer data answers each person only with what they may know. A contractor can ask for one field of one customer; the owner approves it with a button; the agent hands out exactly that field, once. Who may reach the agent and who may approve is enforced by [Switch](https://github.com/sandbox-quantum/switch), not by a prompt. Remove Switch and nothing here holds: there are no rooms, no identities, no policy and no cards, only a bot that answers everyone with its owner's access.
+
+On top of per-room isolation, a contractor gets a field only through the owner's press on a Switch approval card, exactly once, and the audit exits 1 if keeper's own log ever disagrees with Switch's record of who answered what.
 
 Built for the Flip the Switch hackathon, Track 01 (Best Business Workflow), on Switch 0.31.0 with Mattermost.
 
@@ -52,8 +54,6 @@ A shared agent in a team chat usually runs with the access of whoever set it up.
 | Anyone asks "who opened what?" | keeps every card's answer, who answered and when, and shows the last 7 days (`core/switch_core/chats/service.py:602`) | `audit.py` joins it with keeper's log |
 
 ![What Switch enforces and what our code decides](docs/img/switch-vs-our-code.png)
-
-Remove Switch and nothing here holds: there are no rooms, no identities, no policy and no cards, only a bot that answers everyone with its owner's access.
 
 [`scripts/seed.py`](scripts/seed.py) creates the rooms and policies through Switch's API, and the people through Mattermost's and Switch's. The same rooms and the Claude Code desk are also written as a Switch template, [`templates/need-to-know.v2.template.yaml`](templates/need-to-know.v2.template.yaml).
 
